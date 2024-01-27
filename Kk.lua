@@ -1,6 +1,6 @@
-local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
-local Tab = NOKEY HUB({
-	Name = "Tab 1",
+local Window = OrionLib:MakeWindow({Name = "Barloss", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Tab = Window:MakeTab({
+	Name = "AutoFarm",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })

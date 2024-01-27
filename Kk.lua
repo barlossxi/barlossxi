@@ -6,23 +6,16 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 local Section = Tab:AddSection({
-	Name = "AutoFram"
-})
-Tab:AddButton({
-	Name = "AutoFram!",
-	Callback = function()
-      		print("button pressed")
-		
-  	end    
+	Name = "Tw"
 })
 Tab:AddToggle({
-	Name = "This is a toggle!",
+	Name = "Tw",
 	Default = false,
 	Callback = function(Value)
-		_G.TW = true
-	while _G.TW do wait() 
-	local TweenService = game:GetService("TweenService")
+_G.Tw = true
+while _G.Tw do wait()
+local TweenService = game:GetService("TweenService")
 local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
-{CFrame = CFrame.new(-387.568878, 2.65220118, 1648.24072, -0.0299262311, -4.77026383e-08, 0.999552131, -3.2846672e-09, 1, 4.76256687e-08, -0.999552131, -1.85793925e-09, -0.0299262311)}):Play()			
+{CFrame = CFrame.new(-387.568878, 2.65220118, 1648.24072, -0.0299262311, -4.77026383e-08, 0.999552131, -3.2846672e-09, 1, 4.76256687e-08, -0.999552131, -1.85793925e-09, -0.0299262311)}):Play()
 	end    
 })

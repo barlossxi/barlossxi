@@ -1,11 +1,11 @@
 local Window = OrionLib:MakeWindow({Name = "Barloss", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 local Tab = Window:MakeTab({
-	Name = "AutoFarm",
+	Name = "AutoFram",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-local Section = AutoFarm({
-	Name = "Section"
+local Section = Tab:AddSection({
+	Name = "AutoFram"
 })
 Tab:AddToggle({
 	Name = "AutoFarm",

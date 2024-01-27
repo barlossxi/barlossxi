@@ -17,5 +17,11 @@ local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPa
 {CFrame = CFrame.new(-387.568878, 2.65220118, 1648.24072, -0.0299262311, -4.77026383e-08, 0.999552131, -3.2846672e-09, 1, 4.76256687e-08, -0.999552131, -1.85793925e-09, -0.0299262311)}):Play()
 	end 
 })
-                    
+Tab:AddToggle({
+	Name = "Tw1",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
+})                    
                     

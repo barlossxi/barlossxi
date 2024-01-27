@@ -1,16 +1,17 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
-local Tab = Window:MakeTab({
+local Tab = NOKEY HUB({
 	Name = "Tab 1",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-local Section = Tab:AddSection({
+local Section = AutoFarm({
 	Name = "Section"
 })
-Tab:AddButton({
-	Name = "Auto Farm",
-	_G.AutoFarm_Level = true
+Tab:AddToggle({
+	Name = "AutoFarm",
+	Default = false,
+	Callback = function(Value)
+		_G.AutoFarm_Level = true
 _G.FastAttack = true
  
  
@@ -134,7 +135,6 @@ spawn(function()
             local Combat = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework)
             local Cemara = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework.CameraShaker)
             Cemara.CameraShakeInstance.CameraShakeState = {FadingIn = 3, FadingOut = 2, Sustained = 0, Inactive = 1}
-            Combat.activeCont = function()
-      		print("button pressed")
-  	end    
+            Combat.activeCont
+	end    
 })

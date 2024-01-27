@@ -9,7 +9,7 @@ local Section = Tab:AddSection({
 	Name = "ออโต้ฟาม"
 })
 Tab:AddToggle({
-	Name = "ออโต้ฟาม",
+	Name = "ออโต้คลิก",
 	Default = false,
 	Callback = function(Value)
 section1:addToggle("Fast Attack", _G.FastAttack, function(value)

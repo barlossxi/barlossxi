@@ -12,29 +12,59 @@ Tab:AddToggle({
 	Name = "ออโต้ฟาม",
 	Default = false,
 	Callback = function(Value)
-
-MONS = {}
- 
-for i,v in pairs(game:GetService("Workspace").Monster.Mon:GetChildren()) do
-    table.insert(MONS,v.Name)
-end
- 
-Section:NewToggle("Auto-Farm", "", function(state)
-    _G.AutoFarm = state
-    while _G.AutoFarm do wait()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Monster.Mon[Select].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
-end
+section1:addToggle("Fast Attack", _G.FastAttack, function(value)
+_G.FastAttack = value
 end)
  
-Section:NewDropdown("Please Select Monster", "", MONS, function(currentOption)
-    Select = currentOption
+ 
+local themes = {
+Background = Color3.fromRGB(24, 24, 24),
+Glow = Color3.fromRGB(0, 0, 0),
+Accent = Color3.fromRGB(10, 10, 10),
+LightContrast = Color3.fromRGB(20, 20, 20),
+DarkContrast = Color3.fromRGB(14, 14, 14),  
+TextColor = Color3.fromRGB(255, 255, 255)
+}
+ 
+ 
+for theme, color in pairs(themes) do -- all in one theme changer, i know, im cool
+colors:addColorPicker(theme, color, function(color3)
+venyx:setTheme(theme, color3)
+end)
+end
+ 
+-- load
+venyx:SelectPage(venyx.pages[1], true)
+ 
+ 
+ 
+ 
+ 
+spawn(function()
+   game:GetService("RunService").RenderStepped:Connect(function()
+    pcall(function()
+        if _G.FastAttack then
+            local Combat = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework)
+            local Cemara = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework.CameraShaker)
+            Cemara.CameraShakeInstance.CameraShakeState = {FadingIn = 3, FadingOut = 2, Sustained = 0, Inactive = 1}
+            Combat.activeController.timeToNextAttack = 0
+            Combat.activeController.hitboxMagnitude = 120
+            Combat.activeController.increment = 3
+        end
+    end)
+end) 
 end)
  
-Section:NewButton("Refresh", "", function()
-    table.clear(MONS)
-for i,v in pairs(game:GetService("Workspace").Monster.Mon:GetChildren()) do
-    table.insert(MONS,v.Name)
-end
+ 
+spawn(function()
+   game:GetService("RunService").RenderStepped:Connect(function()
+    pcall(function()
+        if _G.FastAttack then
+            game:GetService'VirtualUser':CaptureController()
+            game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+        end
+    end)
+end) 
 end)
 	end    
 })

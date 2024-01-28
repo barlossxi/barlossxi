@@ -2,7 +2,7 @@ _G.FARM = true -- true = ON  /  false = OFF
 _G.MON = "Bandit [Lv. 5]" -- NAME MONSTER
 _G.TOOL = "Combat" -- Weapon name
 _G.FARMMETHOD = 2 -- MODE FARM (1/3)
-_G.HideHB = false -- HIDEHITBOX
+_G.HideHB = true -- HIDEHITBOX
  
  
 -- =[[ FUNCTION ]]= --

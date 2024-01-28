@@ -23,13 +23,7 @@ function CheckQuest()
                 CFrameQuest = CFrame.new(-1599.8194580078125, 36.852149963378906, 153.0706024169922) 
         end 
     end
-    local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/naypramx/Ui__Project/Script/XeNonUi", true))()
-    library:CreateWatermark("NOOB HUB") -- Config แตกนะเดียวค่อยแก้รอเน็ตมาก่อน By MeowX#0001
-    local CenterHubNo1 = library:CreateWindow("NOOB HUB | BLOX FRUIT",Enum.KeyCode.RightControl)
-    local Tab = CenterHubNo1:CreateTab("Main")
-    local AutoFarm = Tab:CreateSector("AutoFarm","Left")
-    AutoFarm:AddLabel("AutoFarm Lv")
-    Weapon = {}
+    
     for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
         if v:IsA"Tool" then
             table.insert(Weapon,v.Name)

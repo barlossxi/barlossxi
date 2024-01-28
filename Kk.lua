@@ -1,4 +1,4 @@
-function quest() 
+function quest() -- CHECK QUESY AND AUTO QUEST
     local MYLEVEL = game:GetService("Players").LocalPlayer.Data.Level.Value
 if game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == true then
     
@@ -19,13 +19,13 @@ end
 end
  
  
-function attack() 
+function attack() -- AUTO ATTACK
     game:GetService'VirtualUser':CaptureController()
 game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
 end
  
  
-function hitbox() 
+function hitbox() -- HITBOX
     local enamie = game:GetService("Workspace").Enemies:GetChildren()
     
     for i,v in pairs(enamie) do
@@ -40,7 +40,7 @@ function hitbox()
     
     end
  
-function TPTOMON()
+function TPTOMON() -- FARM MODE
 if game:GetService("Workspace").Enemies[_G.MON].Humanoid.Health == 0 then
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1062.7824707031, 16.516611099243, 1539.5036621094)
 elseif _G.FARMMETHOD == 1 then
@@ -57,9 +57,10 @@ end
  
  
  
+-- =[[ Autofarm ]]= --
  
 while _G.FARM do  wait()
-    print("Barloss")
+    print("SHARK X HUB | NO 1") -- DON'T DELETE ME :angry:
     EquipTool()
     TPTOMON()
     hitbox()

@@ -8,11 +8,9 @@ local Tab = Window:MakeTab({
 local Section = Tab:AddSection({
 	Name = "วาป"
 })
-Tab:AddToggle({
-	Name = "This is a toggle!",
-	Default = false,
-	Callback = function(Value)
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-504.398895, 7.85236597, 1445.93567, -0.876919866, 0, -0.480636656, 0, 1, 0, 0.480636656, 0, -0.876919866)
-		
-	end    
+Tab:AddButton({
+	Name = "Button!",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-504.398895, 7.85236597, 1445.93567, -0.876919866, 0, -0.480636656, 0, 1, 0, 0.480636656, 0, -0.876919866)
+  	end    
 })

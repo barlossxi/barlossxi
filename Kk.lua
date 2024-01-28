@@ -12,17 +12,17 @@ function totarget(p)
 end
 
 function checklevel()
-    local lv = game:GetService("Players").LocalPlayer.Data.Level.Value
-    if lv == 1 or lv <= 9 then
-        Mon = "Bandit [Lv. 5]"
+    local Level = game:GetService("Players").LocalPlayer.Data.Level.Value
+    if Level == 1 or Level <= 9 then
+        Mon = "Bandit [Level. 5]"
         Title = "Bandit"
         QuestName = "BanditQuest1"
         QuestNumber = 1
         CFrameQuest = CFrame.new(1059.7457275390625, 16.393512725830078, 1548.560546875)
         CFrameMon = CFrame.new(976.605712890625, 16.34925651550293, 1555.198974609375)
         CFramePuk = CFrame.new(1010.50732421875, 50.843017578125, 1633.6839599609375)
-    elseif lv == 10 or lv <= 14 then
-        Mon = "Monkey [Lv. 14]"
+    elseif Level == 10 or Level <= 14 then
+        Mon = "Monkey [Level. 14]"
         Title = "Monkey"
         QuestName = "JungleQuest"
         QuestNumber = 1

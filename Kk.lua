@@ -45,7 +45,7 @@ spawn(function()
         pcall(function()
             if _G.Auto_Farm then
             checklevel()
-                if game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == false then
+                if game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == true then
 totarget(CFrameQuest)
 wait(.3)
 local args = {
@@ -64,7 +64,7 @@ elseif game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == tr
             v.HumanoidRootPart.CFrame = CFrameMon
             game:GetService'VirtualUser':CaptureController()
             game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
-            v2.HumanoidRootPart.CanCollide = false
+            v2.HumanoidRootPart.CanCollide = true
             sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", math.huge)
         end
         end

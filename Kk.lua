@@ -9,10 +9,10 @@ local Section = Tab:AddSection({
 	Name = "วาป"
 })
 Tab:AddToggle({
-	Name = "วาป",
+	Name = "This is a toggle!",
 	Default = false,
 	Callback = function(Value)
-	_G.AutoWarp = true
+		_G.AutoWarp = true
 
 spawn(function()
         while wait() do
@@ -22,5 +22,5 @@ spawn(function()
                     local plr = game.Players.LocalPlayer
                     local char = plr.Character
                     char.HumanoidRootPart.CFrame = CFrame.new(-504.398895, 7.85236597, 1445.93567, -0.876919866, 0, -0.480636656, 0, 1, 0, 0.480636656, 0, -0.876919866)
-		end    
+	end    
 })

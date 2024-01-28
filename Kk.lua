@@ -12,6 +12,15 @@ Tab:AddToggle({
 	Name = "วาป",
 	Default = false,
 	Callback = function(Value)
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-504.398895, 7.85236597, 1445.93567, -0.876919866, 0, -0.480636656, 0, 1, 0, 0.480636656, 0, -0.876919866)	
-	end    
+	_G.AutoWarp = true
+
+spawn(function()
+        while wait() do
+            if _G.AutoWarp then
+                pcall(function()
+                    wait(1)
+                    local plr = game.Players.LocalPlayer
+                    local char = plr.Character
+                    char.HumanoidRootPart.CFrame = CFrame.new(-504.398895, 7.85236597, 1445.93567, -0.876919866, 0, -0.480636656, 0, 1, 0, 0.480636656, 0, -0.876919866)
+		end    
 })

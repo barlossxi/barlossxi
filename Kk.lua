@@ -1,69 +1,21 @@
-function quest() -- CHECK QUESY AND AUTO QUEST
-    local MYLEVEL = game:GetService("Players").LocalPlayer.Data.Level.Value
-if game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == true then
-    
-    elseif MYLEVEL == 1 or MYLEVEL <= 9 then
- 
-local args = {
-    [1] = "StartQuest",
-    [2] = "BanditQuest1",
-    [3] = 1
-}
- 
-game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
- 
-    
- 
-end
- 
-end
- 
- 
-function attack() -- AUTO ATTACK
-    game:GetService'VirtualUser':CaptureController()
-game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
-end
- 
- 
-function hitbox() -- HITBOX
-    local enamie = game:GetService("Workspace").Enemies:GetChildren()
-    
-    for i,v in pairs(enamie) do
-        v.HumanoidRootPart.Size = Vector3.new(100,100,100)
-        v.HumanoidRootPart.CanCollide = true
-        if _G.HideHB == true then
-        v.HumanoidRootPart.Transparency = 1
-        elseif _G.HideHB == false then
-            v.HumanoidRootPart.Transparency = 0.5
-            end
-        end
-    
-    end
- 
-function TPTOMON() -- FARM MODE
-if game:GetService("Workspace").Enemies[_G.MON].Humanoid.Health == 0 then
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1062.7824707031, 16.516611099243, 1539.5036621094)
-elseif _G.FARMMETHOD == 1 then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Enemies[_G.MON].HumanoidRootPart.CFrame * CFrame.new(0,0,20)
- 
-elseif _G.FARMMETHOD == 2 then
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Enemies[_G.MON].HumanoidRootPart.CFrame * CFrame.new(0,30,0)
-elseif    _G.FARMMETHOD == 3 then
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Enemies[_G.MON].HumanoidRootPart.CFrame * CFrame.new(0,-10,0)
-        end
- 
- 
-end
- 
- 
- 
--- =[[ Autofarm ]]= --
- 
-while _G.FARM do  wait()
-    print("SHARK X HUB | NO 1") -- DON'T DELETE ME :angry:
-    EquipTool()
-    TPTOMON()
-    hitbox()
-    attack()
-    quest()
-end
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Barloss", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Tab = Window:MakeTab({
+	Name = "วาป",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "วาป"
+})
+Tab:AddToggle({
+	Name = "วาป",
+	Default = false,
+	Callback = function(Value)
+		local TweenService = game:GetService("TweenService")
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+{CFrame = CFrame.new(-387.568878, 2.65220118, 1648.24072, -0.0299262311, -4.77026383e-08, 0.999552131, -3.2846672e-09, 1, 4.76256687e-08, -0.999552131, -1.85793925e-09, -0.0299262311)}):Play()
+	end    
+})
+OrionLib:Destroy()
+

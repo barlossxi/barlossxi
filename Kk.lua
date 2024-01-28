@@ -1,6 +1,4 @@
 _G.Auto_Farm = true 
-while_G.Auto_Farm wait()
-
 
 function totarget(p)
     local Distance2 = (p.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude

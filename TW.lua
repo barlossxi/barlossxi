@@ -8,8 +8,6 @@ local Tab = Window:MakeTab({
 local Section = Tab:AddSection({
 	Name = "โหมดวาปหาคน"
 })
-___________________________
-
 
 players = {}
 
@@ -24,7 +22,6 @@ Tab:AddDropdown({
 	Callback = function(Value)
 	Select = Value
 	end    
-})
 })
 Tab:AddButton({
 	Name = "วาปหาคน",

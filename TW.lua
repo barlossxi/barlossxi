@@ -8,12 +8,20 @@ local Tab = Window:MakeTab({
 local Section = Tab:AddSection({
 	Name = "โหมดวาปหาคน"
 })
+
+players = {}
+
+for i,v in pairs(game:GetService("Player"):GetChildren()) do
+table.insert(Players,v.Name)
+end
+
+
 Tab:AddDropdown({
-	Name = "เลือกคนที่จะวาปไปหา",
+	Name = "Select Player",
 	Default = "1",
 	Options = {"1", "2"},
-	Callback = function(Value)
-		print(Value)
+	Callback = function(abc)
+		Select = abc
 	end    
 })
 Tab:AddButton({

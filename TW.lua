@@ -23,6 +23,7 @@ Tab:AddDropdown({
 	Select = Value
 	end    
 })
+})
 Tab:AddButton({
 	Name = "วาปหาคน",
 	Callback = function()

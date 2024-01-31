@@ -14,8 +14,13 @@ Tab:AddDropdown({
 	Default = "1",
 	Options = {"players"},
 	Callback = function(Value)
-	Select = Value
+	  players = {}
+
+for i,v in pairs(game:GetService("Player"):GetChildren()) do
+table.insert(Players,v.Name)
+end
 	end    
+})
 })
 Tab:AddButton({
 	Name = "วาปหาคน",
@@ -24,8 +29,4 @@ Tab:AddButton({
   	end    
 })
 
-players = {}
 
-for i,v in pairs(game:GetService("Player"):GetChildren()) do
-table.insert(Players,v.Name)
-end

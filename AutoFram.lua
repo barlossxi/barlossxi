@@ -1,35 +1,64 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
-local Tab = Window:MakeTab({
-	Name = "Tab 1",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-local Section = Tab:AddSection({
-	Name = "Section"
-})
-
-MONS = {}
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/GreenDeno/Venyx-UI-Library/main/source.lua"))()
+local venyx = library.new("Shark X Hub | No 1", 5013109572)
  
-for i,v in pairs(game:GetService("Workspace").Monster.Mon:GetChildren()) do
-    table.insert(MONS,v.Name)
+ 
+local page = venyx:addPage("Test", 5012544693)
+local section1 = page:addSection("Section 1")
+local theme = venyx:addPage("Theme", 5012544693)
+local colors = theme:addSection("Colors")
+ 
+ 
+section1:addToggle("Fast Attack", _G.FastAttack, function(value)
+_G.FastAttack = value
+end)
+ 
+ 
+local themes = {
+Background = Color3.fromRGB(24, 24, 24),
+Glow = Color3.fromRGB(0, 0, 0),
+Accent = Color3.fromRGB(10, 10, 10),
+LightContrast = Color3.fromRGB(20, 20, 20),
+DarkContrast = Color3.fromRGB(14, 14, 14),  
+TextColor = Color3.fromRGB(255, 255, 255)
+}
+ 
+ 
+for theme, color in pairs(themes) do -- all in one theme changer, i know, im cool
+colors:addColorPicker(theme, color, function(color3)
+venyx:setTheme(theme, color3)
+end)
 end
-
-Tab:AddButton({
-	Name = "AutoFram",
-	Callback = function(state)
-      	_G.AutoFarm = state
-    while _G.AutoFarm do wait()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Monster.Mon[Select].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
-end	
-  	end    
-})
-
-Tab:AddDropdown({
-	Name = "Please Select Monster",
-	Default = "1",
-	Options = "MONS",
-	Callback = function(currentOption)
-		Select = currentOption
-	end    
-})
+ 
+-- load
+venyx:SelectPage(venyx.pages[1], true)
+ 
+ 
+ 
+ 
+ 
+spawn(function()
+   game:GetService("RunService").RenderStepped:Connect(function()
+    pcall(function()
+        if _G.FastAttack then
+            local Combat = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework)
+            local Cemara = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework.CameraShaker)
+            Cemara.CameraShakeInstance.CameraShakeState = {FadingIn = 3, FadingOut = 2, Sustained = 0, Inactive = 1}
+            Combat.activeController.timeToNextAttack = 0
+            Combat.activeController.hitboxMagnitude = 120
+            Combat.activeController.increment = 3
+        end
+    end)
+end) 
+end)
+ 
+ 
+spawn(function()
+   game:GetService("RunService").RenderStepped:Connect(function()
+    pcall(function()
+        if _G.FastAttack then
+            game:GetService'VirtualUser':CaptureController()
+            game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+        end
+    end)
+end) 
+end)

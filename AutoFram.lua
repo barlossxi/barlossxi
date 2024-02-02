@@ -1,88 +1,114 @@
-LocalPlayer = game:GetService("Players").LocalPlayer
-Char = LocalPlayer.Character
+local httpService = game:GetService("HttpService")
 
-_G.AutoFarm = true
-local GetQuests = function(N,NB)
-    local args = {
-        [1] = "StartQuest",
-        [2] = N or "BanditQuest1",
-        [3] = NB or 1
+local InterfaceManager = {} do
+	InterfaceManager.Folder = "FluentSettings"
+    InterfaceManager.Settings = {
+        Theme = "Dark",
+        Acrylic = true,
+        Transparency = true,
+        MenuKeybind = "LeftControl"
     }
-    game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer(unpack(args))    
-end;local ChackQ = function()
-    local Lv = LocalPlayer.Data.Level
-    if Lv.Value >= 1 and Lv.Value <= 9 then
-        return {
-            ["Mon"] = 'Bandit',
-            ["NumQ"] = 'BanditQuest1',
-            ["NameQ"] = 1,
-            ["CFrameQ"] = CFrame.new(1059.37195, 15.4495068, 1550.4231, 0.939700544, -0, -0.341998369, 0, 1, -0, 0.341998369, 0, 0.939700544),
-            ["CFrameMon"] = CFrame.new(1196.172, 11.8689699, 1616.95923, -0.309060812, 0, 0.951042235, 0, 1, 0, -0.951042235, 0, -0.309060812)
-        }
-    elseif Lv.Value >= 10 and Lv.Value <= 9e99 then
-        return {
-            ["Mon"] = 'Monkey',
-            ["NumQ"] = 'JungleQuest',
-            ["NameQ"] = 1,
-            ["CFrameQ"] = CFrame.new(-1598.08911, 35.5501175, 153.377838, 0, 0, 1, 0, 1, -0, -1, 0, 0),
-            ["CFrameMon"] = CFrame.new(-1619.10632, 21.7005882, 142.148117, 0.342042625, -0.000311157171, 0.939684391, 0.000113111477, 0.99999994, 0.000289957155, -0.939684391, 7.11137545e-06, 0.342042685)
-        }
+
+    function InterfaceManager:SetFolder(folder)
+		self.Folder = folder;
+		self:BuildFolderTree()
+	end
+
+    function InterfaceManager:SetLibrary(library)
+		self.Library = library
+	end
+
+    function InterfaceManager:BuildFolderTree()
+		local paths = {}
+
+		local parts = self.Folder:split("/")
+		for idx = 1, #parts do
+			paths[#paths + 1] = table.concat(parts, "/", 1, idx)
+		end
+
+		table.insert(paths, self.Folder)
+		table.insert(paths, self.Folder .. "/settings")
+
+		for i = 1, #paths do
+			local str = paths[i]
+			if not isfolder(str) then
+				makefolder(str)
+			end
+		end
+	end
+
+    function InterfaceManager:SaveSettings()
+        writefile(self.Folder .. "/options.json", httpService:JSONEncode(InterfaceManager.Settings))
     end
-end;local TW = function(...)
-    local CFrame = {...}
-    pcall(function()
-        if not _G.StopTween then
-            local Distance = (CFrame[1].Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
-            local TweenService = game:GetService("TweenService")
-local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
-{CFrame = CFrame.new(1)}):Play()
-            if _G.StopTween then Tween:Cancel()
-            elseif game.Players.LocalPlayer.Character.Humanoid.Health > 0 then Tween:Play() end
-            if not game.Players.LocalPlayer.Character.HumanoidRootPart:FindFirstChild("OMG Hub") then
-                local Noclip = Instance.new("BodyVelocity")
-                Noclip.Name = "OMG Hub"
-                Noclip.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
-                Noclip.MaxForce = Vector3.new(9e99,9e99,9e99)
-                Noclip.Velocity = Vector3.new(0,0,0)
+
+    function InterfaceManager:LoadSettings()
+        local path = self.Folder .. "/options.json"
+        if isfile(path) then
+            local data = readfile(path)
+            local success, decoded = pcall(httpService.JSONDecode, httpService, data)
+
+            if success then
+                for i, v in next, decoded do
+                    InterfaceManager.Settings[i] = v
+                end
             end
         end
-    end)
-end;local ClearQ = function()
-    if not string.find(game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, tostring(ChackQ()["Mon"])) then
-        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AbandonQuest")
+    end
+
+    function InterfaceManager:BuildInterfaceSection(tab)
+        assert(self.Library, "Must set InterfaceManager.Library")
+		local Library = self.Library
+        local Settings = InterfaceManager.Settings
+
+        InterfaceManager:LoadSettings()
+
+		local section = tab:AddSection("Interface")
+
+		local InterfaceTheme = section:AddDropdown("InterfaceTheme", {
+			Title = "Theme",
+			Description = "Changes the interface theme.",
+			Values = Library.Themes,
+			Default = Settings.Theme,
+			Callback = function(Value)
+				Library:SetTheme(Value)
+                Settings.Theme = Value
+                InterfaceManager:SaveSettings()
+			end
+		})
+
+        InterfaceTheme:SetValue(Settings.Theme)
+	
+		if Library.UseAcrylic then
+			section:AddToggle("AcrylicToggle", {
+				Title = "Acrylic",
+				Description = "The blurred background requires graphic quality 8+",
+				Default = Settings.Acrylic,
+				Callback = function(Value)
+					Library:ToggleAcrylic(Value)
+                    Settings.Acrylic = Value
+                    InterfaceManager:SaveSettings()
+				end
+			})
+		end
+	
+		section:AddToggle("TransparentToggle", {
+			Title = "Transparency",
+			Description = "Makes the interface transparent.",
+			Default = Settings.Transparency,
+			Callback = function(Value)
+				Library:ToggleTransparency(Value)
+				Settings.Transparency = Value
+                InterfaceManager:SaveSettings()
+			end
+		})
+	
+		local MenuKeybind = section:AddKeybind("MenuKeybind", { Title = "Minimize Bind", Default = Settings.MenuKeybind })
+		MenuKeybind:OnChanged(function()
+			Settings.MenuKeybind = MenuKeybind.Value
+            InterfaceManager:SaveSettings()
+		end)
+		Library.MinimizeKeybind = MenuKeybind
     end
 end
 
-spawn(function()
-    while wait() do
-        pcall(function()
-            if _G.AutoFarm then
-                local UIQ = LocalPlayer.PlayerGui.Main.Quest
-                ClearQ()
-                if not UIQ.Visible or UIQ.Visible == false then
-                    TW(ChackQ()["CFrameQ"])
-                    if (ChackQ()["CFrameQ"].Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 15 then
-                        wait(.2)
-                        GetQuests(ChackQ()["NumQ"],ChackQ()["NameQ"])
-                    end
-                else
-                    if game:GetService("Workspace").Enemies:FindFirstChild(ChackQ()["Mon"]) then
-                        for _i,_v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
-                            if _v.Name == tostring(ChackQ()["Mon"]) and _v:FindFirstChild("Humanoid") and _v:FindFirstChild("HumanoidRootPart") then
-                                if _v.Humanoid.Health > 0 then
-                                    repeat wait()
-                                        TW(_v:FindFirstChild("HumanoidRootPart").CFrame * CFrame.new(0,0,5))
-                                        game:GetService("VirtualUser"):CaptureController()
-                                        game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
-                                    until not _G.AutoFarm or _G.AutoFarm == false or not _v.Parent or _v.Humanoid.Health <= 0 or not UIQ.Visible or UIQ.Visible == false
-                                end
-                            end
-                        end
-                    else
-                        Char.HumanoidRootPart.CFrame = ChackQ()["CFrameMon"]
-                    end
-                end
-            end
-        end)
-    end
-end)
+return InterfaceManager

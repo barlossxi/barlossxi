@@ -20,8 +20,8 @@ Tab:AddToggle({
 	Callback = function(Value)
 	spawn(function()
    (getgenv()).Config = {
- ["FastAttack"] = false,
- ["ClickAttack"] = false
+ ["FastAttack"] = true,
+ ["ClickAttack"] = true
 } 
  
 coroutine.wrap(function()

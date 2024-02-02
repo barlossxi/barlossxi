@@ -33,7 +33,7 @@ end;local TW = function(...)
     pcall(function()
         if not _G.StopTween then
             local Distance = (CFrame[1].Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
-            Tween = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart,TweenInfo.new(Distance/15, Enum.EasingStyle.Cubic),{CFrame = CFrame[1]})
+            Tween = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart,TweenInfo.new(Distance/1, Enum.EasingStyle.Cubic),{CFrame = CFrame[1]})
             if _G.StopTween then Tween:Cancel()
             elseif game.Players.LocalPlayer.Character.Humanoid.Health > 0 then Tween:Play() end
             if not game.Players.LocalPlayer.Character.HumanoidRootPart:FindFirstChild("OMG Hub") then
@@ -69,7 +69,7 @@ spawn(function()
                             if _v.Name == tostring(ChackQ()["Mon"]) and _v:FindFirstChild("Humanoid") and _v:FindFirstChild("HumanoidRootPart") then
                                 if _v.Humanoid.Health > 0 then
                                     repeat wait()
-                                        TW(_v:FindFirstChild("HumanoidRootPart").CFrame * CFrame.new(1,))
+                                        TW(_v:FindFirstChild("HumanoidRootPart").CFrame * CFrame.new(0,1,0))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                     until not _G.AutoFarm or _G.AutoFarm == false or not _v.Parent or _v.Humanoid.Health <= 0 or not UIQ.Visible or UIQ.Visible == false

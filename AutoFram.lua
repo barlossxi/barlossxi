@@ -27,8 +27,8 @@ end
 
 Tab:AddDropdown({
 	Name = "Please Select Monster",
-	Default = "MONS",
-	Options = {"", ""},
+	Default = "1",
+	Options = {"MONS"},
 	Callback = function(currentOption)
 		Select = currentOption
 	end    

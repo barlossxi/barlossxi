@@ -1,17 +1,13 @@
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/GreenDeno/Venyx-UI-Library/main/source.lua"))()
 local venyx = library.new("Shark X Hub | No 1", 5013109572)
- 
- 
 local page = venyx:addPage("Test", 5012544693)
 local section1 = page:addSection("Section 1")
 local theme = venyx:addPage("Theme", 5012544693)
 local colors = theme:addSection("Colors")
  
- 
 section1:addToggle("Fast Attack", _G.FastAttack, function(value)
 _G.FastAttack = value
 end)
- 
  
 local themes = {
 Background = Color3.fromRGB(24, 24, 24),
@@ -22,20 +18,15 @@ DarkContrast = Color3.fromRGB(14, 14, 14),
 TextColor = Color3.fromRGB(255, 255, 255)
 }
  
- 
 for theme, color in pairs(themes) do -- all in one theme changer, i know, im cool
 colors:addColorPicker(theme, color, function(color3)
 venyx:setTheme(theme, color3)
 end)
 end
  
--- load
 venyx:SelectPage(venyx.pages[1], true)
  
- 
- 
- 
- 
+  
 spawn(function()
    game:GetService("RunService").RenderStepped:Connect(function()
     pcall(function()

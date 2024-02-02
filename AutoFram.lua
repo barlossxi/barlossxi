@@ -1,5 +1,5 @@
+local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local httpService = game:GetService("HttpService")
-
 local InterfaceManager = {} do
 	InterfaceManager.Folder = "FluentSettings"
     InterfaceManager.Settings = {
@@ -8,16 +8,16 @@ local InterfaceManager = {} do
         Transparency = true,
         MenuKeybind = "LeftControl"
     }
-
-    function InterfaceManager:SetFolder(folder)
+	
+  function InterfaceManager:SetFolder(folder)
 		self.Folder = folder;
 		self:BuildFolderTree()
+	
 	end
-
     function InterfaceManager:SetLibrary(library)
 		self.Library = library
-	end
 
+	end
     function InterfaceManager:BuildFolderTree()
 		local paths = {}
 

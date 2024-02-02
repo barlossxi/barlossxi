@@ -59,7 +59,7 @@ spawn(function()
                 ClearQ()
                 if not UIQ.Visible or UIQ.Visible == false then
                     TW(ChackQ()["CFrameQ"])
-                    if (ChackQ()["CFrameQ"].Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 1 then
+                    if (ChackQ()["CFrameQ"].Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 15 then
                         wait(.2)
                         GetQuests(ChackQ()["NumQ"],ChackQ()["NameQ"])
                     end
@@ -69,7 +69,7 @@ spawn(function()
                             if _v.Name == tostring(ChackQ()["Mon"]) and _v:FindFirstChild("Humanoid") and _v:FindFirstChild("HumanoidRootPart") then
                                 if _v.Humanoid.Health > 0 then
                                     repeat wait()
-                                        TW(_v:FindFirstChild("HumanoidRootPart").CFrame * CFrame.new(0,1,0))
+                                        TW(_v:FindFirstChild("HumanoidRootPart").CFrame * CFrame.new(0,0,5))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                     until not _G.AutoFarm or _G.AutoFarm == false or not _v.Parent or _v.Humanoid.Health <= 0 or not UIQ.Visible or UIQ.Visible == false

@@ -84,17 +84,3 @@ spawn(function()
         end)
     end
 end)
-for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
-                    for i2,v2 in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
-                        if v.Name == Mon and v2.Name == Mon then
-                            v2.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame
-                            v2.HumanoidRootPart.CanCollide = false
-                            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * Method
-                            sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", math.huge)
-                        end
-                    end
-                end
-            end)
-        end
-    end
-end)

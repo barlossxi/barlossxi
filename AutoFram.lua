@@ -12,8 +12,8 @@ local Window = Fluent:CreateWindow({
 })
 local Tabs = {
     Main = Window:AddTab({ Title = "Main", Icon = "home" }),
-    }
-    local Options = Fluent.Options
+}
+local Options = Fluent.Options
 
 do
 --------------------------------------------------------------------------------------------------------------------------------------------
@@ -660,7 +660,7 @@ CFrameMon = CFrame.new(-16848.94140625, 21.68633460998535, 1041.4490966796875)
 end
 end
 end
---------------------------------------------------------------------------------------------------------------------------------------------
+
 --Create Tabs
     Tabs.Main:AddParagraph({
         Title = "Farming",
@@ -783,5 +783,4 @@ end
     if game:GetService("ReplicatedStorage").Effect.Container:FindFirstChild("Respawn") then
         game:GetService("ReplicatedStorage").Effect.Container.Respawn:Destroy()
     end
-    
-    
+        

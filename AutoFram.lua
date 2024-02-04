@@ -23,8 +23,6 @@ local Tabs = {
 	Misc = Window:AddTab({ Title = "Misc", Icon = "list-plus" }),
 }
 local Options = Fluent.Options
-
-do
 --------------------------------------------------------------------------------------------------------------------------------------------
     repeat wait() until game.Players
     repeat wait() until game.Players.LocalPlayer

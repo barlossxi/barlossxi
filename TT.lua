@@ -117,7 +117,3 @@ spawn(function()
         end)
     end
 end)
-
-Tabs.Misc:AddParagraph({
-	Title = "Open Ui",
-	Content = ""

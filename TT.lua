@@ -23,8 +23,6 @@ local Tabs = {
 	Misc = Window:AddTab({ Title = "อื่น", Icon = "list-plus" }),
 }
 local Options = Fluent.Options
-
-do
 ----------------------------------------------------------------------
 
 LocalPlayer = game:GetService("Players").LocalPlayer
@@ -80,9 +78,10 @@ end;local ClearQ = function()
     end
 end
 
-local ToggleAutoFarmLevel = Tabs.Main:AddToggle("ToggleAutoFarmLevel", {Title = "ออโต้ฟามเลเวล", Default = false })
-    ToggleAutoFarmLevel:OnChanged(function(Value)
-        _G.AutoLevel = Value
+	
+local ToggleAutoFarm = Tabs.Main:AddToggle("ToggleAutoFarmLevel", {Title = "ออโต้ฟามเลเวล", Default = false })
+    ToggleAutoFarm:OnChanged(function(Value)
+        _G.AutoFarm = Value
     end)
     Options.ToggleAutoFarmLevel:SetValue(false)
 spawn(function()

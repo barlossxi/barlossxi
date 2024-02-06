@@ -78,14 +78,14 @@ Ms = "Pirate"
 NameQuest = "BuggyQuest1"
 QuestLv = 1
 NameMon = "Pirate"
-CFrameQ = CFrame.new(CF)
-CFrameMon = CFrame.new(CF)
+CFrameQ = CFrame.new(-1143.61474609375, 8.8773832321167, 3830.47607421875)
+CFrameMon = CFrame.new(-1232.0274658203125, 4.877379894256592, 3938.83251953125)
 elseif Lv == 40 or Lv <= 59 or SelectMonster == "Brute" or SelectArea == 'Buggy' then -- Brute
 Ms = "Brute"
 NameQuest = "BuggyQuest1"
 QuestLv = 2
 NameMon = "Brute"
-CFrameQ = CFrame.new(CF)
+CFrameQ = CFrame.new(-1143.61474609375, 8.8773832321167, 3830.47607421875)
 CFrameMon = CFrame.new(CF)
 elseif Lv == 60 or Lv <= 74 or SelectMonster == "Desert Bandit" or SelectArea == 'Desert' then -- Desert Bandit
 Ms = "Desert Bandit"

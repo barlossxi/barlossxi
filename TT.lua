@@ -5525,18 +5525,6 @@ end
 
 
 
-elseif Third_Sea then
-    Tabs.Raid:AddButton({
-        Title = "จุดเริ่มดันลอว์",
-        Description = "",
-        Callback = function()
-            TP2(CFrame.new(CF))
-        end
-    })
-end
-
-
-
 Tabs.Raid:AddParagraph({
     Title = "Raid Law",
     Content = ""

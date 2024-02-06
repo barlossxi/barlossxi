@@ -60,7 +60,7 @@ end;local TW = function(...)
     pcall(function()
         if not _G.StopTween then
             local Distance = (CFrame[1].Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
-            Tween = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart,TweenInfo.new(Distance/50, Enum.EasingStyle.Cubic),{CFrame = CFrame[1]})
+            Tween = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart,TweenInfo.new(Distance/20, Enum.EasingStyle.Cubic),{CFrame = CFrame[1]})
             if _G.StopTween then Tween:Cancel()
             elseif game.Players.LocalPlayer.Character.Humanoid.Health > 0 then Tween:Play() end
             if not game.Players.LocalPlayer.Character.HumanoidRootPart:FindFirstChild("OMG Hub") then
@@ -78,7 +78,7 @@ end;local ClearQ = function()
     end
 end
 
-	
+
 local ToggleAutoFarm = Tabs.Main:AddToggle("ToggleAutoFarmLevel", {Title = "ออโต้ฟามเลเวล", Default = false })
     ToggleAutoFarm:OnChanged(function(Value)
         _G.AutoFarm = Value
@@ -102,7 +102,7 @@ spawn(function()
                             if _v.Name == tostring(ChackQ()["Mon"]) and _v:FindFirstChild("Humanoid") and _v:FindFirstChild("HumanoidRootPart") then
                                 if _v.Humanoid.Health > 0 then
                                     repeat wait()
-                                        TW(_v:FindFirstChild("HumanoidRootPart").CFrame * CFrame.new(0,10,0))
+                                        TW(_v:FindFirstChild("HumanoidRootPart").CFrame * CFrame.new(0,0,5))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                     until not _G.AutoFarm or _G.AutoFarm == false or not _v.Parent or _v.Humanoid.Health <= 0 or not UIQ.Visible or UIQ.Visible == false

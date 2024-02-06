@@ -117,12 +117,7 @@ spawn(function()
         end)
     end
 end)
---------------------------------------------------------------------------------------------------------------------------------------------
---Setting
-    Tabs.Setting:AddParagraph({
-        Title = "Setting",
-        Content = "Setting Farm"
-    })
+
 
     local ToggleFastAttack = Tabs.Setting:AddToggle("ToggleFastAttack", {Title = "ตีไว", Default = true })
     ToggleFastAttack:OnChanged(function(vu)
@@ -221,7 +216,6 @@ local CamShake = require(game.ReplicatedStorage.Util.CameraShaker)
 CamShake:Stop()
 
 
-
     local ToggleBringMob = Tabs.Setting:AddToggle("ToggleBringMob", {Title = "รวมมอน", Default = true })
     ToggleBringMob:OnChanged(function(Value)
         BringMobs = Value
@@ -272,13 +266,3 @@ CamShake:Stop()
       return false
       end
       end
-
-
-
-    local ToggleBypassTP = Tabs.Setting:AddToggle("ToggleBypassTP", {Title = "Bypass Tp", Default = false })
-    ToggleBypassTP:OnChanged(function(Value)
-        BypassTP = Value
-    end)
-    Options.ToggleBypassTP:SetValue(false)
-end
-

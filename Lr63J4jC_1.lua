@@ -85,10 +85,11 @@ spawn(function()
     end
 end)
 
+
 spawn(function()
     game:GetService("RunService").Heartbeat:Connect(function()
         pcall(function()
-            if _G.AutoFarm then
+            if _G.BigMom then
                 for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
                     if _G.AutoFarm and BringMobFarm and v.Name == Mon and (v.HumanoidRootPart.Position - PosMon.Position).magnitude <= 225 then
                         v.HumanoidRootPart.CFrame = PosMon

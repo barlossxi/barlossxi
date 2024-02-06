@@ -64,8 +64,8 @@ Ms = "Monkey"
 NameQuest = "JungleQuest"
 QuestLv = 1
 NameMon = "Monkey"
-CFrameQ = CFrame.new(CF)
-CFrameMon = CFrame.new(CF)
+CFrameQ = CFrame.new(-1599.951904296875, 36.977455139160156, 152.75381469726562)
+CFrameMon = CFrame.new(-1643.7005615234375, 15.977422714233398, 70.9491958618164)
 elseif Lv == 15 or Lv <= 29 or SelectMonster == "Gorilla" or SelectArea == 'Jungle' then -- Gorilla
 Ms = "Gorilla"
 NameQuest = "JungleQuest"

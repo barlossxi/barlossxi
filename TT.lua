@@ -60,7 +60,7 @@ end;local TW = function(...)
     pcall(function()
         if not _G.StopTween then
             local Distance = (CFrame[1].Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
-            Tween = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart,TweenInfo.new(Distance/20, Enum.EasingStyle.Cubic),{CFrame = CFrame[1]})
+            Tween = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart,TweenInfo.new(Distance/50, Enum.EasingStyle.Cubic),{CFrame = CFrame[1]})
             if _G.StopTween then Tween:Cancel()
             elseif game.Players.LocalPlayer.Character.Humanoid.Health > 0 then Tween:Play() end
             if not game.Players.LocalPlayer.Character.HumanoidRootPart:FindFirstChild("OMG Hub") then
@@ -68,7 +68,7 @@ end;local TW = function(...)
                 Noclip.Name = "OMG Hub"
                 Noclip.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
                 Noclip.MaxForce = Vector3.new(9e99,9e99,9e99)
-                Noclip.Velocity = Vector3.new(0,0,0)
+                Noclip.Velocity = Vector3.new(0,10,0)
             end
         end
     end)

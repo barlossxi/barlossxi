@@ -62,7 +62,23 @@ end;local ChackQ = function()
             ["CFrameQ"] = CFrame.new(-1598.08911, 35.5501175, 153.377838, 0, 0, 1, 0, 1, -0, -1, 0, 0),
             ["CFrameMon"] = CFrame.new(-1226.7481689453125, 6.27936315536499, -482.3430480957031)
         }
-	end
+        elseif Lv.Value >= 30 and Lv.Value <= 39 then
+        return {
+            ["Mon"] = 'Pirate',
+            ["NumQ"] = 'BuggyQuest1',
+            ["NameQ"] = 1,
+            ["CFrameQ"] = CFrame.new(-1142.3291015625, 5.381437301635742, 3829.6611328125),
+            ["CFrameMon"] = CFrame.new(-1220.6905517578125, 4.752050399780273, 3916.2834472656251)
+        }
+        elseif Lv.Value >= 40 and Lv.Value <= 59 then
+        return {
+            ["Mon"] = 'Brute',
+            ["NumQ"] = 'BuggyQuest1',
+            ["NameQ"] = 2,
+            ["CFrameQ"] = CFrame.new(-1142.3291015625, 5.381437301635742, 3829.6611328125),
+            ["CFrameMon"] = CFrame.new(-1314.291259765625, 14.869874954223633, 4263.90478515625)
+        }
+    end
 end;local TW = function(...)
     local CFrame = {...}
     pcall(function()

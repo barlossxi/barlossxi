@@ -52,41 +52,6 @@ end;local ClearQ = function()
 end
 
 spawn(function()
-    while wait() do
-        pcall(function()
-            if _G.AutoFarm then
-                local UIQ = LocalPlayer.PlayerGui.Main.Quest
-                ClearQ()
-                if not UIQ.Visible or UIQ.Visible == false then
-                    TW(ChackQ()["CFrameQ"])
-                    if (ChackQ()["CFrameQ"].Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 15 then
-                        wait(.2)
-                        GetQuests(ChackQ()["NumQ"],ChackQ()["NameQ"])
-                    end
-                else
-                    if game:GetService("Workspace").Enemies:FindFirstChild(ChackQ()["Mon"]) then
-                        for _i,_v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
-                            if _v.Name == tostring(ChackQ()["Mon"]) and _v:FindFirstChild("Humanoid") and _v:FindFirstChild("HumanoidRootPart") then
-                                if _v.Humanoid.Health > 0 then
-                                    repeat wait()
-                                        TW(_v:FindFirstChild("HumanoidRootPart").CFrame * CFrame.new(0,0,5))
-                                        game:GetService("VirtualUser"):CaptureController()
-                                        game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
-                                    until not _G.AutoFarm or _G.AutoFarm == false or not _v.Parent or _v.Humanoid.Health <= 0 or not UIQ.Visible or UIQ.Visible == false
-                                end
-                            end
-                        end
-                    else
-                        Char.HumanoidRootPart.CFrame = ChackQ()["CFrameMon"]
-                    end
-                end
-            end
-        end)
-    end
-end)
-
-
-spawn(function()
     game:GetService("RunService").Heartbeat:Connect(function()
         pcall(function()
             if _G.BigMom then

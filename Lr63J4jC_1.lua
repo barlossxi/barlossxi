@@ -1,106 +1,129 @@
-LocalPlayer = game:GetService("Players").LocalPlayer
-Char = LocalPlayer.Character
-
-_G.AutoFarm = true
-local GetQuests = function(N,NB)
-    local args = {
-        [1] = "StartQuest",
-        [2] = N or "BanditQuest1",
-        [3] = NB or 1
-    }
-    game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer(unpack(args))    
-end;local ChackQ = function()
-    local Lv = LocalPlayer.Data.Level
-    if Lv.Value >= 1 and Lv.Value <= 9 then
-        return {
-            ["Mon"] = 'Bandit',
-            ["NumQ"] = 'BanditQuest1',
-            ["NameQ"] = 1,
-            ["CFrameQ"] = CFrame.new(1059.37195, 15.4495068, 1550.4231, 0.939700544, -0, -0.341998369, 0, 1, -0, 0.341998369, 0, 0.939700544),
-            ["CFrameMon"] = CFrame.new(1196.172, 11.8689699, 1616.95923, -0.309060812, 0, 0.951042235, 0, 1, 0, -0.951042235, 0, -0.309060812)
-        }
-  elseif Lv.Value >= 10 and Lv.Value <= 9e99 then
-        return {
-            ["Mon"] = 'Monkey',
-            ["NumQ"] = 'JungleQuest',
-            ["NameQ"] = 1,
-            ["CFrameQ"] = CFrame.new(-1598.08911, 35.5501175, 153.377838, 0, 0, 1, 0, 1, -0, -1, 0, 0),
-            ["CFrameMon"] = CFrame.new(-1619.10632, 21.7005882, 142.148117, 0.342042625, -0.000311157171, 0.939684391, 0.000113111477, 0.99999994, 0.000289957155, -0.939684391, 7.11137545e-06, 0.342042685)
-        }
-    end
-end;local TW = function(...)
-    local CFrame = {...}
-    pcall(function()
-        if not _G.StopTween then
-            local Distance = (CFrame[1].Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
-            Tween = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart,TweenInfo.new(Distance/20, Enum.EasingStyle.Cubic),{CFrame = CFrame[1]})
-            if _G.StopTween then Tween:Cancel()
-            elseif game.Players.LocalPlayer.Character.Humanoid.Health > 0 then Tween:Play() end
-            if not game.Players.LocalPlayer.Character.HumanoidRootPart:FindFirstChild("OMG Hub") then
-                local Noclip = Instance.new("BodyVelocity")
-                Noclip.Name = "OMG Hub"
-                Noclip.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
-                Noclip.MaxForce = Vector3.new(9e99,9e99,9e99)
-                Noclip.Velocity = Vector3.new(0,0,0)
-            end
-        end
-    end)
-end;local ClearQ = function()
-    if not string.find(game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, tostring(ChackQ()["Mon"])) then
-        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AbandonQuest")
-    end
+function checklevel()
+    local Level = game:GetService("Players").LocalPlayer.Data.Level.Value
+    if Level == 1 or Level <= 9 then
+        MON = "Bandit"
+        QUESTTITLE = "Bandit"
+        QUESTPOS = CFrame.new(1060.0158691406, 16.424287796021, 1547.9769287109)
+        MONPOS = CFrame.new(1148.8698730469, 16.432844161987, 1630.5396728516)
+        QUESTNAME = "BanditQuest1"
+        QUESTNUMBER = 1
+        SPAWNPOINT = "Default"
+        SPAWNPOINTPOS = CFrame.new(973.96197509766, 16.273551940918, 1413.2775878906)
+  end
 end
+Method = CFrame.new(0,25,0)
+ 
+spawn(function()
+   while wait(3) do
+       if Methodnow == 1 then
+        Methodnow = 2
+        Method = CFrame.new(0,25,0)
+        else
+        Methodnow = 1
+        Method = CFrame.new(0,0,25)
+      end
+    end
+  end)
+spawn(function()
+   while wait() do
+       if _G.WARP then
+           game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+        else
+            game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+      end
+    end
+  end)
+ 
+spawn(function()
+    game:GetService("RunService").Heartbeat:Connect(function()
+        if game:GetService("Players").LocalPlayer.Character:FindFirstChild("Humanoid") and _G.AutoFarm_Level then
+            setfflag("HumanoidParallelRemoveNoPhysics", "False")
+            setfflag("HumanoidParallelRemoveNoPhysicsNoSimulate2", "False")
+            game:GetService("Players").LocalPlayer.Character.Humanoid:ChangeState(11)
+        end
+      end)
+  end)
 
 spawn(function()
     while wait() do
-        pcall(function()
-            if _G.AutoFarm then
-                local UIQ = LocalPlayer.PlayerGui.Main.Quest
-                ClearQ()
-                if not UIQ.Visible or UIQ.Visible == false then
-                    TW(ChackQ()["CFrameQ"])
-                    if (ChackQ()["CFrameQ"].Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 15 then
-                        wait(.2)
-                        GetQuests(ChackQ()["NumQ"],ChackQ()["NameQ"])
-                    end
-                else
-                    if game:GetService("Workspace").Enemies:FindFirstChild(ChackQ()["Mon"]) then
-                        for _i,_v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
-                            if _v.Name == tostring(ChackQ()["Mon"]) and _v:FindFirstChild("Humanoid") and _v:FindFirstChild("HumanoidRootPart") then
-                                if _v.Humanoid.Health > 0 then
-                                    repeat wait()
-                                        TW(_v:FindFirstChild("HumanoidRootPart").CFrame * CFrame.new(0,0,5))
-                                        game:GetService("VirtualUser"):CaptureController()
-                                        game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
-                                    until not _G.AutoFarm or _G.AutoFarm == false or not _v.Parent or _v.Humanoid.Health <= 0 or not UIQ.Visible or UIQ.Visible == false
-                                end
-                            end
-                        end
-                    else
-                        Char.HumanoidRootPart.CFrame = ChackQ()["CFrameMon"]
-                    end
-                end
+        if _G.AutoFarm_Level then
+            pcall(function()
+                checklevel()
+    
+                if not string.find(game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text,QUESTTITLE) then
+                    local args = {
+                        [1] = "AbandonQuest"
+                    }
+                    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
             end
-        end)
+                if game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == false then
+                    
+                    if game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT then
+                        local args = {
+                            [1] = "SetTeam",
+                            [2] = "Pirates"
+                        }
+                        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+                        wait(0.5)
+                        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = QUESTPOS
+                        wait(0.8)
+                            local args = {
+                                [1] = "StartQuest",
+                                [2] = QUESTNAME,
+                                [3] = QUESTNUMBER
+                            }
+                            game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+                        wait(0.8)
+                        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = MONPOS
+                    else
+                        _G.WARP = true
+                        repeat 
+                            wait()
+                            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = SPAWNPOINTPOS
+                            game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+                        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT or _G.AutoFarm_Level == false
+                        _G.WARP = false
+              end
+            end
+                for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
+                    for i2,v2 in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
+                        if v.Name == MON and v2.Name == MON then
+                            v2.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame
+                            v2.HumanoidRootPart.CanCollide = false
+                            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * Method
+                            sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", math.huge)
+                end
+              end
+            end
+          end)
+      end
     end
-end)
-
-
-_G.BringNormal = true
+  end) 
+ 
+ 
 spawn(function()
-    game:GetService("RunService").Heartbeat:Connect(function() CheckQuest()
-		pcall(function()
-			for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
-				if _G.AutoFarm and MasteryGunStartMagnetActive and v.Name == Ms and (v.HumanoidRootPart.Position - PosMonMasteryGun.Position).magnitude <= 350 then
-					v.HumanoidRootPart.CFrame = PosMonMasteryGun
-					v.HumanoidRootPart.CanCollide = false
-					v.HumanoidRootPart.Size = Vector3.new(50,50,50)
-					if v.Humanoid:FindFirstChild("Animator") then
-						v.Humanoid.Animator:Destroy()
-					end
-					sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius",  math.huge)
-				end
-			end
-		end)
-    end)
-end)
+   game:GetService("RunService").RenderStepped:Connect(function()
+    pcall(function()
+        if _G.FastAttack and _G.AutoFarm_Level then
+            local Combat = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework)
+            local Cemara = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework.CameraShaker)
+            Cemara.CameraShakeInstance.CameraShakeState = {FadingIn = 3, FadingOut = 2, Sustained = 0, Inactive = 1}
+            Combat.activeController.timeToNextAttack = 0
+            Combat.activeController.hitboxMagnitude = 120
+            Combat.activeController.increment = 3
+            end
+          end)
+      end)
+  end)
+ 
+ 
+spawn(function()
+   game:GetService("RunService").RenderStepped:Connect(function()
+    pcall(function()
+        if _G.AutoFarm_Level then
+            game:GetService'VirtualUser':CaptureController()
+            game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+            end
+          end)
+      end)
+  end)

@@ -1,4 +1,4 @@
-_G.Auto_Farm = true -- true / false
+_G.Auto_Farm = true
 
 function totarget(p)
     local Distance2 = (p.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
@@ -22,7 +22,7 @@ function checklevel()
         CFrameMon = CFrame.new(1151.11829, 16.7761021, 1599.73499, -0.999999762, 0, -0.000701809535, 0, 1, 0, 0.000701809535, 0, -0.999999762)
         CFramePuk = CFrame.new(1101.75903, 67.6758957, 1617.50391, -0.399259984, -5.24373327e-08, -0.916837752, -1.74068084e-08, 1, -4.96134582e-08, 0.916837752, -3.84945009e-09, -0.399259984)
     elseif lv == 10 or lv <= 14 then
-        Mon = "Monkey [Lv. 14]"
+        Mon = "Monkey"
         Title = "Monkey"
         QuestName = "JungleQuest"
         QuestNumber = 1
@@ -102,24 +102,5 @@ spawn(function()
             end
             end
         end)
-    end
-end)
-
-spawn(function()
-    while task.wait(.1) do
-        pcall(function()
-            if _G.Auto_Farm then
-            checklevel()
-            for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
-        if v.Name == Mon then
-            if v.Humanoid.Health == 0 then
-            v:Destroy()
-            end
-            end
-            end
-            end
-        end)
-    end
-end)d)
     end
 end)

@@ -19,8 +19,7 @@ end;local ChackQ = function()
             ["CFrameQ"] = CFrame.new(1059.37195, 15.4495068, 1550.4231, 0.939700544, -0, -0.341998369, 0, 1, -0, 0.341998369, 0, 0.939700544),
             ["CFrameMon"] = CFrame.new(1196.172, 11.8689699, 1616.95923, -0.309060812, 0, 0.951042235, 0, 1, 0, -0.951042235, 0, -0.309060812)
         }
-        SPAWNPOINT = "Default"
-    elseif Lv.Value >= 10 and Lv.Value <= 9e99 then
+  elseif Lv.Value >= 10 and Lv.Value <= 9e99 then
         return {
             ["Mon"] = 'Monkey',
             ["NumQ"] = 'JungleQuest',

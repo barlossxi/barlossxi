@@ -5582,15 +5582,6 @@ Tabs.Race:AddButton({
 })
 
 
-Tabs.Raid:AddButton({
-    Title = "บอสลอว์",
-    Description = "",
-    Callback = function()
-        TP2(CFrame.new((-6438.73535, 250.645355, -4501.50684))
-    end
-})
-
-
 Tabs.Race:AddButton({
     Title = "Lever Pull",
     Description = "",

@@ -2022,39 +2022,6 @@ end
     end
 
  
-    --function TP to Boat/Ship
-    function TPB(CFgo)
-        local tween_s = game:service"TweenService"
-        local info = TweenInfo.new((game:GetService("Workspace").Boats.MarineBrigade.VehicleSeat.CFrame.Position - CFgo.Position).Magnitude/300, Enum.EasingStyle.Linear)
-        tween = tween_s:Create(game:GetService("Workspace").Boats.MarineBrigade.VehicleSeat, info, {CFrame = CFgo})
-        tween:Play()
-    
-        local tweenfunc = {}
-    
-        function tweenfunc:Stop()
-            tween:Cancel()
-        end
-    
-        return tweenfunc
-    end
-    
-    function TPP(CFgo)
-        if game.Players.LocalPlayer.Character:WaitForChild("Humanoid").Health <= 0 or not game:GetService("Players").LocalPlayer.Character:WaitForChild("Humanoid") then tween:Cancel() repeat wait() until game:GetService("Players").LocalPlayer.Character:WaitForChild("Humanoid") and game:GetService("Players").LocalPlayer.Character:WaitForChild("Humanoid").Health > 0 wait(7) return end
-        local tween_s = game:service"TweenService"
-        local info = TweenInfo.new((game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart.Position - CFgo.Position).Magnitude/325, Enum.EasingStyle.Linear)
-        tween = tween_s:Create(game.Players.LocalPlayer.Character["HumanoidRootPart"], info, {CFrame = CFgo})
-        tween:Play()
-    
-        local tweenfunc = {}
-    
-        function tweenfunc:Stop()
-            tween:Cancel()
-        end
-    
-        return tweenfunc
-    end
-
- 
 --select weapon
 function EquipTool(ToolSe)
 		if game.Players.LocalPlayer.Backpack:FindFirstChild(ToolSe) then
@@ -2457,9 +2424,9 @@ local posZ = 0
           if not string.find(game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, NameMon) or game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == false then
           game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AbandonQuest")
           if BypassTP then
-          if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - CFrameQ.Position).Magnitude > 5 then
+          if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - CFrameQ.Position).Magnitude > 10 then
           BTP(CFrameQ)
-          elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - CFrameQ.Position).Magnitude 5 then
+          elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - CFrameQ.Position).Magnitude < 10 then
           Tween(CFrameQ)
           end
     else
@@ -2490,7 +2457,7 @@ local posZ = 0
           end
           for i,v in pairs(game:GetService("Workspace")["_WorldOrigin"].EnemySpawns:GetChildren()) do
           if string.find(v.Name,NameMon) then
-          if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - v.Position).Magnitude >= 20 then
+          if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - v.Position).Magnitude >= 15 then
             Tween(v.CFrame * CFrame.new(posX,posY,posZ))
           end
           end

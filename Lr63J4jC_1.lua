@@ -5513,14 +5513,16 @@ Tabs.Raid:AddButton({
         TP2(CFrame.new(-6438.73535, 250.645355, -4501.50684))
     end
 })
+
 if Second_Sea then
 Tabs.Raid:AddButton({
-    Title = "Raid Lab",
+    Title = "ลงดันลอว์",
     Description = "",
     Callback = function()
         TP2(CFrame.new(-6438.73535, 250.645355, -4501.50684))
     end
 })
+
 elseif Third_Sea then
     Tabs.Raid:AddButton({
         Title = "Raid Lab",

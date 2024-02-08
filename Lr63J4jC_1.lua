@@ -5513,16 +5513,6 @@ Tabs.Raid:AddButton({
         TP2(CFrame.new(-6438.73535, 250.645355, -4501.50684))
     end
 })
-
-if Second_Sea then
-Tabs.Raid:AddButton({
-    Title = "ลงดันลอว์",
-    Description = "",
-    Callback = function()
-        TP2(CFrame.new(-6438.73535, 250.645355, -4501.50684))
-    end
-})
-
 elseif Third_Sea then
     Tabs.Raid:AddButton({
         Title = "Raid Lab",
@@ -5545,20 +5535,6 @@ local ToggleLaw = Tabs.Raid:AddToggle("ToggleLaw", {Title = "Auto Law", Default 
 
 ToggleLaw:OnChanged(function(Value)
     Auto_Law = Value
-end)
-Options.ToggleLaw:SetValue(false)
-spawn(function()
-    pcall(function()
-        while wait() do
-            if Auto_Law then
-                if not game:GetService("Players").LocalPlayer.Character:FindFirstChild("Microchip") and not game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Microchip") and not game:GetService("Workspace").Enemies:FindFirstChild("Order") and not game:GetService("ReplicatedStorage"):FindFirstChild("Order") then
-                    wait(1)
-                    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","Microchip","1")
-                    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","Microchip","2")
-                end
-            end
-        end
-    end)
 end)
 
 spawn(function()
@@ -5602,6 +5578,15 @@ Tabs.Race:AddButton({
     Description = "",
     Callback = function()
         game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(28286.35546875, 14895.3017578125, 102.62469482421875)
+    end
+})
+
+
+Tabs.Raid:AddButton({
+    Title = "บอสลอว์",
+    Description = "",
+    Callback = function()
+        TP2(CFrame.new((-6438.73535, 250.645355, -4501.50684))
     end
 })
 

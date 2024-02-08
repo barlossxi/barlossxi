@@ -4335,7 +4335,7 @@ end
 
 
 
-_G.FastAttackDelay = 0.13
+_G.FastAttackDelay = 0.15
 
     local Client = game.Players.LocalPlayer
     local STOP = require(Client.PlayerScripts.CombatFramework.Particle)
@@ -4468,7 +4468,7 @@ CamShake:Stop()
       if isnetworkowner then
       return isnetworkowner(object)
       else
-        if (object.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 350 then
+        if (object.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 150 then
       return true
       end
       return false

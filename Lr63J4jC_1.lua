@@ -1956,8 +1956,8 @@ end
         --// Tween Island
         function TP2(P1)
         local Distance = (P1.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
-        if Distance >= 1 then
-        Speed 150
+        if Distance >= 8 then
+        Speed = 150
         end
         game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart,TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear), {
           CFrame = P1
@@ -1989,6 +1989,39 @@ end
         end
     end
     
+    --function TP to Boat/Ship
+    function TPB(CFgo)
+        local tween_s = game:service"TweenService"
+        local info = TweenInfo.new((game:GetService("Workspace").Boats.MarineBrigade.VehicleSeat.CFrame.Position - CFgo.Position).Magnitude/300, Enum.EasingStyle.Linear)
+        tween = tween_s:Create(game:GetService("Workspace").Boats.MarineBrigade.VehicleSeat, info, {CFrame = CFgo})
+        tween:Play()
+    
+        local tweenfunc = {}
+    
+        function tweenfunc:Stop()
+            tween:Cancel()
+        end
+    
+        return tweenfunc
+    end
+    
+    function TPP(CFgo)
+        if game.Players.LocalPlayer.Character:WaitForChild("Humanoid").Health <= 0 or not game:GetService("Players").LocalPlayer.Character:WaitForChild("Humanoid") then tween:Cancel() repeat wait() until game:GetService("Players").LocalPlayer.Character:WaitForChild("Humanoid") and game:GetService("Players").LocalPlayer.Character:WaitForChild("Humanoid").Health > 0 wait(7) return end
+        local tween_s = game:service"TweenService"
+        local info = TweenInfo.new((game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart.Position - CFgo.Position).Magnitude/325, Enum.EasingStyle.Linear)
+        tween = tween_s:Create(game.Players.LocalPlayer.Character["HumanoidRootPart"], info, {CFrame = CFgo})
+        tween:Play()
+    
+        local tweenfunc = {}
+    
+        function tweenfunc:Stop()
+            tween:Cancel()
+        end
+    
+        return tweenfunc
+    end
+
+ 
     --function TP to Boat/Ship
     function TPB(CFgo)
         local tween_s = game:service"TweenService"

@@ -2794,7 +2794,7 @@ CamShake:Stop()
         if BringMobs then
         pcall(function()
           for i,v in pairs(game.Workspace.Enemies:GetChildren()) do
-          if not string.find(v.Name,"Boss") and v.Name == MonFarm and (v.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 100 then
+          if not string.find(v.Name,"Boss") and v.Name == MonFarm and (v.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 300 then
           if InMyNetWork(v.HumanoidRootPart) then
             if InMyNetWork(v.HumanoidRootPart) then
           v.HumanoidRootPart.CFrame = FarmPos
@@ -2828,7 +2828,7 @@ CamShake:Stop()
       if isnetworkowner then
       return isnetworkowner(object)
       else
-        if (object.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 350 then
+        if (object.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 100 then
       return true
       end
       return false

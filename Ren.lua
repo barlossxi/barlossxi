@@ -6942,7 +6942,7 @@ Main:Toggle("SuperFast Attack มีโอกาสโดนเตะออก�
 end)
 
 Main:Toggle('Fast Attack ',false, function(value)
-	_G.FastAttac = value
+	_G.FastAttack = value
 
 	local SeraphFrame = debug.getupvalues(require(game:GetService("Players").LocalPlayer.PlayerScripts:WaitForChild("CombatFramework")))[2]
 	local VirtualUser = game:GetService('VirtualUser')

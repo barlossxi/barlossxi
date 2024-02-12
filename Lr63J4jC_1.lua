@@ -11,7 +11,7 @@ ImageButton.BorderSizePixel = 0
 ImageButton.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
 ImageButton.Size = UDim2.new(0, 50, 0, 50)
 ImageButton.Draggable = true
-ImageButton.Image = "http://www.roblox.com/asset/?id=13325236595"
+ImageButton.Image = "http://www.roblox.com/asset/?id=16341514086"
 ImageButton.MouseButton1Down:connect(function()
 	game:GetService("VirtualInputManager"):SendKeyEvent(true,305,false,game)
 	game:GetService("VirtualInputManager"):SendKeyEvent(false,305,false,game)
@@ -1427,7 +1427,7 @@ function CheckQuest()
 	local MyLevel = game.Players.LocalPlayer.Data.Level.Value
 	if World1 then
 		if MyLevel == 1 or MyLevel <= 9 or _G.Select_Mob_Farm == "Bandit [Lv. 5]" then -- Bandit
-			Ms = "Bandit [Lv. 5]"
+			Ms = "Bandit"
 			NameQuest = "BanditQuest1"
 			LevelQuest = 1
 			NameMon = "Bandit"
@@ -1435,7 +1435,7 @@ function CheckQuest()
 			CFrameMon = CFrame.new(1199.31287, 52.2717781, 1536.91516, -0.929782331, 6.60215846e-08, -0.368109822, 3.9077392e-08, 1, 8.06501603e-08, 0.368109822, 6.06023249e-08, -0.929782331)
 			SPAWNPOINT = "Default"
 		elseif MyLevel == 10 or MyLevel <= 14 or _G.Select_Mob_Farm == "Monkey [Lv. 14]" then -- Monkey
-			Ms = "Monkey [Lv. 14]"
+			Ms = "Monkey"
 			NameQuest = "JungleQuest"
 			LevelQuest = 1
 			NameMon = "Monkey"
@@ -1443,7 +1443,7 @@ function CheckQuest()
 			CFrameMon = CFrame.new(-1502.74609, 98.5633316, 90.6417007, 0.836947978, 0, 0.547282517, -0, 1, -0, -0.547282517, 0, 0.836947978)
 			SPAWNPOINT = "Jungle"
 		elseif MyLevel == 15 or MyLevel <= 29 or _G.Select_Mob_Farm == "Gorilla [Lv. 20]" then -- Gorilla
-			Ms = "Gorilla [Lv. 20]"
+			Ms = "Gorilla"
 			NameQuest = "JungleQuest"
 			LevelQuest = 2
 			NameMon = "Gorilla"
@@ -1451,7 +1451,7 @@ function CheckQuest()
 			CFrameMon = CFrame.new(-1223.52808, 6.27936459, -502.292664, 0.310949147, -5.66602516e-08, 0.950426519, -3.37275488e-08, 1, 7.06501808e-08, -0.950426519, -5.40241736e-08, 0.310949147)
 			SPAWNPOINT = "Jungle"
 		elseif MyLevel == 30 or MyLevel <= 39 or _G.Select_Mob_Farm == "Pirate [Lv. 35]" then -- Pirate
-			Ms = "Pirate [Lv. 35]"
+			Ms = "Pirate"
 			NameQuest = "BuggyQuest1"
 			LevelQuest = 1
 			NameMon = "Pirate"

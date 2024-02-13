@@ -66,8 +66,8 @@ end;local ClearQ = function()
 end
 
 
-page1:AutoFarm('AutoFarm',function(V)
-   _G.AutoFarm = V
+page1:Button('ออโต้ฟาม',function(1)
+    _G.AutoFarm = 1
 end)
 spawn(function()
     while wait() do
@@ -102,6 +102,5 @@ spawn(function()
         end)
     end
 end)
-
 
 

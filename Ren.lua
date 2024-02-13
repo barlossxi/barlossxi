@@ -9,6 +9,7 @@ local tab1 = Win:CraftTab('Main')
 local page1 = tab1:CraftPage('Main',1)
 
 local player = page1:Label('Label')
-page1:Toggle("Start Auto Farm",_G.AutoFarm,function(value)
-	_G.AutoFarm = value
+
+page1:Toggle('Test',nil,function(a)
+    print(a)
 end)

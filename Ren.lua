@@ -65,9 +65,8 @@ end;local ClearQ = function()
     end
 end
 
-
-page1:Button('ออโต้ฟาม',function(1)
-    _G.AutoFarm = 1
+page1:Toggle("Start Auto Farm",_G.AutoFarm,function(value)
+	_G.AutoFarm = value
 end)
 spawn(function()
     while wait() do

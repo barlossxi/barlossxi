@@ -10,7 +10,7 @@ local page1 = tab1:CraftPage('Main',1)
 
 local player = page1:Label('ตีเร็วเหมือนเเม่คุณไล่ตี')
 
-page1:Toggle('ตีเร็ว',OnChanged,function(vu)
+page1:ToggleFastAttack('ตีเร็ว',OnChanged,function(vu)
     FastAttack = vu
     end)
     Options.ToggleFastAttack:SetValue(true)
@@ -104,5 +104,4 @@ end)
 
 local CamShake = require(game.ReplicatedStorage.Util.CameraShaker)
 CamShake:Stop()
-
 

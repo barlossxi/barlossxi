@@ -5502,10 +5502,10 @@ spawn(function()
 	while wait() do
 		if _G.Auto_Cake_Prince then
 			pcall(function()
-				if game.ReplicatedStorage:FindFirstChild("Cake Prince [Lv. 2300] [Raid Boss]") or game:GetService("Workspace").Enemies:FindFirstChild("Cake Prince [Lv. 2300] [Raid Boss]") then   
-					if game:GetService("Workspace").Enemies:FindFirstChild("Cake Prince [Lv. 2300] [Raid Boss]") then
+				if game.ReplicatedStorage:FindFirstChild("Cake Prince  [Raid Boss]") or game:GetService("Workspace").Enemies:FindFirstChild("Cake Prince  [Raid Boss]") then   
+					if game:GetService("Workspace").Enemies:FindFirstChild("Cake Prince  [Raid Boss]") then
 						for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do 
-							if v.Name == "Cake Prince [Lv. 2300] [Raid Boss]" then
+							if v.Name == "Cake Prince  [Raid Boss]" then
 								repeat wait()
 									AutoHaki()
 									EquipWeapon(_G.Select_Weapon)
@@ -5521,9 +5521,9 @@ spawn(function()
 						topos(CFrame.new(-2009.2802734375, 4532.97216796875, -14937.3076171875)) 
 					end
 				else
-					if game.Workspace.Enemies:FindFirstChild("Baking Staff [Lv. 2250]") or game.Workspace.Enemies:FindFirstChild("Head Baker [Lv. 2275]") or game.Workspace.Enemies:FindFirstChild("Cake Guard [Lv. 2225]") or game.Workspace.Enemies:FindFirstChild("Cookie Crafter [Lv. 2200]")  then
+					if game.Workspace.Enemies:FindFirstChild("Baking Staff [Lv. 2250]") or game.Workspace.Enemies:FindFirstChild("Head Baker ") or game.Workspace.Enemies:FindFirstChild("Cake Guard ") or game.Workspace.Enemies:FindFirstChild("Cookie Crafter ")  then
 						for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do  
-							if (v.Name == "Baking Staff [Lv. 2250]" or v.Name == "Head Baker [Lv. 2275]" or v.Name == "Cake Guard [Lv. 2225]" or v.Name == "Cookie Crafter [Lv. 2200]") and v.Humanoid.Health > 0 then
+							if (v.Name == "Baking Staff " or v.Name == "Head Baker " or v.Name == "Cake Guard " or v.Name == "Cookie Crafter ") and v.Humanoid.Health > 0 then
 								repeat wait()
 									AutoHaki()
 									EquipWeapon(_G.Select_Weapon)
@@ -5533,7 +5533,7 @@ spawn(function()
 									topos(v.HumanoidRootPart.CFrame * MethodFarm)
 									game:GetService'VirtualUser':CaptureController()
 									game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
-								until _G.Auto_Cake_Prince == false or game:GetService("ReplicatedStorage"):FindFirstChild("Cake Prince [Lv. 2300] [Raid Boss]") or not v.Parent or v.Humanoid.Health <= 0
+								until _G.Auto_Cake_Prince == false or game:GetService("ReplicatedStorage"):FindFirstChild("Cake Prince  [Raid Boss]") or not v.Parent or v.Humanoid.Health <= 0
 							end
 						end
 					else

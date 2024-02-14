@@ -4449,24 +4449,7 @@ Main:Slider("Farm Distance",1,100,25,function(value)
 	_G.DistanceMob = value
 end)
 
-Main:Toggle("ตีค่ตตตเร็ววววว",_G.FastAttack2,function(value)
-	_G.FastAttack2 = value
-    spawn(function()
-        while task.wait() do
-        if _G.FastAttack2 then
-	local CombatFramework = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework)
-local Camera = require(game.ReplicatedStorage.Util.CameraShaker)
-Camera:Stop()
-coroutine.wrap(function()
-    game:GetService("RunService").Stepped:Connect(function()
-        if getupvalues(CombatFramework)[2]['activeController'].timeToNextAttack then
-            getupvalues(CombatFramework)[2]['activeController'].timeToNextAttack = 0
-            getupvalues(CombatFramework)[2]['activeController'].hitboxMagnitude = 25
-        end
-    end)
-end)()
-    
-    
+
 Main:Toggle('Fast Attack ',true, function(value)
 	_G.FastAttack = value
 
@@ -4558,7 +4541,7 @@ Main:Toggle('Fast Attack ',true, function(value)
 	spawn(function()
 		while wait(0) do
 			if  _G.FastAttack then
-				if b - tick() > 0.25 then
+				if b - tick() > 0.50 then
 					wait(.2)
 					b = tick()
 				end
@@ -4581,7 +4564,7 @@ Main:Toggle('Fast Attack ',true, function(value)
 	spawn(function()
 		while wait(0) do
 			if  _G.FastAttack then
-				if k - tick() > 0.25 then
+				if k - tick() > 0.50 then
 					wait(0)
 					k = tick()
 				end

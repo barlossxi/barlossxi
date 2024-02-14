@@ -5484,7 +5484,7 @@ spawn(function()
 	game:GetService("RunService").Heartbeat:Connect(function()
 		pcall(function()
 			for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
-				if _G.Auto_Cake_Prince and StartCakeStartMagnet and (v.Name == "Cookie Crafter [Lv. 2200]" or v.Name == "Cake Guard [Lv. 2225]" or v.Name == "Baking Staff [Lv. 2250]" or v.Name == "Head Baker [Lv. 2275]") and (v.HumanoidRootPart.Position - POSCAKE.Position).magnitude <= 350 then
+				if _G.Auto_Cake_Prince and StartCakeStartMagnet and (v.Name == "Cookie Crafter " or v.Name == "Cake Guard " or v.Name == "Baking Staff " or v.Name == "Head Baker ") and (v.HumanoidRootPart.Position - POSCAKE.Position).magnitude <= 350 then
 					v.HumanoidRootPart.CFrame = POSCAKE
 					v.HumanoidRootPart.CanCollide = false
 					v.HumanoidRootPart.Size = Vector3.new(50,50,50)

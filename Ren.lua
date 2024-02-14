@@ -5484,7 +5484,7 @@ spawn(function()
 	game:GetService("RunService").Heartbeat:Connect(function()
 		pcall(function()
 			for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
-				if _G.Auto_Cake_Prince and StartCakeStartMagnet and (v.Name == "Cookie Crafter " or v.Name == "Cake Guard " or v.Name == "Baking Staff " or v.Name == "Head Baker ") and (v.HumanoidRootPart.Position - POSCAKE.Position).magnitude <= 350 then
+				if _G.Auto_Cake_Prince and StartCakeStartMagnet and (v.Name == "Cookie Crafter" or v.Name == "Cake Guard" or v.Name == "Baking Staff" or v.Name == "Head Baker") and (v.HumanoidRootPart.Position - POSCAKE.Position).magnitude <= 350 then
 					v.HumanoidRootPart.CFrame = POSCAKE
 					v.HumanoidRootPart.CanCollide = false
 					v.HumanoidRootPart.Size = Vector3.new(50,50,50)
@@ -5521,9 +5521,9 @@ spawn(function()
 						topos(CFrame.new(-2009.2802734375, 4532.97216796875, -14937.3076171875)) 
 					end
 				else
-					if game.Workspace.Enemies:FindFirstChild("Baking Staff [Lv. 2250]") or game.Workspace.Enemies:FindFirstChild("Head Baker ") or game.Workspace.Enemies:FindFirstChild("Cake Guard ") or game.Workspace.Enemies:FindFirstChild("Cookie Crafter ")  then
+					if game.Workspace.Enemies:FindFirstChild("Baking Staff") or game.Workspace.Enemies:FindFirstChild("Head Baker ") or game.Workspace.Enemies:FindFirstChild("Cake Guard ") or game.Workspace.Enemies:FindFirstChild("Cookie Crafter")  then
 						for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do  
-							if (v.Name == "Baking Staff " or v.Name == "Head Baker " or v.Name == "Cake Guard " or v.Name == "Cookie Crafter ") and v.Humanoid.Health > 0 then
+							if (v.Name == "Baking Staff" or v.Name == "Head Baker" or v.Name == "Cake Guard" or v.Name == "Cookie Crafter") and v.Humanoid.Health > 0 then
 								repeat wait()
 									AutoHaki()
 									EquipWeapon(_G.Select_Weapon)

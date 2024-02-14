@@ -4453,8 +4453,6 @@ end)
 Main:Toggle('Fast Attack ',true, function(value)
 	_G.FastAttack = value
 
-	_G.FastAttackDelay = 0.13
-
     local Client = game.Players.LocalPlayer
     local STOP = require(Client.PlayerScripts.CombatFramework.Particle)
     local STOPRL = require(game:GetService("ReplicatedStorage").CombatFramework.RigLib)
@@ -4539,104 +4537,6 @@ end)
 
 local CamShake = require(game.ReplicatedStorage.Util.CameraShaker)
 CamShake:Stop()
-	end)
-
-	k = tick()
-	spawn(function()
-		while wait(0) do
-			if  _G.FastAttack then
-				if k - tick() > 0.50 then
-					wait(0)
-					k = tick()
-				end
-				pcall(function()
-					for i, v in pairs(game.Workspace.Enemies:GetChildren()) do
-						if v.Humanoid.Health > 0 then
-							if (v.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 40 then
-								wait(0)
-								Unboost()
-							end
-						end
-					end
-				end)
-			end
-		end
-	end)
-
-	tjw1 = true
-	task.spawn(
-		function()
-			local a = game.Players.LocalPlayer
-			local b = require(a.PlayerScripts.CombatFramework.Particle)
-			local c = require(game:GetService("ReplicatedStorage").CombatFramework.RigLib)
-			if not shared.orl then
-				shared.orl = c.wrapAttackAnimationAsync
-			end
-			if not shared.cpc then
-				shared.cpc = b.play
-			end
-			if tjw1 then
-				pcall(
-					function()
-						c.wrapAttackAnimationAsync = function(d, e, f, g, h)
-							local i = c.getBladeHits(e, f, g)
-							if i then
-								b.play = function()
-								end
-								d:Play(15.25, 15.25, 15.25)
-								h(i)
-								b.play = shared.cpc
-								wait(0)
-								d:Stop()
-							end
-						end
-					end
-				)
-			end
-		end
-	)
-
-
-
-	local CameRa = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework.CameraShaker)
-	CameRa.CameraShakeInstance.CameraShakeState = {FadingIn = 3,FadingOut = 2,Sustained = 0,Inactive =1}
-
-	local Client = game.Players.LocalPlayer
-	local STOP = require(Client.PlayerScripts.CombatFramework.Particle)
-	local STOPRL = require(game:GetService("ReplicatedStorage").CombatFramework.RigLib)
-	task.spawn(function()
-		pcall(function()
-			if not shared.orl then
-				shared.orl = STOPRL.wrapAttackAnimationAsync
-			end
-			if not shared.cpc then
-				shared.cpc = STOP.play 
-			end
-			spawn(function()
-				require(game.ReplicatedStorage.Util.CameraShaker):Stop()
-				game:GetService("RunService").Stepped:Connect(function()
-					STOPRL.wrapAttackAnimationAsync = function(a,b,c,d,func)
-						local Hits = STOPRL.getBladeHits(b,c,d)
-						if Hits then
-							if  _G.FastAttack then
-								STOP.play = function() end
-								a:Play(10.1,9.1,8.1)
-								func(Hits)
-								STOP.play = shared.cpc
-								wait(a.length * 10.5)
-								a:Stop()
-							else
-								func(Hits)
-								STOP.play = shared.cpc
-								wait(a.length * 10.5)
-								a:Stop()
-							end
-						end
-					end
-				end)
-			end)
-		end)
-	end)
 end)
 
 

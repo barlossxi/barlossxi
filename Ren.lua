@@ -1,5 +1,9 @@
 _G.FastAttack1 = true
 
+local Module = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework)
+local CombatFramework = debug.getupvalues(Module)[2]
+local CameraShakerR = require(game.ReplicatedStorage.Util.CameraShaker)
+
 spawn(function()
     while true do
         if _G.FastAttack1 then

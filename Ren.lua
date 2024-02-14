@@ -5466,7 +5466,7 @@ spawn(function()
 	game:GetService("RunService").Heartbeat:Connect(function()
 		pcall(function()
 			for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
-				if _G.Auto_Open_Dough_Dungeon and StartCakeStartMagnet and (v.Name == "Cookie Crafter " or v.Name == "Cake Guard " or v.Name == "Baking Staff " or v.Name == "Head Baker ") and (v.HumanoidRootPart.Position - POSCAKE.Position).magnitude <= 350 then
+				if _G.Auto_Open_Dough_Dungeon and StartCakeStartMagnet and (v.Name == "Cookie Crafter" or v.Name == "Cake Guard" or v.Name == "Baking Staff" or v.Name == "Head Baker") and (v.HumanoidRootPart.Position - POSCAKE.Position).magnitude <= 350 then
 					v.HumanoidRootPart.CFrame = POSCAKE
 					v.HumanoidRootPart.CanCollide = false
 					v.HumanoidRootPart.Size = Vector3.new(50,50,50)
@@ -9262,10 +9262,10 @@ spawn(function()
 	while wait() do
 		if Auto_Quest_Tushita_3 then
 			pcall(function()
-				if game:GetService("Workspace").Enemies:FindFirstChild("Cake Queen [Lv. 2175] [Boss]") or game.ReplicatedStorage:FindFirstChild("Cake Queen [Lv. 2175] [Boss]") then
-					if game:GetService("Workspace").Enemies:FindFirstChild("Cake Queen [Lv. 2175] [Boss]") then
+				if game:GetService("Workspace").Enemies:FindFirstChild("Cake Queen  [Boss]") or game.ReplicatedStorage:FindFirstChild("Cake Queen  [Boss]") then
+					if game:GetService("Workspace").Enemies:FindFirstChild("Cake Queen  [Boss]") then
 						for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
-							if v.Name == "Cake Queen [Lv. 2175] [Boss]" then
+							if v.Name == "Cake Queen  [Boss]" then
 								if v.Humanoid.Health > 0 then
 									repeat wait()
 										if Auto_Buso then

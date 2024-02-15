@@ -4467,12 +4467,11 @@ spawn(function()
                     xShadowx.activeController.blocking = false
                     xShadowx.activeController.attacking = false
                     xShadowx.activeController.humanoid.AutoRotate = 25
-                end)
+                  end)
+               end
             end
-        end
+        end)
     end)
-end)
-
 end)
 
 Main:Toggle("Invisble Mob",false,function(value)

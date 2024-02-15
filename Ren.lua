@@ -4469,7 +4469,7 @@ spawn(function()
                     xShadowx.activeController.increment = 4
                     xShadowx.activeController.blocking = false
                     xShadowx.activeController.attacking = false
-                    xShadowx.activeController.humanoid.AutoRotate = 25
+                    xShadowx.activeController.humanoid.AutoRotate = 50
                 end)
             end
         end

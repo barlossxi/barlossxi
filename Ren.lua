@@ -2069,17 +2069,10 @@ function CheckQuest()
 			CFrameQuest = CFrame.new(-1151.48987, 16.1422901, -14445.6904, -0.316594511, -6.85698254e-08, -0.948560953, -2.05343067e-08, 1, -6.54346692e-08, 0.948560953, -1.23821675e-09, -0.316594511)
 			CFrameMon = CFrame.new(-1408.46521, 16.1423531, -14552.2041, 0.90175873, -8.17216943e-08, -0.432239741, 7.81264475e-08, 1, -2.60746162e-08, 0.432239741, -1.02563433e-08, 0.90175873)
 			SPAWNPOINT = "Chocolate"
-		elseif MyLevel >= 2525 or _G.Select_Mob_Farm == "Isle Champion [Lv. 2525]" then
-			Ms = "Isle Champion"
-			NameQuest = "TikiQuest2"
-			LevelQuest = 2
-			NameMon = "Isle Champion"
-			CFrameQuest = CFrame.new(-16542.447265625, 55.68632888793945, 1044.41650390625)
-			CFrameMon = CFrame.new(-16848.94140625, 21.68633460998535, 1041.4490966796875)
-			SPAWNPOINT = "Chocolate"
 		end
-	end
-end
+	end	
+end	
+
 
 function CheckLevel2()
 	local Lvl = game:GetService("Players").LocalPlayer.Data.Level.Value

@@ -10056,37 +10056,25 @@ spawn(function()
 end)
 
 
-spawn(function()
-    pcall(function()
-        while wait() do
-            if game.Workspace._WorldOrigin.Locations:FindFirstChild('Kitsunen Island') then
-                FaiFaoKai:Set('🦊: Kitsunen Spwan')
-            else
-                FaiFaoKai:Set('🔴: Kitsunen Not Found')
-            end
-        end
-    end)
-end)
-
     
-FrozenIsland = Item:AddLabel("")
+FrozenIsland = M:AddLabel("")
      
-    MM:Toggle("เกาะเลเวน",false,function(value)
+    MM:Toggle("Auto Click",false,function(value)
     _G.AutoFrozenDimension = value
     StopTween(_G.AutoFrozenDimension)
     end)
     
-    MM:Seperator(" เกาะคิสึเนะ ")
+    M:AddSeperator("Kitsunen")
         
-    FaiFaoKai = MM:AddLabel("")
+    FaiFaoKai = M:AddLabel("")
     
     
-    MM:Toggle("วาปเกาะคิสึเนะ",false,function(value)
+    MM:Toggle("Auto Click",false,function(value)
     _G.AutoFKitsune = value
     StopTween(_G.AutoFKitsune)
     end)
     
-    MM:Toggle("เก็บลูกไฟ",false,function(value)
+    MM:Toggle("คุยกับหิน",false,function(value)
     _G.AutoAzuerEmber = value
     StopTween(_G.AutoAzuerEmber)
     end)
@@ -10127,7 +10115,7 @@ FrozenIsland = Item:AddLabel("")
         end)
     end)
     
-    MM:Toggle("คุยกับหิน",false,function(value)
+    MM:Toggle("คุยกับหิน",false,function(value)function(value)
     _G.KisuneWarn = value
     end)
     
@@ -10154,3 +10142,27 @@ notification.Volume = 5 --ระวังหูแตก
             end
         end
     end)
+    
+    spawn(function()
+    pcall(function()
+        while wait() do
+            if game.Workspace._WorldOrigin.Locations:FindFirstChild('Kitsunen Island') then
+                FaiFaoKai:Set('🦊: Kitsunen Spwan')
+            else
+                FaiFaoKai:Set('🔴: Kitsunen Not Found')
+            end
+        end
+    end)
+end)
+
+spawn(function()
+    pcall(function()
+        while wait() do
+            if game.Workspace._WorldOrigin.Locations:FindFirstChild('Frozen Dimension') then
+                FrozenIsland:Set('🟢: Frozen Dimension Spawning')
+            else
+                FrozenIsland:Set('🔴: Frozen Dimension Not Found')
+            end
+        end
+    end)
+end)

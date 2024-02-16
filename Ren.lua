@@ -10072,27 +10072,15 @@ end)
    Item:Seperator(" คิสึเนะ ")
         
     
-    Misc:Toggle("บินไปเกาะคิสึเนะ",_G.AutoFKitsune = value,function(value)
+    Item:Toggle("บินไปเกาะคิสึเนะ",_G.AutoFKitsune = value,function(value)
     _G.AutoFKitsune = value
     StopTween(_G.AutoFKitsune)
     end)
     
-    Misc:Toggle("เก็บลูกไฟ",_G.AutoAzuerEmber = value,function(value)
+    Item:Toggle("เก็บลูกไฟ",_G.AutoAzuerEmber = value,function(value)
     _G.AutoAzuerEmber = value
     StopTween(_G.AutoAzuerEmber)
     end)
-    
-          spawn(function()
-            while wait() do
-                if _G.AutoFrozenDimension then
-                    pcall(function()
-                        if game.Workspace._WorldOrigin.Locations:FindFirstChild('Frozen Dimension') then
-                            topos(game.Workspace._WorldOrigin.Locations:FindFirstChild('Frozen Dimension').HumanoidRootPart.CFrame * CFrame.new(0,500,-100))
-                        end
-                    end)
-                end
-            end
-        end)
         
         spawn(function()
 		while  _G.AutoFKitsune do wait()
@@ -10104,7 +10092,6 @@ end)
 		end
 	end)
 	
-        
         
     spawn(function()
         pcall(function()
@@ -10118,7 +10105,7 @@ end)
         end)
     end)
     
-    Misc:Toggle("คุยกับหิน",_G.KisuneWarn,function(value)
+    Item:Toggle("คุยกับหิน",_G.KisuneWarn,function(value)
     _G.KisuneWarn = value
     end)
     

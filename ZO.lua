@@ -5,24 +5,69 @@ _G.Logo = 16341514086
 local Evil = loadstring(game:HttpGet("https://raw.githubusercontent.com/lntanon55/Golf-HUB/main/Protected_9405524596134885.lua.txt"))()
 local Win = library:Evil("ZOLA HUB","",_G.Logo )
 
-local ZA = Win:CraftTab('เมนู')
-local ZX = Win:CraftTab('อีเว้นท์ทะเล')
-local ZS = Win:CraftTab('หาไอเท็ม')
-local ZZ = Win:CraftTab('อัพค่าพลัง')
-local ZC = Win:CraftTab('ผู้เล่น')
-local ZV = Win:CraftTab('เผ่าวี4')
-local ZB = Win:CraftTab('ผู้เล่น')
-local ZM = Win:CraftTab('วาป')
-local ZN = Win:CraftTab('อื่น')
+local tab1 = Win:CraftTab('เมนู')
+local ZZ = tab1:CraftPage('บลาๆ',1)
+local ZX = tab1:CraftPage('บลาๆ',2)
+local tab2 = Win:CraftTab('อีเว้นท์ทะเล')
+local ZC = tab2:CraftPage('บลาๆ',1)
+local ZV = tab2:CraftPage('บลาๆ',2)
+local tab3 = Win:CraftTab('ไอเท็ม')
+local ZB = tab3:CraftPage('บลาๆ',1)
+local ZN = tab3:CraftPage('บลาๆ',2)
+local tab4 = Win:CraftTab('เผ่าวี4')
+local ZM = tab4:CraftPage('บลาๆ',1)
+local ZA = tab4:CraftPage('บลาๆ',2)
 
-local player = ZA:Label('ออโต้ฟาม')
+local player = ZZ:Label('Label')
 
-page1:Button('ออโต้ฟาม',function()
+ZZ:Button('Button',function()
     print("t")
 end)
 
-local player = ZX:Label('ออโต้ทำดาบคู่')
+local player = ZX:Label('Label')
 
-ZX:Button('ออโต้ทำดาบคู่',function()
+ZX:Button('Button',function()
+    print("t")
+end)
+
+local player = ZC:Label('Label')
+
+ZC:Button('Button',function()
+    print("t")
+end)
+
+local player = ZV:Label('Label')
+
+ZV:Button('Button',function()
+    print("t")
+end)
+
+local player = ZB:Label('Label')
+
+ZB:Button('Button',function()
+    print("t")
+end)
+
+local player = ZB:Label('Label')
+
+ZB:Button('Button',function()
+    print("t")
+end)
+
+local player = ZN:Label('Label')
+
+ZN:Button('Button',function()
+    print("t")
+end)
+
+local player = ZM:Label('Label')
+
+ZM:Button('Button',function()
+    print("t")
+end)
+
+local player = ZA:Label('Label')
+
+ZA:Button('Button',function()
     print("t")
 end)

@@ -10040,7 +10040,7 @@ task.spawn(function()
 	end
 end)
 
-MM:Toggle("Auto Click",false,function(value)
+Misc:Toggle("ออโต้คริก",false,function(value)
 	_G.click = value
 end)
 

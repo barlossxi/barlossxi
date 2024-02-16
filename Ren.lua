@@ -4814,21 +4814,6 @@ end)
 
 Main:Seperator("  ออโต้ฟามคาตา ")
 
-local Kill_Cake_Monster_ST = Main:Label("")
-
-	spawn(function()
-	    while wait() do
-			pcall(function()
-				if not game.Workspace.Enemies:FindFirstChild("Cake Prince") or not game.ReplicatedStorage:FindFirstChild("Cake Prince") then
-					local OP = game.ReplicatedStorage.Remotes.CommF_:InvokeServer("CakePrinceSpawner")
-					local Lp = tonumber(string.match(tostring(OP), "%d+"))
-					Kill_Cake_Monster_ST:Set(" // Kill Cake Monster : "..tostring(Lp).."/500 \\\\")
-				else
-				    Kill_Cake_Monster_ST:Set(" // Kill Cake Monster : Spawned !!! \\\\")
-				end
-			end)
-		end
-	end)
 
 
 	Main:Toggle("Auto Cake Prince",_G.Setting_table.Auto_Spikey_Trident,function(vu)
@@ -4837,23 +4822,6 @@ local Kill_Cake_Monster_ST = Main:Label("")
 		Update_Setting(getgenv()['MyName'])
 	end)
 
- local Elite_Hunter_Status = Main:Label("")
-
-	task.spawn(function()
-		while task.wait() do
-			pcall(function()
-				if game:GetService("ReplicatedStorage"):FindFirstChild("Diablo") or game:GetService("Workspace").Enemies:FindFirstChild("Diablo") then
-					Elite_Hunter_Status:Set("Status : Spawned\nName : Diablo ✅")   
-				elseif game:GetService("ReplicatedStorage"):FindFirstChild("Deandre") or game:GetService("Workspace").Enemies:FindFirstChild("Deandre") then 
-					Elite_Hunter_Status:Set("Status : Spawned\nName : Deandre ✅")   
-				elseif game:GetService("ReplicatedStorage"):FindFirstChild("Urban") or game:GetService("Workspace").Enemies:FindFirstChild("Urban") then
-					Elite_Hunter_Status:Set("Status : Spawned\nName : Urban ✅") 
-				else
-					Elite_Hunter_Status:Set("Status : Not Spawn ❌")    
-				end
-			end)
-		end
-	end)
 
 	Main:Toggle("Auto Cake Prince V2",_G.Setting_table.Prince2,function(vu)
 		Prince2 = vu
@@ -10894,3 +10862,34 @@ spawn(function()
 		end)
 	end
 	
+	
+	task.spawn(function()
+		while task.wait() do
+			pcall(function()
+				if game:GetService("ReplicatedStorage"):FindFirstChild("Diablo") or game:GetService("Workspace").Enemies:FindFirstChild("Diablo") then
+					Elite_Hunter_Status:Set("Status : Spawned\nName : Diablo ✅")   
+				elseif game:GetService("ReplicatedStorage"):FindFirstChild("Deandre") or game:GetService("Workspace").Enemies:FindFirstChild("Deandre") then 
+					Elite_Hunter_Status:Set("Status : Spawned\nName : Deandre ✅")   
+				elseif game:GetService("ReplicatedStorage"):FindFirstChild("Urban") or game:GetService("Workspace").Enemies:FindFirstChild("Urban") then
+					Elite_Hunter_Status:Set("Status : Spawned\nName : Urban ✅") 
+				else
+					Elite_Hunter_Status:Set("Status : Not Spawn ❌")    
+				end
+			end)
+		end
+	end)
+	
+	
+	spawn(function()
+	    while wait() do
+			pcall(function()
+				if not game.Workspace.Enemies:FindFirstChild("Cake Prince") or not game.ReplicatedStorage:FindFirstChild("Cake Prince") then
+					local OP = game.ReplicatedStorage.Remotes.CommF_:InvokeServer("CakePrinceSpawner")
+					local Lp = tonumber(string.match(tostring(OP), "%d+"))
+					Kill_Cake_Monster_ST:Set(" // Kill Cake Monster : "..tostring(Lp).."/500 \\\\")
+				else
+				    Kill_Cake_Monster_ST:Set(" // Kill Cake Monster : Spawned !!! \\\\")
+				end
+			end)
+		end
+	end)

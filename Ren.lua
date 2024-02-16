@@ -10057,19 +10057,14 @@ end)
 
 
      
-    MM:Toggle("Auto Frozen Dimension",_G.AutoFrozenDimension,function(value)
-    _G.AutoFrozenDimension = value
-    StopTween(_G.AutoFrozenDimension)
-    end)
+    MM:Seperator(" เกาะคิสึเนะ🦊 ")
     
-    
-    
-    MM:Toggle("Teleport To Kitsunen Island",_G.AutoFKitsune,function(value)
+    MM:Toggle("วาปไปเกาะคิสึเนะ",_G.AutoFKitsune,function(value)
     _G.AutoFKitsune = value
     StopTween(_G.AutoFKitsune)
     end)
     
-    MM:Toggle("Auto Azuer Ember",_G.AutoAzuerEmber,function(value)
+    MM:Toggle("เก็บลูกไฟ",_G.AutoAzuerEmber,function(value)
     _G.AutoAzuerEmber = value
     StopTween(_G.AutoAzuerEmber)
     end)
@@ -10110,7 +10105,7 @@ end)
         end)
     end)
     
-    MM:Toggle("Send Notification If Kitsunen Island Spwan",_G.KisuneWarn,function(value)
+    MM:Toggle("คุยกับหิน",_G.KisuneWarn,function(value)
     _G.KisuneWarn = value
     end)
     
@@ -10139,17 +10134,8 @@ notification.Volume = 5 --ระวังหูแตก
     end)
     
     
-    spawn(function()
-    pcall(function()
-        while wait() do
-            if game.Workspace._WorldOrigin.Locations:FindFirstChild('Frozen Dimension') then
-                FrozenIsland:Set('🟢: Frozen Dimension Spawning')
-            else
-                FrozenIsland:Set('🔴: Frozen Dimension Not Found')
-            end
-        end
-    end)
-end)
+    MM:Seperator(" อีเว้นท์ทะเล⛵ ")
+
 
 spawn(function()
     pcall(function()

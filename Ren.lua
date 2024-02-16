@@ -2085,12 +2085,12 @@ function CheckLevel2()
 	local Lvl = game:GetService("Players").LocalPlayer.Data.Level.Value
 	if Lvl >= 1 and Lvl <= 9 then
 		if tostring(game.Players.LocalPlayer.Team) == "Marines" then
-			namemon = "Trainee [Lv. 5]"
+			namemon = "Trainee"
 			namequest = "MarineQuest"
 			questlv = 1
 			npcpos = CFrame.new(-2709.67944, 24.5206585, 2104.24585, -0.744724929, -3.97967455e-08, -0.667371571, 4.32403588e-08, 1, -1.07884304e-07, 0.667371571, -1.09201515e-07, -0.744724929)
 		elseif tostring(game.Players.LocalPlayer.Team) == "Pirates" then
-			namemon = "Bandit [Lv. 5]"
+			namemon = "Bandit"
 			namequest = "BanditQuest1"
 			questlv = 1
 			npcpos = CFrame.new(1059.99731, 16.9222069, 1549.28162, -0.95466274, 7.29721794e-09, 0.297689587, 1.05190106e-08, 1, 9.22064114e-09, -0.297689587, 1.19340022e-08, -0.95466274)
@@ -2131,7 +2131,7 @@ function CheckLevel2()
 	if namequest == "MarineQuest2" then
 		namequest = "MarineQuest2"
 		questlv = 1
-		namemon = "Chief Petty Officer [Lv. 120]"
+		namemon = "Chief Petty Officer"
 		levelreq = 120
 	elseif namequest == "ImpelQuest" then
 		namequest = "PrisonerQuest"
@@ -2148,7 +2148,7 @@ function CheckLevel2()
 	elseif namequest == "Area2Quest" and questlv == 2 then
 		namequest = "Area2Quest"
 		questlv = 1
-		namemon = "Swan Pirate [Lv. 775]"
+		namemon = "Swan Pirate"
 		levelreq = 775
 	end
 	namemon = namemon:sub(1,#namemon)
@@ -2173,100 +2173,100 @@ end
 
 function CheckBossQuest()
 	if _G.Select_Boss == "Saber Expert [Lv. 200] [Boss]" then
-		MsBoss = "Saber Expert [Lv. 200] [Boss]"
+		MsBoss = "Saber Expert [Boss]"
 		NameBoss = "Saber Expert"
 		CFrameBoss = CFrame.new(-1458.89502, 29.8870335, -50.633564, 0.858821094, 1.13848939e-08, 0.512275636, -4.85649254e-09, 1, -1.40823326e-08, -0.512275636, 9.6063415e-09, 0.858821094)
 	elseif _G.Select_Boss == "The Saw [Lv. 100] [Boss]" then
-		MsBoss = "The Saw [Lv. 100] [Boss]"
+		MsBoss = "The Saw [Boss]"
 		NameBoss = "The Saw"
 		CFrameBoss = CFrame.new(-683.519897, 13.8534927, 1610.87854, -0.290192783, 6.88365773e-08, 0.956968188, 6.98413629e-08, 1, -5.07531119e-08, -0.956968188, 5.21077759e-08, -0.290192783)
 	elseif _G.Select_Boss == "Greybeard [Lv. 750] [Raid Boss]" then
-		MsBoss = "Greybeard [Lv. 750] [Raid Boss]"
+		MsBoss = "Greybeard [Raid Boss]"
 		NameBoss = "Greybeard"
 		CFrameBoss = CFrame.new(-4955.72949, 80.8163834, 4305.82666, -0.433646321, -1.03394289e-08, 0.901083171, -3.0443168e-08, 1, -3.17633075e-09, -0.901083171, -2.88092288e-08, -0.433646321)
 	elseif _G.Select_Boss == "The Gorilla King [Lv. 25] [Boss]" then
-		MsBoss = "The Gorilla King [Lv. 25] [Boss]"
+		MsBoss = "The Gorilla King [Boss]"
 		NameBoss = "The Gorilla King"
 		NameQuestBoss = "JungleQuest"
 		LevelQuestBoss = 3
 		CFrameQuestBoss = CFrame.new(-1604.12012, 36.8521118, 154.23732, 0.0648873374, -4.70858913e-06, -0.997892559, 1.41431883e-07, 1, -4.70933674e-06, 0.997892559, 1.64442184e-07, 0.0648873374)
 		CFrameBoss = CFrame.new(-1223.52808, 6.27936459, -502.292664, 0.310949147, -5.66602516e-08, 0.950426519, -3.37275488e-08, 1, 7.06501808e-08, -0.950426519, -5.40241736e-08, 0.310949147)
 	elseif _G.Select_Boss == "Bobby [Lv. 55] [Boss]" then
-		MsBoss = "Bobby [Lv. 55] [Boss]"
+		MsBoss = "Bobby [Boss]"
 		NameBoss = "Bobby"
 		NameQuestBoss = "BuggyQuest1"
 		LevelQuestBoss = 3
 		CFrameQuestBoss = CFrame.new(-1139.59717, 4.75205183, 3825.16211, -0.959730506, -7.5857054e-09, 0.280922383, -4.06310328e-08, 1, -1.11807175e-07, -0.280922383, -1.18718916e-07, -0.959730506)
 		CFrameBoss = CFrame.new(-1147.65173, 32.5966301, 4156.02588, 0.956680477, -1.77109952e-10, -0.29113996, 5.16530874e-10, 1, 1.08897802e-09, 0.29113996, -1.19218679e-09, 0.956680477)
 	elseif _G.Select_Boss == "Yeti [Lv. 110] [Boss]" then
-		MsBoss = "Yeti [Lv. 110] [Boss]"
+		MsBoss = "Yeti [Boss]"
 		NameBoss = "Yeti"
 		NameQuestBoss = "SnowQuest"
 		LevelQuestBoss = 3
 		CFrameQuestBoss = CFrame.new(1384.90247, 87.3078308, -1296.6825, 0.280209213, 2.72035177e-08, -0.959938943, -6.75690828e-08, 1, 8.6151708e-09, 0.959938943, 6.24481444e-08, 0.280209213)
 		CFrameBoss = CFrame.new(1221.7356, 138.046906, -1488.84082, 0.349343032, -9.49245944e-08, 0.936994851, 6.29478194e-08, 1, 7.7838429e-08, -0.936994851, 3.17894653e-08, 0.349343032)
 	elseif _G.Select_Boss == "Mob Leader [Lv. 120] [Boss]" then
-		MsBoss = "Mob Leader [Lv. 120] [Boss]"
+		MsBoss = "Mob Leader [Boss]"
 		NameBoss = "Mob Leader"
 		CFrameBoss = CFrame.new(-2848.59399, 7.4272871, 5342.44043, -0.928248107, -8.7248246e-08, 0.371961564, -7.61816636e-08, 1, 4.44474857e-08, -0.371961564, 1.29216433e-08, -0.92824)
 	elseif _G.Select_Boss == "Vice Admiral [Lv. 130] [Boss]" then
-		MsBoss = "Vice Admiral [Lv. 130] [Boss]"
+		MsBoss = "Vice Admiral [Boss]"
 		NameBoss = "Vice Admiral"
 		NameQuestBoss = "MarineQuest2"
 		LevelQuestBoss = 2
 		CFrameQuestBoss = CFrame.new(-5035.42285, 28.6520386, 4324.50293, -0.0611100644, -8.08395768e-08, 0.998130739, -1.57416586e-08, 1, 8.00271849e-08, -0.998130739, -1.08217701e-08, -0.0611100644)
 		CFrameBoss = CFrame.new(-5078.45898, 99.6520691, 4402.1665, -0.555574954, -9.88630566e-11, 0.831466436, -6.35508286e-08, 1, -4.23449258e-08, -0.831466436, -7.63661632e-08, -0.555574954)
 	elseif _G.Select_Boss == "Warden [Lv. 175] [Boss]" then
-		MsBoss = "Warden [Lv. 175] [Boss]"
+		MsBoss = "Warden [Boss]"
 		NameBoss = "Warden"
 		NameQuestBoss = "ImpelQuest"
 		LevelQuestBoss = 1
 		CFrameQuestBoss = CFrame.new(4851.35059, 5.68744135, 743.251282, -0.538484037, -6.68303741e-08, -0.842635691, 1.38001752e-08, 1, -8.81300792e-08, 0.842635691, -5.90851599e-08, -0.538484037)
 		CFrameBoss = CFrame.new(5232.5625, 5.26856995, 747.506897, 0.943829298, -4.5439414e-08, 0.330433697, 3.47818627e-08, 1, 3.81658154e-08, -0.330433697, -2.45289105e-08, 0.943829298)
 	elseif _G.Select_Boss == "Chief Warden [Lv. 200] [Boss]" then
-		MsBoss = "Chief Warden [Lv. 200] [Boss]"
+		MsBoss = "Chief Warden [Boss]"
 		NameBoss = "Chief Warden"
 		NameQuestBoss = "ImpelQuest"
 		LevelQuestBoss = 2
 		CFrameQuestBoss = CFrame.new(4851.35059, 5.68744135, 743.251282, -0.538484037, -6.68303741e-08, -0.842635691, 1.38001752e-08, 1, -8.81300792e-08, 0.842635691, -5.90851599e-08, -0.538484037)
 		CFrameBoss = CFrame.new(5232.5625, 5.26856995, 747.506897, 0.943829298, -4.5439414e-08, 0.330433697, 3.47818627e-08, 1, 3.81658154e-08, -0.330433697, -2.45289105e-08, 0.943829298)
 	elseif _G.Select_Boss == "Swan [Lv. 225] [Boss]" then
-		MsBoss = "Swan [Lv. 225] [Boss]"
+		MsBoss = "Swan [Boss]"
 		NameBoss = "Swan"
 		NameQuestBoss = "ImpelQuest"
 		LevelQuestBoss = 3
 		CFrameQuestBoss = CFrame.new(4851.35059, 5.68744135, 743.251282, -0.538484037, -6.68303741e-08, -0.842635691, 1.38001752e-08, 1, -8.81300792e-08, 0.842635691, -5.90851599e-08, -0.538484037)
 		CFrameBoss = CFrame.new(5232.5625, 5.26856995, 747.506897, 0.943829298, -4.5439414e-08, 0.330433697, 3.47818627e-08, 1, 3.81658154e-08, -0.330433697, -2.45289105e-08, 0.943829298)
 	elseif _G.Select_Boss == "Magma Admiral [Lv. 350] [Boss]" then
-		MsBoss = "Magma Admiral [Lv. 350] [Boss]"
+		MsBoss = "Magma Admiral [Boss]"
 		NameBoss = "Magma Admiral"
 		NameQuestBoss = "MagmaQuest"
 		LevelQuestBoss = 3
 		CFrameQuestBoss = CFrame.new(-5317.07666, 12.2721891, 8517.41699, 0.51175487, -2.65508806e-08, -0.859131515, -3.91131572e-08, 1, -5.42026761e-08, 0.859131515, 6.13418294e-08, 0.51175487)
 		CFrameBoss = CFrame.new(-5530.12646, 22.8769703, 8859.91309, 0.857838571, 2.23414389e-08, 0.513919294, 1.53689133e-08, 1, -6.91265853e-08, -0.513919294, 6.71978384e-08, 0.857838571)
 	elseif _G.Select_Boss == "Fishman Lord [Lv. 425] [Boss]" then
-		MsBoss = "Fishman Lord [Lv. 425] [Boss]"
+		MsBoss = "Fishman Lord [Boss]"
 		NameBoss = "Fishman Lord"
 		NameQuestBoss = "FishmanQuest"
 		LevelQuestBoss = 3
 		CFrameQuestBoss = CFrame.new(61123.0859, 18.5066795, 1570.18018, 0.927145958, 1.0624845e-07, 0.374700129, -6.98219367e-08, 1, -1.10790765e-07, -0.374700129, 7.65569368e-08, 0.927145958)
 		CFrameBoss = CFrame.new(61351.7773, 31.0306778, 1113.31409, 0.999974668, 0, -0.00714713801, 0, 1.00000012, 0, 0.00714714266, 0, 0.999974549)
 	elseif _G.Select_Boss == "Wysper [Lv. 500] [Boss]" then
-		MsBoss = "Wysper [Lv. 500] [Boss]"
+		MsBoss = "Wysper [Boss]"
 		NameBoss = "Wysper"
 		NameQuestBoss = "SkyExp1Quest"
 		LevelQuestBoss = 3
 		CFrameQuestBoss = CFrame.new(-7862.94629, 5545.52832, -379.833954, 0.462944925, 1.45838088e-08, -0.886386991, 1.0534996e-08, 1, 2.19553424e-08, 0.886386991, -1.95022007e-08, 0.462944925)
 		CFrameBoss = CFrame.new(-7925.48389, 5550.76074, -636.178345, 0.716468513, -1.22915289e-09, 0.697619379, 3.37381434e-09, 1, -1.70304748e-09, -0.697619379, 3.57381835e-09, 0.716468513)
 	elseif _G.Select_Boss == "Thunder God [Lv. 575] [Boss]" then
-		MsBoss = "Thunder God [Lv. 575] [Boss]"
+		MsBoss = "Thunder God [Boss]"
 		NameBoss = "Thunder God"
 		NameQuestBoss = "SkyExp2Quest"
 		LevelQuestBoss = 3
 		CFrameQuestBoss = CFrame.new(-7902.78613, 5635.99902, -1411.98706, -0.0361216255, -1.16895912e-07, 0.999347389, 1.44533963e-09, 1, 1.17024491e-07, -0.999347389, 5.6715117e-09, -0.0361216255)
 		CFrameBoss = CFrame.new(-7917.53613, 5616.61377, -2277.78564, 0.965189934, 4.80563429e-08, -0.261550069, -6.73089886e-08, 1, -6.46515304e-08, 0.261550069, 8.00056768e-08, 0.965189934)
 	elseif _G.Select_Boss == "Cyborg [Lv. 675] [Boss]" then
-		MsBoss = "Cyborg [Lv. 675] [Boss]"
+		MsBoss = "Cyborg [Boss]"
 		NameBoss = "Cyborg"
 		NameQuestBoss = "FountainQuest"
 		LevelQuestBoss = 3
@@ -2274,39 +2274,39 @@ function CheckBossQuest()
 		CFrameBoss = CFrame.new(6041.82813, 52.7112198, 3907.45142, -0.563162148, 1.73805248e-09, -0.826346457, -5.94632716e-08, 1, 4.26280238e-08, 0.826346457, 7.31437524e-08, -0.563162148)
 		-- New World
 	elseif _G.Select_Boss == "Diamond [Lv. 750] [Boss]" then
-		MsBoss = "Diamond [Lv. 750] [Boss]"
+		MsBoss = "Diamond [Boss]"
 		NameBoss = "Diamond"
 		NameQuestBoss = "Area1Quest"
 		LevelQuestBoss = 3
 		CFrameQuestBoss = CFrame.new(-424.080078, 73.0055847, 1836.91589, 0.253544956, -1.42165932e-08, 0.967323601, -6.00147771e-08, 1, 3.04272909e-08, -0.967323601, -6.5768397e-08, 0.253544956)
 		CFrameBoss = CFrame.new(-1736.26587, 198.627731, -236.412857, -0.997808516, 0, -0.0661673471, 0, 1, 0, 0.0661673471, 0, -0.997808516)
 	elseif _G.Select_Boss == "Jeremy [Lv. 850] [Boss]" then
-		MsBoss = "Jeremy [Lv. 850] [Boss]"
+		MsBoss = "Jeremy [Boss]"
 		NameBoss = "Jeremy"
 		NameQuestBoss = "Area2Quest"
 		LevelQuestBoss = 3
 		CFrameQuestBoss = CFrame.new(632.698608, 73.1055908, 918.666321, -0.0319722369, 8.96074881e-10, -0.999488771, 1.36326533e-10, 1, 8.92172336e-10, 0.999488771, -1.07732087e-10, -0.0319722369)
 		CFrameBoss = CFrame.new(2203.76953, 448.966034, 752.731079, -0.0217453763, 0, -0.999763548, 0, 1, 0, 0.999763548, 0, -0.0217453763)
 	elseif _G.Select_Boss == "Fajita [Lv. 925] [Boss]" then
-		MsBoss = "Fajita [Lv. 925] [Boss]"
+		MsBoss = "Fajita [Boss]"
 		NameBoss = "Fajita"
 		NameQuestBoss = "MarineQuest3"
 		LevelQuestBoss = 3
 		CFrameQuestBoss = CFrame.new(-2442.65015, 73.0511475, -3219.11523, -0.873540044, 4.2329841e-08, -0.486752301, 5.64383384e-08, 1, -1.43220786e-08, 0.486752301, -3.99823996e-08, -0.873540044)
 		CFrameBoss = CFrame.new(-2297.40332, 115.449463, -3946.53833, 0.961227536, -1.46645796e-09, -0.275756449, -2.3212845e-09, 1, -1.34094433e-08, 0.275756449, 1.35296352e-08, 0.961227536)
 	elseif _G.Select_Boss == "Don Swan [Lv. 1000] [Boss]" then
-		MsBoss = "Don Swan [Lv. 1000] [Boss]"
+		MsBoss = "Don Swan [Boss]"
 		NameBoss = "Don Swan"
 		CFrameBoss = CFrame.new(2288.802, 15.1870775, 863.034607, 0.99974072, -8.41247214e-08, -0.0227668174, 8.4774733e-08, 1, 2.75850098e-08, 0.0227668174, -2.95079072e-08, 0.99974072)
 	elseif _G.Select_Boss == "Smoke Admiral [Lv. 1150] [Boss]" then
-		MsBoss = "Smoke Admiral [Lv. 1150] [Boss]"
+		MsBoss = "Smoke Admiral [Boss]"
 		NameBoss = "Smoke Admiral"
 		NameQuestBoss = "IceSideQuest"
 		LevelQuestBoss = 3
 		CFrameQuestBoss = CFrame.new(-6059.96191, 15.9868021, -4904.7373, -0.444992423, -3.0874483e-09, 0.895534337, -3.64098796e-08, 1, -1.4644522e-08, -0.895534337, -3.91229982e-08, -0.444992423)
 		CFrameBoss = CFrame.new(-5115.72754, 23.7664986, -5338.2207, 0.251453817, 1.48345061e-08, -0.967869282, 4.02796978e-08, 1, 2.57916977e-08, 0.967869282, -4.54708946e-08, 0.251453817)
 	elseif _G.Select_Boss == "Cursed Captain [Lv. 1325] [Raid Boss]" then
-		MsBoss = "Cursed Captain [Lv. 1325] [Raid Boss]"
+		MsBoss = "Cursed Captain [Raid Boss]"
 		NameBoss = "Cursed Captain"
 		CFrameBoss = CFrame.new(916.928589, 181.092773, 33422, -0.999505103, 9.26310495e-09, 0.0314563364, 8.42916226e-09, 1, -2.6643713e-08, -0.0314563364, -2.63653774e-08, -0.999505103)
 	elseif _G.Select_Boss == "Darkbeard [Lv. 1000] [Raid Boss]" then
@@ -2314,18 +2314,18 @@ function CheckBossQuest()
 		NameBoss = "Darkbeard"
 		CFrameBoss = CFrame.new(3876.00366, 24.6882591, -3820.21777, -0.976951957, 4.97356325e-08, 0.213458836, 4.57335361e-08, 1, -2.36868622e-08, -0.213458836, -1.33787044e-08, -0.976951957)
 	elseif _G.Select_Boss == "Order [Lv. 1250] [Raid Boss]" then
-		MsBoss = "Order [Lv. 1250] [Raid Boss]"
+		MsBoss = "Order [Raid Boss]"
 		NameBoss = "Order"
 		CFrameBoss = CFrame.new(-6221.15039, 16.2351036, -5045.23584, -0.380726993, 7.41463495e-08, 0.924687505, 5.85604774e-08, 1, -5.60738549e-08, -0.924687505, 3.28013137e-08, -0.380726993)
 	elseif _G.Select_Boss == "Awakened Ice Admiral [Lv. 1400] [Boss]" then
-		MsBoss = "Awakened Ice Admiral [Lv. 1400] [Boss]"
+		MsBoss = "Awakened Ice Admiral [Boss]"
 		NameBoss = "Awakened Ice Admiral"
 		NameQuestBoss = "FrostQuest"
 		LevelQuestBoss = 3
 		CFrameQuestBoss = CFrame.new(5669.33203, 28.2118053, -6481.55908, 0.921275556, -1.25320829e-08, 0.388910472, 4.72230788e-08, 1, -7.96414241e-08, -0.388910472, 9.17372489e-08, 0.921275556)
 		CFrameBoss = CFrame.new(6407.33936, 340.223785, -6892.521, 0.49051559, -5.25310213e-08, -0.871432424, -2.76146022e-08, 1, -7.58250565e-08, 0.871432424, 6.12576301e-08, 0.49051559)
 	elseif _G.Select_Boss == "Tide Keeper [Lv. 1475] [Boss]" then
-		MsBoss = "Tide Keeper [Lv. 1475] [Boss]"
+		MsBoss = "Tide Keeper [Boss]"
 		NameBoss = "Tide Keeper"
 		NameQuestBoss = "ForgottenQuest"             
 		LevelQuestBoss = 3
@@ -2333,57 +2333,57 @@ function CheckBossQuest()
 		CFrameBoss = CFrame.new(-3570.18652, 123.328949, -11555.9072, 0.465199202, -1.3857326e-08, 0.885206044, 4.0332897e-09, 1, 1.35347511e-08, -0.885206044, -2.72606271e-09, 0.465199202)
 		-- Thire World
 	elseif _G.Select_Boss == "Stone [Lv. 1550] [Boss]" then
-		MsBoss = "Stone [Lv. 1550] [Boss]"
+		MsBoss = "Stone [Boss]"
 		NameBoss = "Stone"
 		NameQuestBoss = "PiratePortQuest"             
 		LevelQuestBoss = 3
 		CFrameQuestBoss = CFrame.new(-290, 44, 5577)
 		CFrameBoss = CFrame.new(-1085, 40, 6779)
 	elseif _G.Select_Boss == "Island Empress [Lv. 1675] [Boss]" then
-		MsBoss = "Island Empress [Lv. 1675] [Boss]"
+		MsBoss = "Island Empress [Boss]"
 		NameBoss = "Island Empress"
 		NameQuestBoss = "AmazonQuest2"             
 		LevelQuestBoss = 3
 		CFrameQuestBoss = CFrame.new(5443, 602, 752)
 		CFrameBoss = CFrame.new(5659, 602, 244)
 	elseif _G.Select_Boss == "Kilo Admiral [Lv. 1750] [Boss]" then
-		MsBoss = "Kilo Admiral [Lv. 1750] [Boss]"
+		MsBoss = "Kilo Admiral [Boss]"
 		NameBoss = "Kilo Admiral"
 		NameQuestBoss = "MarineTreeIsland"             
 		LevelQuestBoss = 3
 		CFrameQuestBoss = CFrame.new(2178, 29, -6737)
 		CFrameBoss =CFrame.new(2846, 433, -7100)
 	elseif _G.Select_Boss == "Captain Elephant [Lv. 1875] [Boss]" then
-		MsBoss = "Captain Elephant [Lv. 1875] [Boss]"
+		MsBoss = "Captain Elephant [Boss]"
 		NameBoss = "Captain Elephant"
 		NameQuestBoss = "DeepForestIsland"             
 		LevelQuestBoss = 3
 		CFrameQuestBoss = CFrame.new(-13232, 333, -7631)
 		CFrameBoss = CFrame.new(-13221, 325, -8405)
 	elseif _G.Select_Boss == "Beautiful Pirate [Lv. 1950] [Boss]" then
-		MsBoss = "Beautiful Pirate [Lv. 1950] [Boss]"
+		MsBoss = "Beautiful Pirate [Boss]"
 		NameBoss = "Beautiful Pirate"
 		NameQuestBoss = "DeepForestIsland2"             
 		LevelQuestBoss = 3
 		CFrameQuestBoss = CFrame.new(-12686, 391, -9902)
 		CFrameBoss = CFrame.new(5182, 23, -20)
 	elseif _G.Select_Boss == "Cake Queen [Lv. 2175] [Boss]" then
-		MsBoss = "Cake Queen [Lv. 2175] [Boss]"
+		MsBoss = "Cake Queen [Boss]"
 		NameBoss = "Cake Queen"
 		NameQuestBoss = "IceCreamIslandQuest"             
 		LevelQuestBoss = 3
 		CFrameQuestBoss = CFrame.new(-716, 382, -11010)
 		CFrameBoss = CFrame.new(-821, 66, -10965)
 	elseif _G.Select_Boss == "rip_indra True Form [Lv. 5000] [Raid Boss]" then
-		MsBoss = "rip_indra True Form [Lv. 5000] [Raid Boss]"
+		MsBoss = "rip_indra True Form [Raid Boss]"
 		NameBoss = "rip_indra True Form"
 		CFrameBoss = CFrame.new(-5359, 424, -2735)
 	elseif _G.Select_Boss == "Longma [Lv. 2000] [Boss]" then
-		MsBoss = "Longma [Lv. 2000] [Boss]"
+		MsBoss = "Longma [Boss]"
 		NameBoss = "Longma"
 		CFrameBoss = CFrame.new(-10248.3936, 353.79129, -9306.34473)
 	elseif _G.Select_Boss == "Soul Reaper [Lv. 2100] [Raid Boss]" then
-		MsBoss = "Soul Reaper [Lv. 2100] [Raid Boss]"
+		MsBoss = "Soul Reaper [Raid Boss]"
 		NameBoss = "Soul Reaper"
 		CFrameBoss = CFrame.new(-9515.62109, 315.925537, 6691.12012)
 	end
@@ -2393,7 +2393,7 @@ function checkselect()
 	local MyLevel = game.Players.LocalPlayer.Data.Level.Value
 	if World1 then
 		if MyLevel == 1 or MyLevel <= 9 or SelectMonster == "Bandit [Lv. 5]" then -- Bandit
-			Mon = "Bandit [Lv. 5]"
+			Mon = "Bandit"
 			--NameQuest = "BanditQuest1"
 			LevelQuest = 1
 			NameMon = "Bandit"
@@ -2401,7 +2401,7 @@ function checkselect()
 			CFrameMon = CFrame.new(1199.31287, 52.2717781, 1536.91516, -0.929782331, 6.60215846e-08, -0.368109822, 3.9077392e-08, 1, 8.06501603e-08, 0.368109822, 6.06023249e-08, -0.929782331)
 			--Spawn = "Default"
 		elseif MyLevel == 10 or MyLevel <= 14 or SelectMonster == "Monkey [Lv. 14]" then -- Monkey
-			Mon = "Monkey [Lv. 14]"
+			Mon = "Monkey"
 			--NameQuest = "JungleQuest"
 			LevelQuest = 1
 			NameMon = "Monkey"
@@ -2409,7 +2409,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-1502.74609, 98.5633316, 90.6417007, 0.836947978, 0, 0.547282517, -0, 1, -0, -0.547282517, 0, 0.836947978)
 			--Spawn = "Jungle"
 		elseif MyLevel == 15 or MyLevel <= 29 or SelectMonster == "Gorilla [Lv. 20]" then -- Gorilla
-			Mon = "Gorilla [Lv. 20]"
+			Mon = "Gorilla"
 			--NameQuest = "JungleQuest"
 			LevelQuest = 2
 			NameMon = "Gorilla"
@@ -2417,7 +2417,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-1223.52808, 6.27936459, -502.292664, 0.310949147, -5.66602516e-08, 0.950426519, -3.37275488e-08, 1, 7.06501808e-08, -0.950426519, -5.40241736e-08, 0.310949147)
 			--Spawn = "Jungle"
 		elseif MyLevel == 30 or MyLevel <= 39 or SelectMonster == "Pirate [Lv. 35]" then -- Pirate
-			Mon = "Pirate [Lv. 35]"
+			Mon = "Pirate"
 			--NameQuest = "BuggyQuest1"
 			LevelQuest = 1
 			NameMon = "Pirate"
@@ -2425,7 +2425,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-1219.32324, 4.75205183, 3915.63452, -0.966492832, -6.91238853e-08, 0.25669381, -5.21195496e-08, 1, 7.3047012e-08, -0.25669381, 5.72206496e-08, -0.966492832)
 			--Spawn = "Pirate"
 		elseif MyLevel == 40 or MyLevel <= 59 or SelectMonster == "Brute [Lv. 45]" then -- Brute
-			Mon = "Brute [Lv. 45]"
+			Mon = "Brute"
 			--NameQuest = "BuggyQuest1"
 			LevelQuest = 2
 			NameMon = "Brute"
@@ -2433,7 +2433,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-1146.49646, 96.0936813, 4312.1333, -0.978175163, -1.53222057e-08, 0.207781896, -3.33316912e-08, 1, -8.31738873e-08, -0.207781896, -8.82843523e-08, -0.978175163)
 			--Spawn = "Pirate"
 		elseif MyLevel == 60 or MyLevel <= 74 or SelectMonster == "Desert Bandit [Lv. 60]" then -- Desert Bandit
-			Mon = "Desert Bandit [Lv. 60]"
+			Mon = "Desert Bandit"
 			--NameQuest = "DesertQuest"
 			LevelQuest = 1
 			NameMon = "Desert Bandit"
@@ -2441,7 +2441,7 @@ function checkselect()
 			CFrameMon = CFrame.new(932.788818, 6.4503746, 4488.24609, -0.998625934, 3.08948351e-08, 0.0524050146, 2.79967303e-08, 1, -5.60361286e-08, -0.0524050146, -5.44919629e-08, -0.998625934)
 			--Spawn = "Desert"
 		elseif MyLevel == 75 or MyLevel <= 89 or SelectMonster == "Desert Officer [Lv. 70]" then -- Desert Officre
-			Mon = "Desert Officer [Lv. 70]"
+			Mon = "Desert Officer"
 			--NameQuest = "DesertQuest"
 			LevelQuest = 2
 			NameMon = "Desert Officer"
@@ -2449,7 +2449,7 @@ function checkselect()
 			CFrameMon = CFrame.new(1580.03198, 4.61375761, 4366.86426, 0.135744005, -6.44280718e-08, -0.990743816, 4.35738308e-08, 1, -5.90598574e-08, 0.990743816, -3.51534837e-08, 0.135744005)
 			--Spawn = "Desert"
 		elseif MyLevel == 90 or MyLevel <= 99 or SelectMonster == "Snow Bandit [Lv. 90]" then -- Snow Bandits
-			Mon = "Snow Bandit [Lv. 90]"
+			Mon = "Snow Bandit"
 			--NameQuest = "SnowQuest"
 			LevelQuest = 1
 			NameMon = "Snow Bandits"
@@ -2457,7 +2457,7 @@ function checkselect()
 			CFrameMon = CFrame.new(1370.24316, 102.403511, -1411.52905, 0.980274439, -1.12995728e-08, 0.197641045, -9.57343449e-09, 1, 1.04655214e-07, -0.197641045, -1.04482936e-07, 0.980274439)
 			--Spawn = "Ice"
 		elseif MyLevel == 100 or MyLevel <= 119 or SelectMonster == "Snowman [Lv. 100]"  then -- Snowman
-			Mon = "Snowman [Lv. 100]"
+			Mon = "Snowman"
 			--NameQuest = "SnowQuest"
 			LevelQuest = 2
 			NameMon = "Snowman"
@@ -2465,7 +2465,7 @@ function checkselect()
 			CFrameMon = CFrame.new(1370.24316, 102.403511, -1411.52905, 0.980274439, -1.12995728e-08, 0.197641045, -9.57343449e-09, 1, 1.04655214e-07, -0.197641045, -1.04482936e-07, 0.980274439)
 			--Spawn = "Ice"
 		elseif MyLevel == 120 or MyLevel <= 149 or SelectMonster == "Chief Petty Officer [Lv. 120]" then -- Chief Petty Officer
-			Mon = "Chief Petty Officer [Lv. 120]"
+			Mon = "Chief Petty Officer"
 			--NameQuest = "MarineQuest2"
 			LevelQuest = 1
 			NameMon = "Chief Petty Officer"
@@ -2473,7 +2473,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-4882.8623, 22.6520386, 4255.53516, 0.273695946, -5.40380647e-08, -0.96181643, 4.37720793e-08, 1, -4.37274998e-08, 0.96181643, -3.01326679e-08, 0.273695946)
 			--Spawn = "MarineBase"
 		elseif MyLevel == 150 or MyLevel <= 174 or SelectMonster == "Sky Bandit [Lv. 150]" then -- Sky Bandit
-			Mon = "Sky Bandit [Lv. 150]"
+			Mon = "Sky Bandit"
 			--NameQuest = "SkyQuest"
 			LevelQuest = 1
 			NameMon = "Sky Bandit"
@@ -2481,7 +2481,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-4970.74219, 294.544342, -2890.11353, -0.994874597, -8.61311236e-08, -0.101116329, -9.10836206e-08, 1, 4.43614923e-08, 0.101116329, 5.33441664e-08, -0.994874597)
 			--Spawn = "Sky"
 		elseif MyLevel == 175 or MyLevel <= 189 or SelectMonster == "Dark Master [Lv. 175]" then -- Dark Master
-			Mon = "Dark Master [Lv. 175]"
+			Mon = "Dark Master"
 			--NameQuest = "SkyQuest"
 			LevelQuest = 2
 			NameMon = "Dark Master"
@@ -2489,7 +2489,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-5220.58594, 430.693298, -2278.17456, -0.925375521, 1.12086873e-08, 0.379051805, -1.05115507e-08, 1, -5.52320891e-08, -0.379051805, -5.50948407e-08, -0.925375521)
 			--Spawn = "Sky"
 		elseif MyLevel == 190 or MyLevel <= 209 or SelectMonster == "Prisoner [Lv. 190]" then
-			Mon = "Prisoner [Lv. 190]"
+			Mon = "Prisoner"
 			--NameQuest = "PrisonerQuest"
 			LevelQuest = 1
 			NameMon = "Prisoner"
@@ -2497,7 +2497,7 @@ function checkselect()
 			CFrameMon = CFrame.new(5433.39307, 88.678093, 514.986877, 0.879988372, 0, -0.474995494, 0, 1, 0, 0.474995494, 0, 0.879988372)
 			--Spawn = "Prison"
 		elseif MyLevel == 210 or MyLevel <= 249 or SelectMonster == "Dangerous Prisoner [Lv. 210]" then
-			Mon = "Dangerous Prisoner [Lv. 210]"
+			Mon = "Dangerous Prisoner"
 			--NameQuest = "PrisonerQuest"
 			LevelQuest = 2
 			NameMon = "Dangerous Prisoner"
@@ -2505,7 +2505,7 @@ function checkselect()
 			CFrameMon = CFrame.new(5433.39307, 88.678093, 514.986877, 0.879988372, 0, -0.474995494, 0, 1, 0, 0.474995494, 0, 0.879988372)
 			--Spawn = "Prison"
 		elseif MyLevel == 250 or MyLevel <= 274 or SelectMonster == "Toga Warrior [Lv. 225]" then -- Toga Warrior
-			Mon = "Toga Warrior [Lv. 250]"
+			Mon = "Toga Warrior"
 			--NameQuest = "ColosseumQuest"
 			LevelQuest = 1
 			NameMon = "Toga Warrior"
@@ -2513,7 +2513,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-1779.97583, 44.6077499, -2736.35474, 0.984437346, 4.10396339e-08, 0.175734788, -3.62286876e-08, 1, -3.05844168e-08, -0.175734788, 2.3741821e-08, 0.984437346)
 			--Spawn = "Colosseum"
 		elseif MyLevel == 275 or MyLevel <= 299 or SelectMonster == "Gladiator [Lv. 275]" then -- Gladiato
-			Mon = "Gladiator [Lv. 275]"
+			Mon = "Gladiator"
 			--NameQuest = "ColosseumQuest"
 			LevelQuest = 2
 			NameMon = "Gladiato"
@@ -2521,7 +2521,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-1274.75903, 58.1895943, -3188.16309, 0.464524001, 6.21005611e-08, 0.885560572, -4.80449414e-09, 1, -6.76054768e-08, -0.885560572, 2.71497012e-08, 0.464524001)
 			--Spawn = "Colosseum"
 		elseif MyLevel == 300 or MyLevel <= 324 or SelectMonster == "Military Soldier [Lv. 300]" then -- Military Soldier
-			Mon = "Military Soldier [Lv. 300]"
+			Mon = "Military Soldier"
 			--NameQuest = "MagmaQuest"
 			LevelQuest = 1
 			NameMon = "Military Soldier"
@@ -2529,7 +2529,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-5363.01123, 41.5056877, 8548.47266, -0.578253984, -3.29503091e-10, 0.815856814, 9.11209668e-08, 1, 6.498761e-08, -0.815856814, 1.11920997e-07, -0.578253984)
 			--Spawn = "Magma"
 		elseif MyLevel == 325 or MyLevel <= 374 or SelectMonster == "Military Spy [Lv. 330]" then -- Military Spy
-			Mon = "Military Spy [Lv. 325]"
+			Mon = "Military Spy"
 			--NameQuest = "MagmaQuest"
 			LevelQuest = 2
 			NameMon = "Military Spy"
@@ -2537,7 +2537,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-5787.99023, 120.864456, 8762.25293, -0.188358366, -1.84706277e-08, 0.982100308, -1.23782129e-07, 1, -4.93306951e-09, -0.982100308, -1.22495649e-07, -0.188358366)
 			--Spawn = "Magma"
 		elseif MyLevel == 375 or MyLevel <= 399 or SelectMonster == "Fishman Warrior [Lv. 375]" then -- Fishman Warrior
-			Mon = "Fishman Warrior [Lv. 375]"
+			Mon = "Fishman Warrior"
 			--NameQuest = "FishmanQuest"
 			LevelQuest = 1
 			NameMon = "Fishman Warrior"
@@ -2545,7 +2545,7 @@ function checkselect()
 			CFrameMon = CFrame.new(60946.6094, 48.6735229, 1525.91687, -0.0817126185, 8.90751153e-08, 0.996655822, 2.00889794e-08, 1, -8.77269599e-08, -0.996655822, 1.28533992e-08, -0.0817126185)
 			--Spawn = "Fountain"
 		elseif MyLevel == 400 or MyLevel <= 449 or SelectMonster == "Fishman Commando [Lv. 400]" then -- Fishman Commando
-			Mon = "Fishman Commando [Lv. 400]"
+			Mon = "Fishman Commando"
 			--NameQuest = "FishmanQuest"
 			LevelQuest = 2
 			NameMon = "Fishman Commando"
@@ -2553,7 +2553,7 @@ function checkselect()
 			CFrameMon = CFrame.new(61885.5039, 18.4828243, 1504.17896, 0.577502489, 0, -0.816389024, -0, 1.00000012, -0, 0.816389024, 0, 0.577502489)
 			--Spawn = "Fountain"
 		elseif MyLevel == 450 or MyLevel <= 474 or SelectMonster == "God's Guard [Lv. 450]" then -- God's Guards
-			Mon = "God's Guard [Lv. 450]"
+			Mon = "God's Guard"
 			--NameQuest = "SkyExp1Quest"
 			LevelQuest = 1
 			NameMon = "God's Guards"
@@ -2562,7 +2562,7 @@ function checkselect()
 			--Spawn = "Sky"
 		elseif MyLevel == 475 or MyLevel <= 524 or SelectMonster == "Shanda [Lv. 475]" then -- Shandas
 			sky = false
-			Mon = "Shanda [Lv. 475]"
+			Mon = "Shanda"
 			--NameQuest = "SkyExp1Quest"
 			LevelQuest = 2
 			NameMon = "Shandas"
@@ -2571,7 +2571,7 @@ function checkselect()
 			--Spawn = "Sky"
 		elseif MyLevel == 525 or MyLevel <= 549 or SelectMonster == "Royal Squad [Lv. 525]" then -- Royal Squad
 			sky = true
-			Mon = "Royal Squad [Lv. 525]"
+			Mon = "Royal Squad"
 			--NameQuest = "SkyExp2Quest"
 			LevelQuest = 1
 			NameMon = "Royal Squad"
@@ -2581,7 +2581,7 @@ function checkselect()
 		elseif MyLevel == 550 or MyLevel <= 624 or SelectMonster == "Royal Soldier [Lv. 550]" then -- Royal Soldier
 			Dis = 240
 			sky = true
-			Mon = "Royal Soldier [Lv. 550]"
+			Mon = "Royal Soldier"
 			--NameQuest = "SkyExp2Quest"
 			LevelQuest = 2
 			NameMon = "Royal Soldier"
@@ -2591,7 +2591,7 @@ function checkselect()
 		elseif MyLevel == 625 or MyLevel <= 649 or SelectMonster == "Galley Pirate [Lv. 625]" then -- Galley Pirate
 			Dis = 240
 			sky = false
-			Mon = "Galley Pirate [Lv. 625]"
+			Mon = "Galley Pirate"
 			--NameQuest = "FountainQuest"
 			LevelQuest = 1
 			NameMon = "Galley Pirate"
@@ -2600,7 +2600,7 @@ function checkselect()
 			--Spawn = "Fountain"
 		elseif MyLevel >= 650 or SelectMonster == "Galley Captain [Lv. 650]" then -- Galley Captain
 			Dis = 240
-			Mon = "Galley Captain [Lv. 650]"
+			Mon = "Galley Captain"
 			--NameQuest = "FountainQuest"
 			LevelQuest = 2
 			NameMon = "Galley Captain"
@@ -2610,7 +2610,7 @@ function checkselect()
 		end
 	elseif World2 then
 		if MyLevel == 700 or MyLevel <= 724 or SelectMonster == "Raider [Lv. 700]" then -- Raider [Lv. 700]
-			Mon = "Raider [Lv. 700]"
+			Mon = "Raider"
 			--NameQuest = "Area1Quest"
 			LevelQuest = 1
 			NameMon = "Raider"
@@ -2618,7 +2618,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-737.026123, 39.1748352, 2392.57959, 0.272128761, 0, -0.962260842, -0, 1, -0, 0.962260842, 0, 0.272128761)
 			--Spawn = "DressTown"
 		elseif MyLevel == 725 or MyLevel <= 774 or SelectMonster == "Mercenary [Lv. 725]" then -- Mercenary [Lv. 725]
-			Mon = "Mercenary [Lv. 725]"
+			Mon = "Mercenary"
 			--NameQuest = "Area1Quest"
 			LevelQuest = 2
 			NameMon = "Mercenary"
@@ -2626,7 +2626,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-973.731995, 95.8733215, 1836.46936, 0.999135971, 2.02326991e-08, -0.0415605344, -1.90767793e-08, 1, 2.82094952e-08, 0.0415605344, -2.73922804e-08, 0.999135971)
 			--Spawn = "DressTown"
 		elseif MyLevel == 775 or MyLevel <= 799 or SelectMonster == "Swan Pirate [Lv. 775]" then -- Swan Pirate [Lv. 775]
-			Mon = "Swan Pirate [Lv. 775]"
+			Mon = "Swan Pirate"
 			--NameQuest = "Area2Quest"
 			LevelQuest = 1
 			NameMon = "Swan Pirate"
@@ -2634,7 +2634,7 @@ function checkselect()
 			CFrameMon = CFrame.new(970.369446, 142.653198, 1217.3667, 0.162079468, -4.85452638e-08, -0.986777723, 1.03357589e-08, 1, -4.74980872e-08, 0.986777723, -2.50063148e-09, 0.162079468)
 			--Spawn = "DressTown"
 		elseif MyLevel == 800 or MyLevel <= 874 or SelectMonster == "Factory Staff [Lv. 800]" then -- Factory Staff [Lv. 800]
-			Mon = "Factory Staff [Lv. 800]"
+			Mon = "Factory Staff"
 			--NameQuest = "Area2Quest"
 			LevelQuest = 2
 			NameMon = "Factory Staff"
@@ -2642,7 +2642,7 @@ function checkselect()
 			CFrameMon = CFrame.new(296.786499, 72.9948196, -57.1298141, -0.876037002, -5.32364979e-08, 0.482243896, -3.87658332e-08, 1, 3.99718729e-08, -0.482243896, 1.63222538e-08, -0.876037002)
 			--Spawn = "DressTown"
 		elseif MyLevel == 875 or MyLevel <= 899 or SelectMonster == "Marine Lieutenant [Lv. 875]" then -- Marine Lieutenant [Lv. 875]
-			Mon = "Marine Lieutenant [Lv. 875]"
+			Mon = "Marine Lieutenant"
 			--NameQuest = "MarineQuest3"
 			LevelQuest = 1
 			NameMon = "Marine Lieutenant"
@@ -2650,7 +2650,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-2913.26367, 73.0011826, -2971.64282, 0.910507619, 0, 0.413492233, 0, 1.00000012, 0, -0.413492233, 0, 0.910507619)
 			--Spawn = "Greenb"
 		elseif MyLevel == 900 or MyLevel <= 949 or SelectMonster == "Marine Captain [Lv. 900]" then -- Marine Captain [Lv. 900]
-			Mon = "Marine Captain [Lv. 900]"
+			Mon = "Marine Captain"
 			--NameQuest = "MarineQuest3"
 			LevelQuest = 2
 			NameMon = "Marine Captain"
@@ -2658,7 +2658,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-1868.67688, 73.0011826, -3321.66333, -0.971402287, 1.06502087e-08, 0.237439692, 3.68856199e-08, 1, 1.06050372e-07, -0.237439692, 1.11775684e-07, -0.971402287)
 			--Spawn = "Greenb"
 		elseif MyLevel == 950 or MyLevel <= 974 or SelectMonster == "Zombie [Lv. 950]" then -- Zombie [Lv. 950]
-			Mon = "Zombie [Lv. 950]"
+			Mon = "Zombie"
 			--NameQuest = "ZombieQuest"
 			LevelQuest = 1
 			NameMon = "Zombie"
@@ -2666,7 +2666,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-5634.83838, 126.067039, -697.665039, -0.992770672, 6.77618939e-09, 0.120025545, 1.65461245e-08, 1, 8.04023372e-08, -0.120025545, 8.18070234e-08, -0.992770672)
 			--Spawn = "Graveyard"
 		elseif MyLevel == 975 or MyLevel <= 999 or SelectMonster == "Vampire [Lv. 975]" then -- Vampire [Lv. 975]
-			Mon = "Vampire [Lv. 975]"
+			Mon = "Vampire"
 			--NameQuest = "ZombieQuest"
 			LevelQuest = 2
 			NameMon = "Vampire"
@@ -2674,7 +2674,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-6030.32031, 6.4377408, -1313.5564, -0.856965423, 3.9138893e-08, -0.515373945, -1.12178942e-08, 1, 9.45958547e-08, 0.515373945, 8.68467822e-08, -0.856965423)
 			--Spawn = "Graveyard"
 		elseif MyLevel == 1000 or MyLevel <= 1049 or SelectMonster == "Snow Trooper [Lv. 1000]" then -- Snow Trooper [Lv. 1000] **
-			Mon = "Snow Trooper [Lv. 1000]"
+			Mon = "Snow Trooper"
 			--NameQuest = "SnowMountainQuest"
 			LevelQuest = 1
 			NameMon = "Snow Trooper"
@@ -2682,7 +2682,7 @@ function checkselect()
 			CFrameMon = CFrame.new(535.893433, 401.457062, -5329.6958, -0.999524176, 0, 0.0308452044, 0, 1, -0, -0.0308452044, 0, -0.999524176)
 			--Spawn = "Snowy"
 		elseif MyLevel == 1050 or MyLevel <= 1099 or SelectMonster == "Winter Warrior [Lv. 1050]" then -- Winter Warrior [Lv. 1050]
-			Mon = "Winter Warrior [Lv. 1050]"
+			Mon = "Winter Warrior"
 			--NameQuest = "SnowMountainQuest"
 			LevelQuest = 2
 			NameMon = "Winter Warrior"
@@ -2690,7 +2690,7 @@ function checkselect()
 			CFrameMon = CFrame.new(1223.7417, 454.575226, -5170.02148, 0.473996818, 2.56845354e-08, 0.880526543, -5.62456428e-08, 1, 1.10811016e-09, -0.880526543, -5.00510211e-08, 0.473996818)
 			--Spawn = "Snowy"
 		elseif MyLevel == 1100 or MyLevel <= 1124 or SelectMonster == "Lab Subordinate [Lv. 1100]" then -- Lab Subordinate [Lv. 1100]
-			Mon = "Lab Subordinate [Lv. 1100]"
+			Mon = "Lab Subordinate"
 			--NameQuest = "IceSideQuest"
 			LevelQuest = 1
 			NameMon = "Lab Subordinate"
@@ -2698,7 +2698,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-5769.2041, 37.9288292, -4468.38721, -0.569419742, -2.49055017e-08, 0.822046936, -6.96206541e-08, 1, -1.79282633e-08, -0.822046936, -6.74401548e-08, -0.569419742)
 			--Spawn = "CircleIslandIce"
 		elseif MyLevel == 1125 or MyLevel <= 1174 or SelectMonster == "Horned Warrior [Lv. 1125]" then -- Horned Warrior [Lv. 1125]
-			Mon = "Horned Warrior [Lv. 1125]"
+			Mon = "Horned Warrior"
 			--NameQuest = "IceSideQuest"
 			LevelQuest = 2
 			NameMon = "Horned Warrior"
@@ -2706,7 +2706,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-6400.85889, 24.7645149, -5818.63574, -0.964845479, 8.65926566e-08, -0.262817472, 3.98261392e-07, 1, -1.13260398e-06, 0.262817472, -1.19745812e-06, -0.964845479)
 			--Spawn = "CircleIslandIce"
 		elseif MyLevel == 1175 or MyLevel <= 1199 or SelectMonster == "Magma Ninja [Lv. 1175]" then -- Magma Ninja [Lv. 1175]
-			Mon = "Magma Ninja [Lv. 1175]"
+			Mon = "Magma Ninja"
 			--NameQuest = "FireSideQuest"
 			LevelQuest = 1
 			NameMon = "Magma Ninja"
@@ -2714,7 +2714,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-5496.65576, 58.6890411, -5929.76855, -0.885073781, 0, -0.465450764, 0, 1.00000012, -0, 0.465450764, 0, -0.885073781)
 			--Spawn = "CircleIslandFire"
 		elseif MyLevel == 1200 or MyLevel <= 1249 or SelectMonster == "Lava Pirate [Lv. 1200]" then -- Lava Pirate [Lv. 1200]
-			Mon = "Lava Pirate [Lv. 1200]"
+			Mon = "Lava Pirate"
 			--NameQuest = "FireSideQuest"
 			LevelQuest = 2
 			NameMon = "Lava Pirate"
@@ -2722,7 +2722,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-5169.71729, 34.1234779, -4669.73633, -0.196780294, 0, 0.98044765, 0, 1.00000012, -0, -0.98044765, 0, -0.196780294)
 			--Spawn = "CircleIslandFire"
 		elseif MyLevel == 1250 or MyLevel <= 1274 or SelectMonster == "Ship Deckhand [Lv. 1250]" then -- Ship Deckhand [Lv. 1250]
-			Mon = "Ship Deckhand [Lv. 1250]"
+			Mon = "Ship Deckhand"
 			--NameQuest = "ShipQuest1"
 			LevelQuest = 1
 			NameMon = "Ship Deckhand"
@@ -2730,7 +2730,7 @@ function checkselect()
 			CFrameMon = CFrame.new(1163.80872, 138.288452, 33058.4258, -0.998580813, 5.49076979e-08, -0.0532564968, 5.57436763e-08, 1, -1.42118655e-08, 0.0532564968, -1.71604082e-08, -0.998580813)
 			--Spawn = "Ship"
 		elseif MyLevel == 1275 or MyLevel <= 1299 or SelectMonster == "Ship Engineer [Lv. 1275]"  then -- Ship Engineer [Lv. 1275]
-			Mon = "Ship Engineer [Lv. 1275]"
+			Mon = "Ship Engineer"
 			--NameQuest = "ShipQuest1"
 			LevelQuest = 2
 			NameMon = "Ship Engineer"
@@ -2738,7 +2738,7 @@ function checkselect()
 			CFrameMon = CFrame.new(916.666504, 44.0920448, 32917.207, -0.99746871, -4.85034697e-08, -0.0711069331, -4.8925461e-08, 1, 4.19294288e-09, 0.0711069331, 7.66126895e-09, -0.99746871)
 			--Spawn = "Ship"
 		elseif MyLevel == 1300 or MyLevel <= 1324 or SelectMonster == "Ship Steward [Lv. 1300]" then -- Ship Steward [Lv. 1300]
-			Mon = "Ship Steward [Lv. 1300]"
+			Mon = "Ship Steward"
 			--NameQuest = "ShipQuest2"
 			LevelQuest = 1
 			NameMon = "Ship Steward"
@@ -2746,7 +2746,7 @@ function checkselect()
 			CFrameMon = CFrame.new(918.743286, 129.591064, 33443.4609, -0.999792814, -1.7070947e-07, -0.020350717, -1.72559169e-07, 1, 8.91351277e-08, 0.020350717, 9.2628369e-08, -0.999792814)
 			--Spawn = "Ship"
 		elseif MyLevel == 1325 or MyLevel <= 1349 or SelectMonster == "Ship Officer [Lv. 1325]" then -- Ship Officer [Lv. 1325]
-			Mon = "Ship Officer [Lv. 1325]"
+			Mon = "Ship Officer"
 			--NameQuest = "ShipQuest2"
 			LevelQuest = 2
 			NameMon = "Ship Officer"
@@ -2754,7 +2754,7 @@ function checkselect()
 			CFrameMon = CFrame.new(786.051941, 181.474106, 33303.2969, 0.999285698, -5.32193063e-08, 0.0377905183, 5.68968588e-08, 1, -9.62386864e-08, -0.0377905183, 9.83201005e-08, 0.999285698)
 			--Spawn = "Ship"
 		elseif MyLevel == 1350 or MyLevel <= 1374 or SelectMonster == "Arctic Warrior [Lv. 1350]" then -- Arctic Warrior [Lv. 1350]
-			Mon = "Arctic Warrior [Lv. 1350]"
+			Mon = "Arctic Warrior"
 			--NameQuest = "FrostQuest"
 			LevelQuest = 1
 			NameMon = "Arctic Warrior"
@@ -2762,7 +2762,7 @@ function checkselect()
 			CFrameMon = CFrame.new(5995.07471, 57.3188477, -6183.47314, 0.702747107, -1.53454167e-07, -0.711440146, -1.08168464e-07, 1, -3.22542007e-07, 0.711440146, 3.03620908e-07, 0.702747107)
 			--Spawn = "IceCastle"
 		elseif MyLevel == 1375 or MyLevel <= 1424 or SelectMonster == "Snow Lurker [Lv. 1375]" then -- Snow Lurker [Lv. 1375]
-			Mon = "Snow Lurker [Lv. 1375]"
+			Mon = "Snow Lurker"
 			--NameQuest = "FrostQuest"
 			LevelQuest = 2
 			NameMon = "Snow Lurker"
@@ -2770,7 +2770,7 @@ function checkselect()
 			CFrameMon = CFrame.new(5518.00684, 60.5559731, -6828.80518, -0.650781393, -3.64292951e-08, 0.759265184, -4.07668654e-09, 1, 4.44854642e-08, -0.759265184, 2.58550248e-08, -0.650781393)
 			--Spawn = "IceCastle"
 		elseif MyLevel == 1425 or MyLevel <= 1449 or SelectMonster == "Sea Soldier [Lv. 1425]" then -- Sea Soldier [Lv. 1425]
-			Mon = "Sea Soldier [Lv. 1425]"
+			Mon = "Sea Soldier"
 			--NameQuest = "ForgottenQuest"
 			LevelQuest = 1
 			NameMon = "Sea Soldier"
@@ -2778,7 +2778,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-3029.78467, 66.944252, -9777.38184, -0.998552859, 1.09555076e-08, 0.0537791774, 7.79564235e-09, 1, -5.89660658e-08, -0.0537791774, -5.84614881e-08, -0.998552859)
 			--Spawn = "ForgottenIsland"
 		elseif MyLevel >= 1450 or SelectMonster == "Water Fighter [Lv. 1450]" then -- Water Fighter [Lv. 1450]
-			Mon = "Water Fighter [Lv. 1450]"
+			Mon = "Water Fighter"
 			--NameQuest = "ForgottenQuest"
 			LevelQuest = 2
 			NameMon = "Water Fighter"
@@ -2788,7 +2788,7 @@ function checkselect()
 		end
 	elseif World3 then
 		if MyLevel == 1500 or MyLevel <= 1524 or SelectMonster == "Pirate Millionaire [Lv. 1500]" then
-			Mon = "Pirate Millionaire [Lv. 1500]"
+			Mon = "Pirate Millionaire"
 			--NameQuest = "PiratePortQuest"
 			LevelQuest = 1
 			NameMon = "Pirate Millionaire"
@@ -2796,7 +2796,7 @@ function checkselect()
 			CFrameMon = CFrame.new(81.164993286133, 43.755737304688, 5724.7021484375)
 			--Spawn = "Default"
 		elseif MyLevel == 1525 or MyLevel <= 1574 or SelectMonster == "Pistol Billionaire [Lv. 1525]" then
-			Mon = "Pistol Billionaire [Lv. 1525]"
+			Mon = "Pistol Billionaire"
 			--NameQuest = "PiratePortQuest"
 			LevelQuest = 2
 			NameMon = "Pistol Billionaire"
@@ -2804,7 +2804,7 @@ function checkselect()
 			CFrameMon = CFrame.new(81.164993286133, 43.755737304688, 5724.7021484375)
 			--Spawn = "Default"
 		elseif MyLevel == 1575 or MyLevel <= 1599 or SelectMonster == "Dragon Crew Warrior [Lv. 1575]" then
-			Mon = "Dragon Crew Warrior [Lv. 1575]"
+			Mon = "Dragon Crew Warrior"
 			--NameQuest = "AmazonQuest"
 			LevelQuest = 1
 			NameMon = "Dragon Crew Warrior"
@@ -2812,7 +2812,7 @@ function checkselect()
 			CFrameMon = CFrame.new(6241.9951171875, 51.522083282471, -1243.9771728516)
 			--Spawn = "Hydra3"
 		elseif MyLevel == 1600 or MyLevel <= 1624 or SelectMonster == "Dragon Crew Archer [Lv. 1600]" then
-			Mon = "Dragon Crew Archer [Lv. 1600]"
+			Mon = "Dragon Crew Archer"
 			--NameQuest = "AmazonQuest"
 			LevelQuest = 2
 			NameMon = "Dragon Crew Archer"
@@ -2820,7 +2820,7 @@ function checkselect()
 			CFrameMon = CFrame.new(6488.9155273438, 383.38375854492, -110.66246032715)
 			--Spawn = "Hydra3"
 		elseif MyLevel == 1625 or MyLevel <= 1649 or SelectMonster == "Female Islander [Lv. 1625]" then
-			Mon = "Female Islander [Lv. 1625]"
+			Mon = "Female Islander"
 			--NameQuest = "AmazonQuest2"
 			LevelQuest = 1
 			NameMon = "Female Islander"
@@ -2828,7 +2828,7 @@ function checkselect()
 			CFrameMon = CFrame.new(4770.4990234375, 758.95520019531, 1069.8680419922)
 			--Spawn = "Hydra1"
 		elseif MyLevel == 1650 or MyLevel <= 1699 or SelectMonster == "Giant Islander [Lv. 1650]" then
-			Mon = "Giant Islander [Lv. 1650]"
+			Mon = "Giant Islander"
 			--NameQuest = "AmazonQuest2"
 			LevelQuest = 2
 			NameMon = "Giant Islander"
@@ -2836,7 +2836,7 @@ function checkselect()
 			CFrameMon = CFrame.new(4530.3540039063, 656.75695800781, -131.60952758789)
 			--Spawn = "Hydra1"
 		elseif MyLevel == 1700 or MyLevel <= 1724 or SelectMonster == "Marine Commodore [Lv. 1700]" then
-			Mon = "Marine Commodore [Lv. 1700]"
+			Mon = "Marine Commodore"
 			--NameQuest = "MarineTreeIsland"
 			LevelQuest = 1
 			NameMon = "Marine Commodore"
@@ -2844,7 +2844,7 @@ function checkselect()
 			CFrameMon = CFrame.new(2490.0844726563, 190.4232635498, -7160.0502929688)
 			--Spawn = "GreatTree"
 		elseif MyLevel == 1725 or MyLevel <= 1774 or SelectMonster == "Marine Rear Admiral [Lv. 1725]" then
-			Mon = "Marine Rear Admiral [Lv. 1725]"
+			Mon = "Marine Rear Admiral"
 			--NameQuest = "MarineTreeIsland"
 			LevelQuest = 2
 			NameMon = "Marine Rear Admiral"
@@ -2852,7 +2852,7 @@ function checkselect()
 			CFrameMon = CFrame.new(3951.3903808594, 229.11549377441, -6912.81640625)
 			--Spawn = "GreatTree"
 		elseif MyLevel == 1775 or MyLevel <= 1799 or SelectMonster == "Fishman Raider [Lv. 1775]" then
-			Mon = "Fishman Raider [Lv. 1775]"
+			Mon = "Fishman Raider"
 			--NameQuest = "DeepForestIsland3"
 			LevelQuest = 1
 			NameMon = "Fishman Raider"
@@ -2860,7 +2860,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-10322.400390625, 390.94473266602, -8580.0908203125)
 			--Spawn = "PineappleTown"
 		elseif MyLevel == 1800 or MyLevel <= 1824 or SelectMonster == "Fishman Captain [Lv. 1800]" then
-			Mon = "Fishman Captain [Lv. 1800]"
+			Mon = "Fishman Captain"
 			--NameQuest = "DeepForestIsland3"
 			LevelQuest = 2
 			NameMon = "Fishman Captain"
@@ -2868,7 +2868,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-11194.541992188, 442.02795410156, -8608.806640625)
 			--Spawn = "PineappleTown"
 		elseif MyLevel == 1825 or MyLevel <= 1849 or SelectMonster == "Forest Pirate [Lv. 1825]" then
-			Mon = "Forest Pirate [Lv. 1825]"
+			Mon = "Forest Pirate"
 			--NameQuest = "DeepForestIsland"
 			LevelQuest = 1
 			NameMon = "Forest Pirate"
@@ -2876,7 +2876,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-13225.809570313, 428.19387817383, -7753.1245117188)
 			--Spawn = "BigMansion"
 		elseif MyLevel == 1850 or MyLevel <= 1899 or SelectMonster == "Mythological Pirate [Lv. 1850]" then
-			Mon = "Mythological Pirate [Lv. 1850]"
+			Mon = "Mythological Pirate"
 			--NameQuest = "DeepForestIsland"
 			LevelQuest = 2
 			NameMon = "Mythological Pirate"
@@ -2884,7 +2884,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-13869.172851563, 564.95251464844, -7084.4135742188)
 			--Spawn = "BigMansion"
 		elseif MyLevel == 1900 or MyLevel <= 1924 or SelectMonster == "Jungle Pirate [Lv. 1900]" then
-			Mon = "Jungle Pirate [Lv. 1900]"
+			Mon = "Jungle Pirate"
 			--NameQuest = "DeepForestIsland2"
 			LevelQuest = 1
 			NameMon = "Jungle Pirate"
@@ -2892,7 +2892,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-11982.221679688, 376.32522583008, -10451.415039063)
 			--Spawn = "PineappleTown"
 		elseif MyLevel == 1925 or MyLevel <= 1974 or SelectMonster == "Musketeer Pirate [Lv. 1925]" then
-			Mon = "Musketeer Pirate [Lv. 1925]"
+			Mon = "Musketeer Pirate"
 			--NameQuest = "DeepForestIsland2"
 			LevelQuest = 2
 			NameMon = "Musketeer Pirate"
@@ -2900,7 +2900,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-13282.3046875, 496.23684692383, -9565.150390625)
 			--Spawn = "PineappleTown"
 		elseif MyLevel == 1975 or MyLevel <= 1999 or SelectMonster == "Reborn Skeleton [Lv. 1975]" then
-			Mon = "Reborn Skeleton [Lv. 1975]"
+			Mon = "Reborn Skeleton"
 			--NameQuest = "HauntedQuest1"
 			LevelQuest = 1
 			NameMon = "Reborn Skeleton"
@@ -2908,7 +2908,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-8761.3154296875, 164.85829162598, 6161.1567382813)
 			--Spawn = "HauntedCastle"
 		elseif MyLevel == 2000 or MyLevel <= 2024 or SelectMonster == "Living Zombie [Lv. 2000]" then
-			Mon = "Living Zombie [Lv. 2000]"
+			Mon = "Living Zombie"
 			--NameQuest = "HauntedQuest1"
 			LevelQuest = 2
 			NameMon = "Living Zombie"
@@ -2916,7 +2916,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-10093.930664063, 237.38233947754, 6180.5654296875)
 			--Spawn = "HauntedCastle"
 		elseif MyLevel == 2025 or MyLevel <= 2049 or SelectMonster == "Demonic Soul [Lv. 2025]" then
-			Mon = "Demonic Soul [Lv. 2025]"
+			Mon = "Demonic Soul"
 			--NameQuest = "HauntedQuest2"
 			LevelQuest = 1
 			NameMon = "Demonic Soul"
@@ -2924,7 +2924,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-9466.72949, 171.162918, 6132.01514)
 			--Spawn = "HauntedCastle"
 		elseif MyLevel == 2050 or MyLevel <= 2074 or SelectMonster == "Posessed Mummy [Lv. 2050]" then
-			Mon = "Posessed Mummy [Lv. 2050]" 
+			Mon = "Posessed Mummy" 
 			--NameQuest = "HauntedQuest2"
 			LevelQuest = 2
 			NameMon = "Posessed Mummy"
@@ -2932,7 +2932,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-9589.93848, 4.85058546, 6190.27197)
 			--Spawn = "HauntedCastle"
 		elseif MyLevel == 2075 or MyLevel <= 2099 or SelectMonster == "Peanut Scout [Lv. 2075]" then
-			Mon = "Peanut Scout [Lv. 2075]"
+			Mon = "Peanut Scout"
 			--NameQuest = "NutsIslandQuest"
 			LevelQuest = 1
 			NameMon = "Peanut Scout"
@@ -2940,7 +2940,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-2150.587890625, 122.49767303467, -10358.994140625)
 			--Spawn = "Peanut"
 		elseif MyLevel == 2100 or MyLevel <= 2124 or SelectMonster == "Peanut President [Lv. 2100]" then
-			Mon = "Peanut President [Lv. 2100]"
+			Mon = "Peanut President"
 			--NameQuest = "NutsIslandQuest"
 			LevelQuest = 2
 			NameMon = "Peanut President"
@@ -2948,7 +2948,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-2150.587890625, 122.49767303467, -10358.994140625)
 			--Spawn = "Peanut"
 		elseif MyLevel == 2125 or MyLevel <= 2149 or SelectMonster == "Ice Cream Chef [Lv. 2125]" then
-			Mon = "Ice Cream Chef [Lv. 2125]"
+			Mon = "Ice Cream Chef"
 			--NameQuest = "IceCreamIslandQuest"
 			LevelQuest = 1
 			NameMon = "Ice Cream Chef"
@@ -2956,7 +2956,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-890.55895996094, 186.34135437012, -11127.306640625)
 			--Spawn = "IceCream"
 		elseif MyLevel == 2150 or MyLevel <= 2199 or SelectMonster == "Ice Cream Commander [Lv. 2150]" then
-			Mon = "Ice Cream Commander [Lv. 2150]"
+			Mon = "Ice Cream Commander"
 			--NameQuest = "IceCreamIslandQuest"
 			LevelQuest = 2
 			NameMon = "Ice Cream Commander"
@@ -2964,7 +2964,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-890.55895996094, 186.34135437012, -11127.306640625)
 			--Spawn = "IceCream"
 		elseif MyLevel == 2200 or MyLevel <= 2224 or SelectMonster == "Cookie Crafter [Lv. 2200]" then
-			Mon = "Cookie Crafter [Lv. 2200]"
+			Mon = "Cookie Crafter"
 			--NameQuest = "CakeQuest1"
 			LevelQuest = 1
 			NameMon = "Cookie Crafter"
@@ -2972,7 +2972,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-2273.00244140625, 90.22590637207031, -12151.62109375)
 			--Spawn = "Loaf"
 		elseif MyLevel == 2225 or MyLevel <= 2249 or SelectMonster == "Cake Guard [Lv. 2225]" then
-			Mon = "Cake Guard [Lv. 2225]"
+			Mon = "Cake Guard"
 			--NameQuest = "CakeQuest1"
 			LevelQuest = 2
 			NameMon = "Cake Guard"
@@ -2980,7 +2980,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-1442.373046875, 158.14111328125, -12277.37109375)
 			--Spawn = "Loaf"
 		elseif MyLevel == 2250 or MyLevel <= 2274 or SelectMonster == "Baking Staff [Lv. 2250]" then
-			Mon = "Baking Staff [Lv. 2250]"
+			Mon = "Baking Staff"
 			--NameQuest = "CakeQuest2"
 			LevelQuest = 1
 			NameMon = "Baking Staff"
@@ -2988,7 +2988,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-1837.2803955078125, 129.0594482421875, -12934.5498046875)
 			--Spawn = "Loaf"
 		elseif MyLevel == 2275 or MyLevel <= 2299 or SelectMonster == "Head Baker [Lv. 2275]" then
-			Mon = "Head Baker [Lv. 2275]"
+			Mon = "Head Baker"
 			--NameQuest = "CakeQuest2"
 			LevelQuest = 2
 			NameMon = "Head Baker"
@@ -2996,7 +2996,7 @@ function checkselect()
 			CFrameMon = CFrame.new(-2203.302490234375, 109.90937042236328, -12788.7333984375)
 			--Spawn = "Loaf"
 		elseif MyLevel == 2300 or MyLevel <= 2324 or SelectMonster == "Cocoa Warrior [Lv. 2300]" then
-			Mon = "Cocoa Warrior [Lv. 2300]"
+			Mon = "Cocoa Warrior"
 			--NameQuest = "ChocQuest1"
 			LevelQuest = 1
 			NameMon = "Cocoa Warrior"
@@ -3004,7 +3004,7 @@ function checkselect()
 			CFrameMon = CFrame.new(231.13571166992188, 24.734268188476562, -12195.1162109375)
 			--Spawn = "Chocolate"
 		elseif MyLevel == 2325 or MyLevel <= 2349 or SelectMonster == "Chocolate Bar Battler [Lv. 2325]" then
-			Mon = "Chocolate Bar Battler [Lv. 2325]"
+			Mon = "Chocolate Bar Battler"
 			--NameQuest = "ChocQuest1"
 			LevelQuest = 2
 			NameMon = "Chocolate Bar Battler"
@@ -3012,7 +3012,7 @@ function checkselect()
 			CFrameMon = CFrame.new(231.13571166992188, 24.734268188476562, -12195.1162109375)
 			--Spawn = "Chocolate"
 		elseif MyLevel == 2350 or MyLevel <= 2374 or SelectMonster == "Sweet Thief [Lv. 2350]" then
-			Mon = "Sweet Thief [Lv. 2350]"
+			Mon = "Sweet Thief"
 			--NameQuest = "ChocQuest2"
 			LevelQuest = 1
 			NameMon = "Sweet Thief"
@@ -3020,7 +3020,7 @@ function checkselect()
 			CFrameMon = CFrame.new(147.52256774902344, 24.793832778930664, -12775.3583984375)
 			--Spawn = "Chocolate"
 		elseif MyLevel == 2375 or MyLevel <= 2400 or SelectMonster == "Candy Rebel [Lv. 2375]" then
-			Mon = "Candy Rebel [Lv. 2375]"
+			Mon = "Candy Rebel"
 			--NameQuest = "ChocQuest2"
 			LevelQuest = 2
 			NameMon = "Candy Rebel"
@@ -3029,7 +3029,7 @@ function checkselect()
 			--Spawn = "Chocolate"
 		elseif MyLevel == 2400 or MyLevel <= 2424 or SelectMonster == "Candy Pirate [Lv. 2400]" then
 
-			Mon = "Candy Pirate [Lv. 2400]"
+			Mon = "Candy Pirate"
 			QuestName = "CandyQuest1"
 
 			LevelQuest = 1
@@ -3043,7 +3043,7 @@ function checkselect()
 		elseif MyLevel >= 2425 or SelectMonster == "Snow Demon [Lv. 2425]" then
 
 
-			Mon = "Snow Demon [Lv. 2425]"
+			Mon = "Snow Demon"
 			QuestName = "CandyQuest1"
 
 			LevelQuest = 2

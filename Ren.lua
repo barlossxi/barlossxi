@@ -4512,8 +4512,8 @@ end)
 
 local AttackList = {"0", "0.1", "0.15", "0.155", "0.16", "0.165", "0.17", "0.175", "0.18", "0.185"}
 _G.FastAttackDelay = "0.175"
-Main:AddDropdown("Fast Attack Delay", AttackList,function(MakoGay)
-    _G.FastAttackDelay = MakoGay
+Main:Dropdown("เลือกตีไว",AttackList,function(value)
+    _G.FastAttackDelay = value
 end)
 spawn(function()
     while wait(.1) do

@@ -10071,22 +10071,22 @@ end)
     
 FrozenIsland = Item:AddLabel("")
      
-    MM:Toggle("Auto Frozen Dimension",_G.AutoFrozenDimension,function(value)
+    MM:Toggle("เกาะเลเวน",false,function(value)
     _G.AutoFrozenDimension = value
     StopTween(_G.AutoFrozenDimension)
     end)
     
-    MM:Seperator("Kitsunen")
+    MM:Seperator(" เกาะคิสึเนะ ")
         
     FaiFaoKai = MM:AddLabel("")
     
     
-    MM:Toggle("Teleport To Kitsunen Island",_G.AutoFKitsune,function(value)
+    MM:Toggle("วาปเกาะคิสึเนะ",false,function(value)
     _G.AutoFKitsune = value
     StopTween(_G.AutoFKitsune)
     end)
     
-    MM:Toggle("Auto Azuer Ember",_G.AutoAzuerEmber,function(value)
+    MM:Toggle("เก็บลูกไฟ",false,function(value)
     _G.AutoAzuerEmber = value
     StopTween(_G.AutoAzuerEmber)
     end)
@@ -10127,7 +10127,7 @@ FrozenIsland = Item:AddLabel("")
         end)
     end)
     
-    MM:Toggle("Send Notification If Kitsunen Island Spwan",_G.KisuneWarn,function(value)
+    MM:Toggle("คุยกับหิน",false,function(value)
     _G.KisuneWarn = value
     end)
     

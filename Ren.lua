@@ -10056,30 +10056,6 @@ spawn(function()
 end)
 
 
-spawn(function()
-    pcall(function()
-        while wait() do
-            if game.Workspace._WorldOrigin.Locations:FindFirstChild('Frozen Dimension') then
-                FrozenIsland:Set('🟢: Frozen Dimension Spawning')
-            else
-                FrozenIsland:Set('🔴: Frozen Dimension Not Found')
-            end
-        end
-    end)
-end)
-
-spawn(function()
-    pcall(function()
-        while wait() do
-            if game.Workspace._WorldOrigin.Locations:FindFirstChild('Kitsunen Island') then
-                FaiFaoKai:Set('🦊: Kitsunen Spwan')
-            else
-                FaiFaoKai:Set('🔴: Kitsunen Not Found')
-            end
-        end
-    end)
-end)
-
      
     MM:Toggle("Auto Frozen Dimension",_G.AutoFrozenDimension,function(value)
     _G.AutoFrozenDimension = value
@@ -10161,3 +10137,28 @@ notification.Volume = 5 --ระวังหูแตก
             end
         end
     end)
+    
+    
+    spawn(function()
+    pcall(function()
+        while wait() do
+            if game.Workspace._WorldOrigin.Locations:FindFirstChild('Frozen Dimension') then
+                FrozenIsland:Set('🟢: Frozen Dimension Spawning')
+            else
+                FrozenIsland:Set('🔴: Frozen Dimension Not Found')
+            end
+        end
+    end)
+end)
+
+spawn(function()
+    pcall(function()
+        while wait() do
+            if game.Workspace._WorldOrigin.Locations:FindFirstChild('Kitsunen Island') then
+                FaiFaoKai:Set('🦊: Kitsunen Spwan')
+            else
+                FaiFaoKai:Set('🔴: Kitsunen Not Found')
+            end
+        end
+    end)
+end)

@@ -4293,7 +4293,7 @@ end
 
 local win = library:Window("ZOLA",[[HUB]],"By.BARLOSS V1",Enum.KeyCode.RightControl)
 local Main = win:Tab("เมนู",[[6026568198]])
-local Item = win:Tab("อีเว้นท์ทะเล",[[16387774287]])
+local MM = win:Tab("อีเว้นท์ทะเล",[[16387774287]])
 local Stats = win:Tab("อัพพลังงาน",[[7040410130]])
 local Combat = win:Tab("ผู้เล่น",[[7251993295]])
 local Teleport = win:Tab("วาป",[[6035190846]])
@@ -10040,7 +10040,7 @@ task.spawn(function()
 	end
 end)
 
-Misc:Toggle("Auto Click",false,function(value)
+MM:Toggle("Auto Click",false,function(value)
 	_G.click = value
 end)
 
@@ -10071,22 +10071,22 @@ end)
     
 FrozenIsland = Item:AddLabel("")
      
-    Item:Toggle("Auto Frozen Dimension",_G.AutoFrozenDimension,function(value)
+    MM:Toggle("Auto Frozen Dimension",_G.AutoFrozenDimension,function(value)
     _G.AutoFrozenDimension = value
     StopTween(_G.AutoFrozenDimension)
     end)
     
-    Item:Seperator("Kitsunen")
+    MM:Seperator("Kitsunen")
         
-    FaiFaoKai = Item:AddLabel("")
+    FaiFaoKai = MM:AddLabel("")
     
     
-    Item:Toggle("Teleport To Kitsunen Island",_G.AutoFKitsune,function(value)
+    MM:Toggle("Teleport To Kitsunen Island",_G.AutoFKitsune,function(value)
     _G.AutoFKitsune = value
     StopTween(_G.AutoFKitsune)
     end)
     
-    Item:Toggle("Auto Azuer Ember",_G.AutoAzuerEmber,function(value)
+    MM:Toggle("Auto Azuer Ember",_G.AutoAzuerEmber,function(value)
     _G.AutoAzuerEmber = value
     StopTween(_G.AutoAzuerEmber)
     end)
@@ -10127,7 +10127,7 @@ FrozenIsland = Item:AddLabel("")
         end)
     end)
     
-    Item:Toggle("Send Notification If Kitsunen Island Spwan",_G.KisuneWarn,function(value)
+    MM:Toggle("Send Notification If Kitsunen Island Spwan",_G.KisuneWarn,function(value)
     _G.KisuneWarn = value
     end)
     

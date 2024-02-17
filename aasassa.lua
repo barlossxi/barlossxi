@@ -141,7 +141,7 @@ function Update:Window(text,logo,keybind)
     Name.Size = UDim2.new(0, 61, 0, 27)
     Name.Font = Enum.Font.GothamSemibold
     Name.Text = text
-    Name.TextColor3 = Color3.fromRGB(225, 225, 225)
+    Name.TextColor3 = Color3.fromRGB(252, 3, 3)
     Name.TextSize = 20.000
 
     local Hub = Instance.new("TextLabel")
@@ -153,7 +153,7 @@ function Update:Window(text,logo,keybind)
     Hub.Size = UDim2.new(0, 81, 0, 27)
     Hub.Font = Enum.Font.GothamSemibold
     Hub.Text = "        HUB"
-    Hub.TextColor3 = Color3.fromRGB(0, 247, 255)   
+    Hub.TextColor3 = Color3.fromRGB(252, 3, 3)   
     Hub.TextSize = 20.000
     Hub.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -165,8 +165,8 @@ function Update:Window(text,logo,keybind)
     MapName.Position = UDim2.new(0, 85, 0, 0)
     MapName.Size = UDim2.new(0, 81, 0, 27)
     MapName.Font = Enum.Font.GothamSemibold
-    MapName.Text = "                | BLOX FRUIT"
-    MapName.TextColor3 = Color3.fromRGB(225, 225, 225)   
+    MapName.Text = "                |BARLOSS V1"
+    MapName.TextColor3 = Color3.fromRGB(252, 3, 3)   
     MapName.TextSize = 20.000
     MapName.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -179,7 +179,7 @@ function Update:Window(text,logo,keybind)
     Hubb.Size = UDim2.new(0, 81, 0, 27)
     Hubb.Font = Enum.Font.GothamSemibold
     Hubb.Text = ""
-    Hubb.TextColor3 = Color3.fromRGB(255, 255, 255)
+    Hubb.TextColor3 = Color3.fromRGB(252, 3, 3)
     Hubb.TextSize = 17.000
     Hubb.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -3436,6 +3436,19 @@ local G = Library:AddTab("","")
 Main:AddSeperator("Farm")
 
 
+Main:AddToggle("Auto Farm Level",_G.AutoFarm,function(value)
+        _G.AutoFarm = value
+        StopTween(_G.AutoFarm)
+    end)
+
+
+if World1 then
+    Main:AddToggle("Auto Farm Fast (Farm Lv.1-300)",_G.AutoFarmFast,function(value)
+        _G.Farmfast = value
+        StopTween(_G.Farmfast)
+    end)
+
+
 Main:AddToggle("Auto SetSpawn Point [open it If you use Bypass Tp]",true,function(value)
     _G.Set = value
 end)
@@ -3526,11 +3539,6 @@ spawn(function()
   end)
   
    
-    
-    Main:AddToggle("Auto Farm Level",_G.AutoFarm,function(value)
-        _G.AutoFarm = value
-        StopTween(_G.AutoFarm)
-    end)
     
     spawn(function()
         while wait() do
@@ -3711,11 +3719,7 @@ spawn(function()
         end
     end)
 
-if World1 then
-    Main:AddToggle("Auto Farm Fast (Farm Lv.1-300)",_G.AutoFarmFast,function(value)
-        _G.Farmfast = value
-        StopTween(_G.Farmfast)
-    end)
+
     
     spawn(function()
 		pcall(function()

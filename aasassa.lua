@@ -7895,7 +7895,7 @@ M:AddToggle("Auto Find Full Moon",_G.AutoFindFullmoon,function(value)
             if game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149052" or game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149431" then
                 wait(2.0)
                 game.StarterGui:SetCore("SendNotification", {
-					Title = "ZOLA Hab", 
+					Title = "Domadic Hab", 
 					Text = "Full Moon" ,
 					Icon = "http://www.roblox.com/asset/?id=",
 					Duration = 2.5
@@ -7903,7 +7903,7 @@ M:AddToggle("Auto Find Full Moon",_G.AutoFindFullmoon,function(value)
             elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709143733" then
                 Hop()
                 game.StarterGui:SetCore("SendNotification", {
-					Title = "ZOLA Hub", 
+					Title = "Domadic Hub", 
 					Text = "Wait New Server" ,
 					Icon = "http://www.roblox.com/asset/?id=",
 					Duration = 2.5
@@ -7919,7 +7919,7 @@ M:AddToggle("Auto Find Full Moon",_G.AutoFindFullmoon,function(value)
             elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149680" then
                 Hop()
                 game.StarterGui:SetCore("SendNotification", {
-					Title = "ZOLA Hub", 
+					Title = "Domadic Hub", 
 					Text = "Wait New Server" ,
 					Icon = "http://www.roblox.com/asset/?id=",
 					Duration = 2.5
@@ -9086,7 +9086,7 @@ notification.Volume = 5 --ระวังหูแตก
                         wait(5)
                     game.StarterGui:SetCore("SendNotification", {
                         Icon = "http://www.roblox.com/asset/?id=";
-                        Title = "ZOLA Notification", 
+                        Title = "Domadic Notification", 
                         Text = "Kitsunen Is Spawn";
                     notification:Play()
                     })
@@ -15950,7 +15950,7 @@ spawn(function()
     end)
     end)
 
-print("ZOLA Hub Load Complete")
+print("Domadic Hub Load Complete")
 
 game.StarterGui:SetCore("SendNotification", {
       Icon = "http://www.roblox.com/asset/?id=16341514086";
@@ -15960,7 +15960,7 @@ game.StarterGui:SetCore("SendNotification", {
 wait(3)
 game.StarterGui:SetCore("SendNotification", {
       Icon = "http://www.roblox.com/asset/?id=16341514086";
-      Title = "ZOLA Hub", 
+      Title = "Domadic Hub", 
       Text = "BARLOSSV1";
 })
 

@@ -13,7 +13,7 @@ ImageButton1.BorderSizePixel = 0
 ImageButton1.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
 ImageButton1.Size = UDim2.new(0, 50, 0, 50)
 ImageButton1.Draggable = true
-ImageButton1.Image = "http://www.roblox.com/asset/?id=12523036534"
+ImageButton1.Image = "http://www.roblox.com/asset/?id=16341514086"
 ImageButton1.MouseButton1Down:connect(function()
   game:GetService("VirtualInputManager"):SendKeyEvent(true,305,false,game)
   game:GetService("VirtualInputManager"):SendKeyEvent(false,305,false,game)
@@ -198,7 +198,7 @@ local LogoHub = Instance.new("ImageLabel")
     LogoHub.BackgroundTransparency = 1.000
     LogoHub.Position = UDim2.new(0, 5, 0, 1)
     LogoHub.Size = UDim2.new(0, 26, 0, 26)
-    LogoHub.Image = "http://www.roblox.com/asset/?id="..tostring(12523036534)
+    LogoHub.Image = "http://www.roblox.com/asset/?id="..tostring()
 
     local ScrollTab = Instance.new("ScrollingFrame")
     ScrollTab.Name = "ScrollTab"
@@ -517,7 +517,7 @@ local LogoToggle = Instance.new("ImageLabel")
     LogoToggle.BackgroundTransparency = 1.000
     LogoToggle.Position = UDim2.new(0, 7, 0, 2)
     LogoToggle.Size = UDim2.new(0, 26, 0, 26)
-    LogoToggle.Image = "http://www.roblox.com/asset/?id="..tostring(12523036534)
+    LogoToggle.Image = "http://www.roblox.com/asset/?id="..tostring()
 
             Circle.Name = "Circle"
             Circle.Parent = ToggleImage
@@ -3418,18 +3418,18 @@ end)
 
 print("Load Script")
 
-local Library = Update:Window("           Domadic","12523036534",Enum.KeyCode.RightControl);
+local Library = Update:Window("           ZOLA","",Enum.KeyCode.RightControl);
 
-local Main = Library:AddTab("Level Farm","13075651575")
-local M = Library:AddTab("Auto Item Quest","13075622619")
-local Ss = Library:AddTab("Stats","7040410130")
-local RaceV4 = Library:AddTab("RaceV4","11162889532")
-local P = Library:AddTab("Player","7251993295")
-local R = Library:AddTab("Raid","11155986081")
-local T = Library:AddTab("Teleport","11155851001")
-local S = Library:AddTab("Shop","6031265976")
-local D = Library:AddTab("Devil Fruit","7044233235")
-local Misc = Library:AddTab("Misc","11156061121")
+local Main = Library:AddTab("เมนู","13075651575")
+local M = Library:AddTab("อีเว้นทะเล Quest","13075622619")
+local Ss = Library:AddTab("อัพค่าพลัง","7040410130")
+local RaceV4 = Library:AddTab("เผ่าวี4","11162889532")
+local P = Library:AddTab("ผู้เล่น","7251993295")
+local R = Library:AddTab("ลงดัน","11155986081")
+local T = Library:AddTab("วาป","11155851001")
+local S = Library:AddTab("ร้านค้า","6031265976")
+local D = Library:AddTab("ผลปีศาจ","7044233235")
+local Misc = Library:AddTab("อื่น","11156061121")
 local G = Library:AddTab("","")
 
 
@@ -6020,7 +6020,7 @@ spawn(function()
 						game.StarterGui:SetCore("SendNotification", {
 							Title = "Notification", 
 							Text = "Not Have Superhuman" ,
-							Icon = "http://www.roblox.com/asset/?id=12523036534",
+							Icon = "http://www.roblox.com/asset/?id=",
 							Duration = 2.5
 						})
 					end
@@ -6032,7 +6032,7 @@ spawn(function()
 						game.StarterGui:SetCore("SendNotification", {
 							Title = "Notification", 
 							Text = "Not Have Death Step" ,
-							Icon = "http://www.roblox.com/asset/?id=12523036534",
+							Icon = "http://www.roblox.com/asset/?id=",
 							Duration = 2.5
 						})
 					end
@@ -6044,7 +6044,7 @@ spawn(function()
 						game.StarterGui:SetCore("SendNotification", {
 							Title = "Notification", 
 							Text = "Not Have SharkMan Karate" ,
-							Icon = "http://www.roblox.com/asset/?id=12523036534",
+							Icon = "http://www.roblox.com/asset/?id=",
 							Duration = 2.5
 						})
 					end
@@ -6056,7 +6056,7 @@ spawn(function()
 						game.StarterGui:SetCore("SendNotification", {
 							Title = "Notification", 
 							Text = "Not Have Electric Claw" ,
-							Icon = "http://www.roblox.com/asset/?id=12523036534",
+							Icon = "http://www.roblox.com/asset/?id=",
 							Duration = 2.5
 						})
 					end
@@ -6066,7 +6066,7 @@ spawn(function()
 								game.StarterGui:SetCore("SendNotification", {
 									Title = "Notification", 
 									Text = "Not Have Enough Material" ,
-									Icon = "http://www.roblox.com/asset/?id=12523036534",
+									Icon = "http://www.roblox.com/asset/?id=",
 									Duration = 2.5
 								})
 							else
@@ -6077,7 +6077,7 @@ spawn(function()
 						game.StarterGui:SetCore("SendNotification", {
 							Title = "Notification", 
 							Text = "Not Have Dragon Talon" ,
-							Icon = "http://www.roblox.com/asset/?id=12523036534",
+							Icon = "http://www.roblox.com/asset/?id=",
 							Duration = 2.5
 						})
 					end
@@ -7895,33 +7895,33 @@ M:AddToggle("Auto Find Full Moon",_G.AutoFindFullmoon,function(value)
             if game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149052" or game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149431" then
                 wait(2.0)
                 game.StarterGui:SetCore("SendNotification", {
-					Title = "Domadic Hab", 
+					Title = "ZOLA Hab", 
 					Text = "Full Moon" ,
-					Icon = "http://www.roblox.com/asset/?id=12523036534",
+					Icon = "http://www.roblox.com/asset/?id=",
 					Duration = 2.5
 				})
             elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709143733" then
                 Hop()
                 game.StarterGui:SetCore("SendNotification", {
-					Title = "Domadic Hub", 
+					Title = "ZOLA Hub", 
 					Text = "Wait New Server" ,
-					Icon = "http://www.roblox.com/asset/?id=12523036534",
+					Icon = "http://www.roblox.com/asset/?id=",
 					Duration = 2.5
 				})
             elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709150401" then
                 Hop()
                 game.StarterGui:SetCore("SendNotification", {
-					Title = "Domadic Hub", 
+					Title = "ZOLA Hub", 
 					Text = "Wait New Server" ,
-					Icon = "http://www.roblox.com/asset/?id=12523036534",
+					Icon = "http://www.roblox.com/asset/?id=",
 					Duration = 2.5
 				})
             elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149680" then
                 Hop()
                 game.StarterGui:SetCore("SendNotification", {
-					Title = "Domadic Hub", 
+					Title = "ZOLA Hub", 
 					Text = "Wait New Server" ,
-					Icon = "http://www.roblox.com/asset/?id=12523036534",
+					Icon = "http://www.roblox.com/asset/?id=",
 					Duration = 2.5
 				})
             else
@@ -9085,8 +9085,8 @@ notification.Volume = 5 --ระวังหูแตก
                     if game:GetService("Workspace").Map:FindFirstChild('KitsuneIsland') then
                         wait(5)
                     game.StarterGui:SetCore("SendNotification", {
-                        Icon = "http://www.roblox.com/asset/?id=12523036534";
-                        Title = "Domadic Notification", 
+                        Icon = "http://www.roblox.com/asset/?id=";
+                        Title = "ZOLA Notification", 
                         Text = "Kitsunen Is Spawn";
                     notification:Play()
                     })
@@ -15950,18 +15950,18 @@ spawn(function()
     end)
     end)
 
-print("Domadic Hub Load Complete")
+print("ZOLA Hub Load Complete")
 
 game.StarterGui:SetCore("SendNotification", {
-      Icon = "http://www.roblox.com/asset/?id=12523036534";
-      Title = "Domadic Hub", 
+      Icon = "http://www.roblox.com/asset/?id=16341514086";
+      Title = "ZOLA Hub", 
       Text = "Welcome To Script!!";
 })
 wait(3)
 game.StarterGui:SetCore("SendNotification", {
-      Icon = "http://www.roblox.com/asset/?id=12523036534";
-      Title = "Domadic Hub", 
-      Text = "made by @miidraayeerng อยาก Yed Owner Zps วะ";
+      Icon = "http://www.roblox.com/asset/?id=16341514086";
+      Title = "ZOLA Hub", 
+      Text = "BARLOSSV1";
 })
 
    

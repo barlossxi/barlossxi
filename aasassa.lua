@@ -3421,7 +3421,7 @@ print("Load Script")
 local Library = Update:Window("           ZOLA","",Enum.KeyCode.RightControl);
 
 local Main = Library:AddTab("เมนู","6026568198")
-local JK = Library:AddTab("อีเว้นทะเล","16387774287")
+local Shop = Library:AddTab("บ","16387774287")
 local M = Library:AddTab("อีเว้นทะเล","16387774287")
 local Ss = Library:AddTab("อัพค่าพลัง","7040410130")
 local RaceV4 = Library:AddTab("เผ่าวี4","11162889532")
@@ -8577,7 +8577,7 @@ M:AddToggle("Auto Tushita", _G.Autotushita,function(value)
         end
     end)
     
-    JK:AddSeperator("Rough Sea")
+    M:AddSeperator("Rough Sea")
     
     M:AddToggle("Auto Drive Boat Sea Event", _G.DomadicAutoDriveBoat,function(value)
          _G.DomadicAutoDriveBoat = value
@@ -8638,7 +8638,7 @@ M:AddToggle("Auto Tushita", _G.Autotushita,function(value)
 	end)
 	
 
-    JK:AddToggle("Auto Farm Terrorshark", _G.AutoTerrorshark,function(value)
+    M:AddToggle("Auto Farm Terrorshark", _G.AutoTerrorshark,function(value)
          _G.AutoTerrorshark = value
         StopTween( _G.AutoTerrorshark)
     end)
@@ -8686,17 +8686,17 @@ M:AddToggle("Auto Tushita", _G.Autotushita,function(value)
         end
     end)
     
-    JK:AddToggle("Auto Farm Piranha",_G.farmpiranya,function(value)
+    M:AddToggle("Auto Farm Piranha",_G.farmpiranya,function(value)
     _G.farmpiranya = value
     StopTween(_G.farmpiranya)
     end)
     
-    JK:AddToggle("Auto Fish Crew Member",_G.Fish_Crew_Member,function(value)
+    M:AddToggle("Auto Fish Crew Member",_G.Fish_Crew_Member,function(value)
     _G.Fish_Crew_Member = value
     StopTween(_G.Fish_Crew_Member)
     end)
     
-    JK:AddToggle("Auto Terrorshark Hop", _G.AutoTerrorsharkhop,function(value)
+    M:AddToggle("Auto Terrorshark Hop", _G.AutoTerrorsharkhop,function(value)
          _G.AutoTerrorsharkhop = value
     end)
    
@@ -8814,7 +8814,7 @@ M:AddToggle("Auto Tushita", _G.Autotushita,function(value)
         end
     end)
     
-    JK:AddToggle("Auto Raid Ship",_G.KillGhostShip,function(value)
+    M:AddToggle("Auto Raid Ship",_G.KillGhostShip,function(value)
     _G.KillGhostShip = value
     StopTween(_G.KillGhostShip)
     end)
@@ -8852,7 +8852,7 @@ M:AddToggle("Auto Tushita", _G.Autotushita,function(value)
     end
 end)
     
-    JK:AddToggle("Auto Ghost Ship",_G.bjirFishBoat,function(value)
+    M:AddToggle("Auto Ghost Ship",_G.bjirFishBoat,function(value)
     _G.bjirFishBoat = value
     StopTween(_G.bjirFishBoat)
     end)
@@ -8996,24 +8996,24 @@ spawn(function()
 end)
 
     
-FrozenIsland = JK:AddLabel("")
+FrozenIsland = Shop:AddLabel("")
      
-    JK:AddToggle("Auto Frozen Dimension",_G.AutoFrozenDimension,function(value)
+    Shop:AddToggle("Auto Frozen Dimension",_G.AutoFrozenDimension,function(value)
     _G.AutoFrozenDimension = value
     StopTween(_G.AutoFrozenDimension)
     end)
     
-    JK:AddSeperator("Kitsunen")
+    Shop:AddSeperator("Kitsunen")
         
-    FaiFaoKai = JK:AddLabel("")
+    FaiFaoKai = M:AddLabel("")
     
     
-    JK:AddToggle("Teleport To Kitsunen Island",_G.AutoFKitsune,function(value)
+    Shop:AddToggle("Teleport To Kitsunen Island",_G.AutoFKitsune,function(value)
     _G.AutoFKitsune = value
     StopTween(_G.AutoFKitsune)
     end)
     
-    M:AddToggle("Auto Azuer Ember",_G.AutoAzuerEmber,function(value)
+    Shop:AddToggle("Auto Azuer Ember",_G.AutoAzuerEmber,function(value)
     _G.AutoAzuerEmber = value
     StopTween(_G.AutoAzuerEmber)
     end)
@@ -9054,7 +9054,7 @@ FrozenIsland = JK:AddLabel("")
         end)
     end)
     
-    JK:AddToggle("Send Notification If Kitsunen Island Spwan",_G.KisuneWarn,function(value)
+    M:AddToggle("Send Notification If Kitsunen Island Spwan",_G.KisuneWarn,function(value)
     _G.KisuneWarn = value
     end)
     
@@ -9082,9 +9082,9 @@ notification.Volume = 5 --ระวังหูแตก
         end
     end)
     
-    JK:AddLabel("Boat")
+    M:AddLabel("Boat")
     
-    JK:AddToggle("Increase Boat Speed",_G.IncreaseBoatSpeed,function(value)
+    M:AddToggle("Increase Boat Speed",_G.IncreaseBoatSpeed,function(value)
         _G.IncreaseBoatSpeed = value
     local vehicleSeats = {}
                 for i, v in pairs(game.Workspace.Boats:GetDescendants()) do

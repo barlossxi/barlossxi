@@ -397,17 +397,17 @@ ZX:Toggle("Auto Kaitan",false,function(value)
     
     
 
-ZX:Dropdown("Select Mob",tableMon,function(vu)
+ZZ:Dropdown("Select Mob",tableMon,function(vu)
     _G.SelectMob = vu
 end)
     
-    ZX:Toggle("Auto Farm Mob",_G.AutoFarmMob,function(value)
+ZZ:Toggle("Auto Farm Mob",_G.AutoFarmMob,function(value)
         _G.AutoFarmMob = value
         StopTween(_G.AutoFarmMob)
     end)
     
     
-   ZX:Toggle("Auto Farm Nearest ",_G.AutoFarmNearest,function(value)
+ZZ:Toggle("Auto Farm Nearest ",_G.AutoFarmNearest,function(value)
    _G.AutoFarmNearest = value
    StopTween(_G.AutoFarmNearest)
  end)

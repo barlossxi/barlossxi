@@ -401,6 +401,7 @@ ZZ:Dropdown("Select Mob",tableMon,function(vu)
     _G.SelectMob = vu
 end)
     
+    
 ZZ:Toggle("Auto Farm Mob",_G.AutoFarmMob,function(value)
         _G.AutoFarmMob = value
         StopTween(_G.AutoFarmMob)

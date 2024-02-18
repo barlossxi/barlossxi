@@ -152,7 +152,7 @@ function Update:Window(text,logo,keybind)
     Hub.Position = UDim2.new(0, 85, 0, 0)
     Hub.Size = UDim2.new(0, 81, 0, 27)
     Hub.Font = Enum.Font.GothamSemibold
-    Hub.Text = "        BY.BARLOSS V1"
+    Hub.Text = "        "
     Hub.TextColor3 = Color3.fromRGB(232, 210, 16)   
     Hub.TextSize = 20.000
     Hub.TextXAlignment = Enum.TextXAlignment.Left

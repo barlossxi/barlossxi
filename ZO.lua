@@ -13229,8 +13229,10 @@ end)
             fireclickdetector(game:GetService("Workspace").Map.CircleIsland.RaidSummon.Button.Main.ClickDetector)
         end
     end)
+    
 
-Main:AddSeperator("รออัพเดทท")
+   Main:AddSeperator("รออัพเดทต่อไป")
+   
 
     T:AddSeperator("World")
     

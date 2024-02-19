@@ -13183,9 +13183,9 @@ spawn(function()
         while wait() do
             if  _G.AutoOderSword then
                 pcall(function()
-                    if game:GetService("Workspace").Enemies:FindFirstChild("Order [Raid Boss]") then
+                    if game:GetService("Workspace").Enemies:FindFirstChild("Order") then
                         for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
-                            if v.Name == "Order [Raid Boss]" then
+                            if v.Name == "Order" then
                                 if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
                                     repeat task.wait()
                                         AutoHaki()
@@ -13202,8 +13202,8 @@ spawn(function()
                             end
                         end
                     else
-                        if game:GetService("ReplicatedStorage"):FindFirstChild("Order [Raid Boss]") then
-                            topos(game:GetService("ReplicatedStorage"):FindFirstChild("Order [Raid Boss]").HumanoidRootPart.CFrame * CFrame.new(2,20,2))
+                        if game:GetService("ReplicatedStorage"):FindFirstChild("Order") then
+                            topos(game:GetService("ReplicatedStorage"):FindFirstChild("Order").HumanoidRootPart.CFrame * CFrame.new(2,20,2))
                         else
                             if  _G.AutoOderSwordHop then
                                 Hop()

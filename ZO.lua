@@ -13230,6 +13230,7 @@ end)
         end
     end)
 
+Main:AddSeperator("รออัพเดทท")
 
     T:AddSeperator("World")
     

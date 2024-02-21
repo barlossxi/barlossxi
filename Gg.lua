@@ -15,6 +15,10 @@ local page4 = tab2:CraftPage('Main',2)
 
 local player = page1:Label('TP')
 
+page1:Dropdown("Weapon",{"Weaponlist"},"Weaponlist",function(a)
+    Weaponlist = a
+end)
+
 
 page1:Toggle('Auto TP Item',false,function(K)
         _G.F = K
@@ -197,3 +201,11 @@ end)
 page3:Button('Yoro',function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1855.29944, 73.6511078, 31.2292843, 9.24971024e-14, 4.23067519e-08, 1, -5.50468542e-08, 1, -4.23067519e-08, -1, -5.50468542e-08, 9.48259551e-14)
 end)
+
+
+local Weaponlist = {}
+local Weapon = nil
+
+for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+    table.insert(Weaponlist,v.Name)
+end

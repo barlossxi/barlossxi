@@ -8,8 +8,7 @@ local Win = library:Evil("ZOLA Hub","",_G.Logo )
 
 local tab1 = Win:CraftTab('Main')
 local page1 = tab1:CraftPage('Main',1)
-local page2 = tab2:CraftPage('Main',2)
-
+local page2 = tab1:CraftPage('Main',2)
 
 local player = page1:Label('TP')
 

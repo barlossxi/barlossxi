@@ -13,8 +13,8 @@ local page3 = tab2:CraftPage('Main',1)
 local page4 = tab2:CraftPage('Main',2)
 
 
-page1:Dropdown("Weapon",Weaponlist,function(value)
-Weaponlist = value
+page1:MultiDropdown("Weapon",{"",""},{"Weaponlist"},function(v)
+    Weaponlist = v
 end)
 
 

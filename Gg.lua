@@ -21,20 +21,22 @@ for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) 
 end
 
 page1:Dropdown("Select Weapon",Weaponlist,{""},function(v)
-    _G.Weaponlist = v
+    Weapon = v
 end)
 
 
 page1:Toggle('Auto Equip',false,function(a)
+AutoEquiped = a
+end)
+
 spawn(function()
 while wait() do
 if AutoEquiped then
 pcall(function()
 game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(Weapon))
+end)
 end
 end
-end)
-end)
 end)
 
 

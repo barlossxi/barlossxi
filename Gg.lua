@@ -1,5 +1,5 @@
 _G.Color = Color3.fromRGB(255, 0, 0)
-_G.Logo = 
+_G.Logo = 1222
 
 
 local Evil = loadstring(game:HttpGet("https://raw.githubusercontent.com/lntanon55/Golf-HUB/main/Protected_9405524596134885.lua.txt"))()

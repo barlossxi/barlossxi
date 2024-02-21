@@ -26,11 +26,15 @@ end)
 
 
 page1:Toggle('Auto Equip',false,function(a)
-_G.AutoEquiped = a
-while _G.AutoEquiped do wait()
+spawn(function()
+while wait() do
+if AutoEquiped then
+pcall(function()
 game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(Weapon))
 end
 end
+end)
+end)
 end)
 
 

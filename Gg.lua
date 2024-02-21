@@ -13,8 +13,8 @@ local page3 = tab2:CraftPage('Main',1)
 local page4 = tab2:CraftPage('Main',2)
 
 
-page1:MultiDropdown("Weapon",{"",""},{"Weaponlist"},function(v)
-    Weaponlist = v
+page1:Dropdown("Dropdown",Wapon,{""},function(v)
+    _G.Wapon = v
 end)
 
 
@@ -203,9 +203,14 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1855.29
 end)
 
 
-local Weaponlist = {}
-local Weapon = nil
-
-for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
-    table.insert(Weaponlist,v.Name)
+Wapon = {}
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do  
+    if v:IsA("Tool") then
+       table.insert(Wapon ,v.Name)
+    end
+end
+for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do  
+    if v:IsA("Tool") then
+       table.insert(Wapon, v.Name)
+    end
 end

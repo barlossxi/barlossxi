@@ -151,7 +151,7 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2086.48
 end)
 
 page3:Button('Garbage',function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2086.48145, 82.6158142, 655.703186, 1, 2.6224892e-11, 2.68795894e-20, -2.6224892e-11, 1, 2.04901496e-09, 2.6855606e-20, -2.04901496e-09, 1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-678.306702, 40.3787766, -1881.7594, 1, -2.35734223e-08, 1.03790213e-13, 2.35734223e-08, 1, -7.43023207e-08, -1.02038657e-13, 7.43023207e-08, 1)
 end)
 
 page3:Button('KashimoV1',function()

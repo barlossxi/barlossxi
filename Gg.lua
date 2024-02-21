@@ -17,6 +17,7 @@ page1:Toggle('Auto TP Item',false,function(K)
       _G.K = K 
 end)
 
+
 page1:Toggle('Auto Chests',false,function(d)
     _G.d = d                 
 end)
@@ -90,12 +91,11 @@ repeat wait() until game:IsLoaded()
 for i,v in pairs(game:GetService("Workspace").ItemDrop:GetDescendants()) do
 if v.Name == "TouchInterest" then
 game.Players.LocalPlayer.Character.HumanoidRootPart .CFrame = v.Parent.CFrame
-wait().        
+wait().          end
             end
       end
-end  
-
-
+end
+    
 spawn(function()
         while wait() do
         if _G.d then
@@ -105,4 +105,5 @@ fireproximityprompt(v,30)
 game.Players.LocalPlayer.Character.HumanoidRootPart .CFrame = v.Parent.CFrame
 end
       end
-            end   
+            end  
+                 end 

@@ -20,7 +20,7 @@ pcall(function()
 for i,v in pairs(game:GetService("Workspace").ItemDrop:GetDescendants()) do
 if v.Name == "TouchInterest" then
 game.Players.LocalPlayer.Character.HumanoidRootPart .CFrame = v.Parent.CFrame
-wait().        
+wait().          end
             end
       end
 end  
@@ -37,6 +37,7 @@ game.Players.LocalPlayer.Character.HumanoidRootPart .CFrame = v.Parent.CFrame
 end
       end
             end   
+                end
                 
 end)
 

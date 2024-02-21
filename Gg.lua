@@ -14,12 +14,30 @@ local player = page1:Label('TP')
 
 
 page1:Toggle('Auto TP Item',false,function(K)
-      _G.K = K 
+        _G.F = K
+while _G.F do wait()
+pcall(function()
+for i,v in pairs(game:GetService("Workspace").ItemDrop:GetDescendants()) do
+if v.Name == "TouchInterest" then
+game.Players.LocalPlayer.Character.HumanoidRootPart .CFrame = v.Parent.CFrame
+wait().        
+            end
+      end
+end  
 end)
 
-
 page1:Toggle('Auto Chests',false,function(d)
-    _G.d = d                 
+        _G.l = d
+while _G.l do wait()
+pcall(function()
+for i,v in pairs(game:GetService("Workspace").Chests:GetDescendants()) do
+if v.ClassName == "ProximityPrompt" then
+fireproximityprompt(v,30)
+game.Players.LocalPlayer.Character.HumanoidRootPart .CFrame = v.Parent.CFrame
+end
+      end
+            end   
+                
 end)
 
 
@@ -84,26 +102,3 @@ repeat wait() until game:IsLoaded()
 		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
    end)
    end)
-   
-   spawn(function()
-        while wait() do
-        if _G.K then
-for i,v in pairs(game:GetService("Workspace").ItemDrop:GetDescendants()) do
-if v.Name == "TouchInterest" then
-game.Players.LocalPlayer.Character.HumanoidRootPart .CFrame = v.Parent.CFrame
-wait().          end
-            end
-      end
-end
-    
-spawn(function()
-        while wait() do
-        if _G.d then
-for i,v in pairs(game:GetService("Workspace").Chests:GetDescendants()) do
-if v.ClassName == "ProximityPrompt" then
-fireproximityprompt(v,30)
-game.Players.LocalPlayer.Character.HumanoidRootPart .CFrame = v.Parent.CFrame
-end
-      end
-            end  
-                 end 

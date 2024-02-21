@@ -10,7 +10,6 @@ local page1 = tab1:CraftPage('Main',1)
 local tab2 = Win:CraftTab('Main')
 local page2 = tab1:CraftPage('Main',2)
 
-tab1:Label('TP')
 
 page1:Toggle('Auto TP Item',false,function(K)
 _G.F = K

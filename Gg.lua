@@ -30,7 +30,7 @@ page1:Dropdown("Select Weapon",Wapon,{""},function(v)
 end)
 
 page1:Toggle('Auto Equip',false,function(A)
-_G.AutoEquiped = A
+AutoEquiped = A
 end)
 
 local player = page1:Label('TP')
@@ -220,7 +220,7 @@ end)
 
 spawn(function()
 while wait() do
-if _G.AutoEquiped then
+if AutoEquiped then
 pcall(function()
 game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(Weapon))
 end)

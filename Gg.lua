@@ -14,7 +14,7 @@ local page4 = tab2:CraftPage('Main',2)
 
 
 page1:Dropdown("Dropdown",Wapon,{""},function(v)
-    _G.Wapon = v
+    Wapon = v
 end)
 
 

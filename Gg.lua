@@ -1,4 +1,3 @@
-
 _G.Color = Color3.fromRGB(0, 247, 255)
 _G.Logo = 16341514086
 
@@ -9,6 +8,7 @@ local Win = library:Evil("ZOLA Hub","",_G.Logo )
 local tab1 = Win:CraftTab('Main')
 local page1 = tab1:CraftPage('Main',1)
 local page2 = tab1:CraftPage('Main',2)
+
 
 local player = page1:Label('TP')
 
@@ -38,8 +38,7 @@ end
 end)
 
 
-local player = page2:Label('Island')
-
+local player = page2:Label('TP')
 
 page2:Button('Bandit Island',function()
 

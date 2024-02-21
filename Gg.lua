@@ -8,6 +8,9 @@ local Win = library:Evil("ZOLA Hub","",_G.Logo )
 local tab1 = Win:CraftTab('Main')
 local page1 = tab1:CraftPage('Main',1)
 local page2 = tab1:CraftPage('Main',2)
+local tab2 = Win:CraftTab('Main')
+local page3 = tab2:CraftPage('Main',1)
+local page4 = tab2:CraftPage('Main',2)
 
 
 local player = page1:Label('TP')
@@ -99,3 +102,48 @@ repeat wait() until game:IsLoaded()
 		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
    end)
    end)
+   
+   
+   local player = page3:Label('SHOP')
+   
+   local player = page4:Label('Fruit')
+   
+   
+   page4:Toggle('Auto Random fruit Beli',false,function(gm)
+   _G.xm = gm
+while _G.xm do wait()
+for i,v in pairs(game:GetService("Workspace").Shop:GetDescendants()) do
+if v.ClassName == "ProximityPrompt" then
+fireproximityprompt(v,30)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(790.203735, 35.5073013, 1201.40369, 0.026754817, -8.37544611e-09, 0.999642015, 1.24128064e-07, 1, 5.05623188e-09, -0.999642015, 1.23948354e-07, 0.026754817)
+end
+end
+end
+end)
+
+page4:Toggle('Auto Random fruit Gem',false,function(gm)
+_G.gg = qm
+while _G.gg do wait()
+for i,v in pairs(game:GetService("Workspace").Shop:GetDescendants()) do
+if v.ClassName == "ProximityPrompt" then
+fireproximityprompt(v,30)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-741.048889, 43.4787788, -1933.82019, -0.0251465552, 7.8026531e-08, 0.999683797, -1.09866749e-09, 1, -7.80788483e-08, -0.999683797, -3.06173398e-09, -0.0251465552)
+end
+end
+end
+end)
+
+
+shop = {}
+for i ,v in pairs(game:GetService("Workspace").Shop:GetChildren()) do
+table.insert(shop,v.Name)
+end
+
+page4:Dropdown("SHOP",,"shop",function(a)
+    shop = a
+end)
+
+
+page2:Button('TP SHOP',function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.workspace.Shop[shop].CFrame * CFrame.new(0,5,0)
+end)

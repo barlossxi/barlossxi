@@ -1,10 +1,10 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/thanhdat4461/OrionMoblie/main/source')))()
 local Window = OrionLib:MakeWindow({
-		Name = "ZOLA HUB [Shadow] Second Piece",
+		Name = "SSS HUB [Shadow] Second Piece",
 		HidePremium = false,
 		SaveConfig = true,
 		ConfigFolder = "OrionTest",
-        IntroText = "ZOLA HUB"       
+        IntroText = "BY NOOB-SCRIPT V2"       
 }) 
 
 
@@ -264,7 +264,7 @@ Tab:AddButton({
 	Callback = function()
 
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.workspace.Shop[shop].CFrame * CFrame.new(0,5,0)
-.
+
   	end    
 })
 

@@ -24,7 +24,7 @@ page1:Dropdown("Select Weapon",Weaponlist,{""},function(v)
     _G.Weaponlist = v
 end)
 
-page1:Toggle('Auto Equip',false,function(a)
+page1:Toggle('Auto Equip',AutoEquiped,function(a)
 AutoEquiped = a
 end)
 

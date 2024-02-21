@@ -14,8 +14,10 @@ local player = page1:Label('TP')
 
 
 page1:Toggle('Auto TP Item',false,function(K)
-_G.F = K
-while _G.F do wait()
+spawn(function()
+        while task.wait() do
+        if _G.K then
+        pcall(function()
 for i,v in pairs(game:GetService("Workspace").ItemDrop:GetDescendants()) do
 if v.Name == "TouchInterest" then
 game.Players.LocalPlayer.Character.HumanoidRootPart .CFrame = v.Parent.CFrame
@@ -26,8 +28,9 @@ end
 end)
 
 page1:Toggle('Auto Chests',false,function(d)
-_G.Fd = d
-while _G.Fd do wait()
+while task.wait() do
+        if _G.d then
+        pcall(function()
 for i,v in pairs(game:GetService("Workspace").Chests:GetDescendants()) do
 if v.ClassName == "ProximityPrompt" then
 fireproximityprompt(v,30)

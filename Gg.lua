@@ -132,3 +132,68 @@ end
 end
 end
 end)
+
+
+page3:Button('Sukuna',function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-917.716675, 38.4563179, -487.042297, 1, 3.34332313e-08, 7.66050499e-14, -3.34332313e-08, 1, 4.39573355e-09, -7.64580863e-14, -4.39573355e-09, 1)
+end)
+
+page3:Button('Higuruma',function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1655.64246, 105.61451, -97.1851425, -0.00435584877, -4.59554279e-08, -0.999990523, -5.81415378e-08, 1, -4.57026061e-08, 0.999990523, 5.79419108e-08, -0.00435584877)
+end)
+
+page3:Button('Gojo',function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1527.85498, 140.616333, -257.534546, -3.10905333e-20, 2.46965764e-11, 1, -1.9295987e-09, 1, -2.46965764e-11, -1, -1.9295987e-09, 1.65639476e-20)
+end)
+
+page3:Button('Cid',function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2086.48145, 82.6158142, 655.703186, 1, 2.32907443e-12, 2.13665362e-22, -2.32907443e-12, 1, 1.81975948e-10, 2.10170153e-22, -1.81975948e-10, 1)
+end)
+
+page3:Button('Garbage',function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2086.48145, 82.6158142, 655.703186, 1, 2.6224892e-11, 2.68795894e-20, -2.6224892e-11, 1, 2.04901496e-09, 2.6855606e-20, -2.04901496e-09, 1)
+end)
+
+page3:Button('KashimoV1',function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(838.417908, 42.8138924, -1516.24011, 0.9999789, 9.80447003e-05, 0.00649920991, -9.11931857e-05, 0.999999464, -0.00105449522, -0.00649930956, 0.0010538802, 0.999978304)
+end)
+
+page3:Button('KashimoV2',function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(998.650574, 36.2562637, 1237.48438, 0.00329625281, 5.93618239e-08, -0.999994576, 5.29546362e-09, 1, 5.93796017e-08, 0.999994576, -5.4911653e-09, 0.00329625281)
+end)
+
+page3:Button('ltadori',function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1835.93457, 61.5467415, -2462.15039, -1, 1.16522266e-07, -4.67915018e-15, 1.16522266e-07, 1, -1.11055218e-08, 3.38510958e-15, -1.11055218e-08, -1)
+end)
+
+page3:Button('Gon',function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(461.460114, 41.1940231, -3005.20459, 0.00265250565, 0.0259927027, 0.999658585, -0.0214995164, 0.999432564, -0.0259297788, -0.999765337, -0.0214233976, 0.00320983096)
+end)
+
+page3:Button('GojoV2',function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2448.08789, 67.5022736, -1164.91846, 1, 2.9212389e-08, -3.6135281e-15, -2.9212389e-08, 1, -2.41440445e-09, 3.54299779e-15, 2.41440445e-09, 1)
+end)
+
+page3:Button('Uraume',function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1935.33435, 114.779411, -2176.74951, 4.56587308e-15, 5.47720624e-08, -1, -4.52769822e-09, 1, 5.47720624e-08, 1, 4.52769822e-09, 4.81386442e-15)
+end)
+
+page3:Button('Sukuna Half Power',function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2461.82861, 59.3461533, -1446.37756, 3.45805457e-15, -6.26585219e-08, -1, 5.17781995e-09, 1, -6.26585219e-08, 1, -5.17781995e-09, 3.78248915e-15)
+end)
+
+page3:Button('Killua',function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(475.303986, 44.8612061, -3017.60693, -1, -1.06468523e-08, 9.55914967e-15, -1.06468523e-08, 1, -8.79721629e-10, -9.54978318e-15, -8.79721629e-10, -1)
+end)
+
+page3:Button('Katana',function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-911.823364, 38.2895813, -517.434387, -0.984810412, 0.172735363, -0.0176329166, 0.173591122, 0.981713653, -0.0781308413, 0.00381451519, -0.0800049827, -0.99678719)
+end)
+
+page3:Button('RandomDemonFruit',function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(786.339355, 38.4602585, 1201.50391, 1, 4.47986856e-08, -2.20741796e-07, -4.47986714e-08, 1, 5.82809356e-08, 2.20741796e-07, -5.8280925e-08, 1)
+end)
+
+page3:Button('Yoro',function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1855.29944, 73.6511078, 31.2292843, 9.24971024e-14, 4.23067519e-08, 1, -5.50468542e-08, 1, -4.23067519e-08, -1, -5.50468542e-08, 9.48259551e-14)
+end)

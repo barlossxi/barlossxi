@@ -66,6 +66,21 @@ end
             end               
 end)
 
+page1:Toggle('Auto Click',false,function(d)
+_G.click = d
+end)
+
+spawn(function()
+	game:GetService("RunService").RenderStepped:Connect(function()
+		if _G.click then
+			pcall(function()
+				game:GetService'VirtualUser':CaptureController()
+				game:GetService'VirtualUser':Button1Down(Vector2.new(0,1,0,1))
+			end)
+		end
+	end)
+end)
+
 
 local player = page2:Label('Island')
 

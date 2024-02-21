@@ -13,11 +13,12 @@ local page3 = tab2:CraftPage('Main',1)
 local page4 = tab2:CraftPage('Main',2)
 
 
-local player = page1:Label('TP')
-
-page1:Dropdown("Weapon",{""},{"Weaponlist"},function(v)
-    Weaponlist = v
+page1:Dropdown("Weapon",Weaponlist,function(value)
+Weaponlist = value
 end)
+
+
+local player = page1:Label('TP')
 
 page1:Toggle('Auto TP Item',false,function(K)
         _G.F = K

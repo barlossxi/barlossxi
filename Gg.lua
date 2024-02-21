@@ -15,8 +15,8 @@ local page4 = tab2:CraftPage('Main',2)
 
 local player = page1:Label('TP')
 
-page1:Dropdown("Weapon", "",Weaponlist,function(a)
-    Weaponlist = a
+page1:Dropdown("Weapon", "", Weaponlist, function(currentOption)
+    Weaponlist = currentOption
 end)
 
 

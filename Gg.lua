@@ -13,20 +13,15 @@ local page3 = tab2:CraftPage('Main',1)
 local page4 = tab2:CraftPage('Main',2)
 
 
-Wapon = {}
-for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do  
-    if v:IsA("Tool") then
-       table.insert(Wapon ,v.Name)
-    end
-end
-for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do  
-    if v:IsA("Tool") then
-       table.insert(Wapon, v.Name)
-    end
+local Weaponlist = {}
+local Weapon = nil
+
+for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+    table.insert(Weaponlist,v.Name)
 end
 
-page1:Dropdown("Select Weapon",Wapon,{""},function(v)
-    _G.Wapon = v
+page1:Dropdown("Select Weapon",Weaponlist,{""},function(v)
+    _G.Weaponlist = v
 end)
 
 page1:Toggle('Auto Equip',false,function(A)
@@ -37,7 +32,7 @@ spawn(function()
 while wait() do
 if AutoEquiped then
 pcall(function()
-game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(Wapon, v.Name))
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(Weapon))
 end)
 end
 end

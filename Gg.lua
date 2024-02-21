@@ -24,8 +24,8 @@ page1:Dropdown("Select Weapon",Weaponlist,{""},function(v)
     _G.Weaponlist = v
 end)
 
-page1:Toggle('Auto Equip',false,function(A)
-AutoEquiped = A
+page1:Toggle('Auto Equip',false,function(a)
+AutoEquiped = a
 end)
 
 spawn(function()
@@ -37,7 +37,6 @@ end)
 end
 end
 end)
-
 
 local player = page1:Label('TP')
 

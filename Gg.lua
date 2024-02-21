@@ -38,7 +38,7 @@ end
 end)
 
 
-local player = page2:Label('TP')
+local player = page2:Label('Island')
 
 page2:Button('Bandit Island',function()
 
@@ -87,3 +87,15 @@ end
 end
 
   	end)
+  	
+  	
+  	page1:Toggle('AFK',true,function()
+  	local vu = game:GetService("VirtualUser")
+repeat wait() until game:IsLoaded() 
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+    game:GetService("VirtualUser"):ClickButton2(Vector2.new())
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+   end)
+   end)

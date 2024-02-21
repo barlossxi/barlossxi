@@ -139,11 +139,10 @@ for i ,v in pairs(game:GetService("Workspace").Shop:GetChildren()) do
 table.insert(shop,v.Name)
 end
 
-page4:Dropdown("SHOP",,"shop",function(a)
-    shop = a
+page1:Dropdown("Dropdown",{""},{"shop"},function(v)
+    shop = v
 end)
 
-
-page2:Button('TP SHOP',function()
+page3:Button('TP SHOP',function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.workspace.Shop[shop].CFrame * CFrame.new(0,5,0)
 end)

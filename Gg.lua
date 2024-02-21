@@ -33,6 +33,17 @@ page1:Toggle('Auto Equip',false,function(A)
 AutoEquiped = A
 end)
 
+spawn(function()
+while wait() do
+if AutoEquiped then
+pcall(function()
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(Wapon, v.Name))
+end)
+end
+end
+end)
+
+
 local player = page1:Label('TP')
 
 page1:Toggle('Auto TP Item',false,function(K)
@@ -218,12 +229,3 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1855.29
 end)
 
 
-spawn(function()
-while wait() do
-if AutoEquiped then
-pcall(function()
-game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(Weapon))
-end)
-end
-end
-end)

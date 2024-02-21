@@ -132,8 +132,3 @@ end
 end
 end
 end)
-
-
-page3:Button('TP SHOP',function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.workspace.Shop[shop].CFrame * CFrame.new(0,5,0)
-end)

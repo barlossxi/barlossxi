@@ -33,7 +33,7 @@ end)
 
 spawn(function()
 while wait() do
-if _G.AutoFarm then
+if AutoEquiped then
 pcall(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives[Select].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
@@ -70,44 +70,29 @@ end)
 
 local player = page1:Label('TP')
 
-page1:Toggle('Auto TP Item',false,function(K)
+page1:Toggle('Auto TP Item',_G.F,function(K)
         _G.F = K
-end)
-
-
-spawn(function()
-while wait() do
-if _G.F then
-pcall(function()
+while _G.F do wait()
 for i,v in pairs(game:GetService("Workspace").ItemDrop:GetDescendants()) do
 if v.Name == "TouchInterest" then
 game.Players.LocalPlayer.Character.HumanoidRootPart .CFrame = v.Parent.CFrame
 wait()
-                  end)
-              end
-          end
+            end
       end
+end
 end)
 
-page1:Toggle('Auto Chests',false,function(d)
+page1:Toggle('Auto Chests',_G.Fd,function(d)
         _G.Fd = d
-end)
-
-spawn(function()
-while wait() do
-if _G.Fd then
-pcall(function()
+while _G.Fd do wait()
 for i,v in pairs(game:GetService("Workspace").Chests:GetDescendants()) do
 if v.ClassName == "ProximityPrompt" then
 fireproximityprompt(v,30)
 game.Players.LocalPlayer.Character.HumanoidRootPart .CFrame = v.Parent.CFrame
-end)
+end
       end
             end               
-end
 end)
-
-
 
 page1:Toggle('Auto Click',false,function(d)
 _G.click = d

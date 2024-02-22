@@ -34,17 +34,26 @@ end)
 
 
 page1:Toggle('Auto Farm',false,function(state)
-    _G.AutoFarm = state
+    Automon = state
 end)
 
 
 spawn(function()
-while wait() do
-if _G.AutoFarm then
-pcall(function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives[Bondit0].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+    pcall(function()
+        while wait() do
+            if Automon then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Snow Bandit2"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
 end
+end)
+
+
+spawn(function()
+    pcall(function()
+        while wait(.1) do
+            if Automon then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Bandit0"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
 end
 end)
 

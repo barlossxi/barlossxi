@@ -41,12 +41,8 @@ end)
 
 
 
-
-
-
-
-page1:Toggle('Auto Farm',false,function(a)
-_G.AutoOderSword = a
+page1:Toggle('Auto Farm',false,function(y)
+_G.AutoOderSword = y
 end)
 
 spawn(function()

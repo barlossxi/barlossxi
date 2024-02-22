@@ -28,9 +28,16 @@ end)
 
 page1:Toggle('Auto Farm',false,function(state)
     _G.AutoFarm = state
-    while _G.AutoFarm do wait()
-    pcall(function)
+end)
+
+
+spawn(function()
+while wait() do
+if _G.AutoFarm then
+pcall(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives[Select].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
 end
 end)
 

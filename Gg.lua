@@ -11,36 +11,6 @@ local page1 = tab1:CraftPage('Main',1)
 local player = page1:Label('Label')
 
 
-
-
-local Weaponlist = {}
-local Weapon = nil
-for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
-    table.insert(Weaponlist,v.Name)
-end
-
-page1:Dropdown("Select Weapon",Weaponlist,{""},function(v)
-    Weapon = v
-end)
-
-
-page1:Toggle('Auto Equip',false,function(a)
-AutoEquiped = a
-end)
-
-spawn(function()
-while wait() do
-if AutoEquiped then
-pcall(function()
-game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(Weapon))
-end)
-end
-end
-end)
-
-
-
-
 page1:Toggle('Auto Farm',false,function(y)
 _G.AutoOderSword = y
 end)

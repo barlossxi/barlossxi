@@ -25,6 +25,15 @@ page1:Dropdown("Select Mon",MONS,{""},function(currentOption)
 end)
 
 
+
+page1:Toggle('Auto Farm',false,function(a)
+    _G.AutoFarm = state
+    while _G.AutoFarm do wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives.HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end
+end)
+
+
 local Weaponlist = {}
 local Weapon = nil
 for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do

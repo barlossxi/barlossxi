@@ -13,9 +13,20 @@ local page3 = tab2:CraftPage('Main',1)
 local page4 = tab2:CraftPage('Main',2)
 
 
+MONS = {}
+ 
+for i,v in pairs(game:GetService("Workspace").Lives:GetChildren()) do
+    table.insert(MONS,v.Name)
+end
+ 
+ 
+page1:Dropdown("Select Mon",MONS,{""},function(currentOption)
+    Select = currentOption
+end)
+
+
 local Weaponlist = {}
 local Weapon = nil
-
 for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
     table.insert(Weaponlist,v.Name)
 end

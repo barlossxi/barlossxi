@@ -52,18 +52,9 @@ spawn(function()
                     if game:GetService("Workspace").Lives:FindFirstChild("Shank3295") then
                         for i,v in pairs(game:GetService("Workspace").Lives:GetChildren()) do
                             if v.Name == "Shank3295" then
-                                if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
-                                    repeat task.wait()
-                                        AutoHaki()
-                                        EquipWeapon(Weapon)
-                                        v.HumanoidRootPart.CanCollide = false
-                                        v.Humanoid.WalkSpeed = 0
-                                        v.HumanoidRootPart.Size = Vector3.new(50,50,50)
-                                        topos(v.HumanoidRootPart.CFrame * Pos)
-                                        FastAttack = true
-                                        sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius",math.huge)
-                                    until not  _G.AutoOderSword or not v.Parent or v.Humanoid.Health <= 0
-                                    FastAttack = false
-                                end
-                            end
+                                if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then                                             end
                         end
+                    end)
+                end)
+            
+                  

@@ -21,11 +21,11 @@ end
  
  
 page1:Dropdown("Select Mon",MONS,{""},function(currentOption)
-    Select = currentOption
+    Bondit0 = currentOption
 end)
 
 
-page1:Button('Refresh',function()
+page1:Button('Sukuna Half Power',function()
 table.clear(MONS)
 for i,v in pairs(game:GetService("Workspace").Lives:GetChildren()) do
     table.insert(MONS,v.Name)
@@ -40,9 +40,9 @@ end)
 
 spawn(function()
 while wait() do
-if AutoEquiped then
+if _G.AutoFarm then
 pcall(function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives[Select].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives[Bondit0].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
 end
 end

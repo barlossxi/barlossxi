@@ -58,16 +58,21 @@ end)
 
 
 page1:Toggle('Auto Equip',false,function(1122)
- AutoClick = 1122
+ _G.AUTOHAKI = 1122
 
-while wait() do
-if AutoClick then
-local args = {
+spawn(function()
+    while wait(.1) do
+        if _G.AUTOHAKI then 
+            if not game.Players.LocalPlayer.Character:FindFirstChild("BusoHaki") then
+                local args = {
     [1] = "BusoHaki"
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("SkillHolder"):FireServer(unpack(args))
-end
+            end
+        end
+    end
+end)
 end)
 
 

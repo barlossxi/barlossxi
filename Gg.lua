@@ -85,7 +85,7 @@ CloseButton.BackgroundColor3 = Color3.new(1, 0, 0)
 CloseButton.Parent = frame
 
 CloseButton.MouseButton1Click:Connect(function()
-    screenGui:Destroy(Barloss)
+    screenGui:Destroy()
 end)
 
 local GetKeyButton = Instance.new("TextButton")
@@ -96,7 +96,7 @@ GetKeyButton.Parent = frame
 --------------------------------------------------------------------------
 SubmitButton.MouseButton1Click:Connect(function()
     local KeySystem = KeySystem.Text
-    if KeySystem == "Barloss" then 
+    if KeySystem == "Barloss" then
 screenGui:Destroy()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/barlossxi/barlossxi/main/Gg.lua"))()
@@ -107,8 +107,3 @@ end)
 GetKeyButton.MouseButton1Click:Connect(function()
  setclipboard("Paste here your link to get the key") 
 end) 
-
-
-
-
-

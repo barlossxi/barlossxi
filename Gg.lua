@@ -64,12 +64,10 @@ page1:Toggle('Auto BusoHaki',false,function(hh)
 spawn(function()
     while wait(.1) do
         if _G.AUTOHAKI then 
-            if not game.Players.LocalPlayer.Character:FindFirstChild("BusoHaki") then
+            if not game.Players.LocalPlayer.Character:FindFirstChild("Assets") then
                 local args = {
-    [1] = "BusoHaki"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("SkillHolder"):FireServer(unpack(args))
+                [1] = "BusoHaki"
+                 }              game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("SkillHolder"):FireServer(unpack(args))
             end
         end
     end

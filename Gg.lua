@@ -405,20 +405,3 @@ end)
 page3:Button('Yoro',function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1855.29944, 73.6511078, 31.2292843, 9.24971024e-14, 4.23067519e-08, 1, -5.50468542e-08, 1, -4.23067519e-08, -1, -5.50468542e-08, 9.48259551e-14)
 end)
-
-
-Plr = {}
-for i,v in pairs(game:GetService("Players"):GetChildren()) do
-    table.insert(Plr,v.Name) 
-end
-
- page5:Dropdown("Select Player",Plr,{""},function(t)
-		PlayerTP = t
-	end)
-
-
-
-
-page5:Button('Teleport Player',function()
-      			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[PlayerTP].Character.HumanoidRootPart.CFrame
-end)

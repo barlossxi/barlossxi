@@ -58,12 +58,12 @@ end)
 
 
 page1:Toggle('Auto BusoHaki',false,function(hh)
- _G.AUTOHAKI = hh
+  AUTOHAKI = hh
  end)
 
 spawn(function()
     while wait(.1) do
-        if _G.AUTOHAKI then 
+        if AUTOHAKI then 
             if not game.Players.LocalPlayer.Character:FindFirstChild("Assets") then
                 local args = {
                 [1] = "BusoHaki"

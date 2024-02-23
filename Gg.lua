@@ -378,7 +378,7 @@ end)
 
 
 page1:Toggle(Sukuna'',_G.Sukuna,function(aaa)
-_G.Sukuna =aaa
+_G.Sukuna = aaa
 end)
 
 

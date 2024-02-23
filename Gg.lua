@@ -59,6 +59,7 @@ end)
 
 page1:Toggle('Auto Equip',false,function(1122)
  _G.AUTOHAKI = 1122
+ end)
 
 spawn(function()
     while wait(.1) do
@@ -72,7 +73,6 @@ game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Skill
             end
         end
     end
-end)
 end)
 
 

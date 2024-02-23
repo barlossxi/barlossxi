@@ -99,7 +99,7 @@ SubmitButton.MouseButton1Click:Connect(function()
     if KeySystem == "zxcv" then
 screenGui:Destroy()
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/barlossxi/barlossxi/main/Gg.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/barlossxi/barlossxi/main/Aa.lua"))()
   
   end
 end)

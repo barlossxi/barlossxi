@@ -377,14 +377,14 @@ end)
 
 
 
-page1:Toggle(Sukuna'',_G.Sukuna,function(aaa)
-_G.Sukuna = aaa
+page1:Toggle(Sukuna'',false,function(zxcv)
+_G.Sukunax = zxcv
 end)
 
 
 spawn(function()
 while wait() do
-if _G.Sukuna then
+if _G.Sukunax then
 pcall(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna118"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
@@ -395,7 +395,7 @@ end)
 
 spawn(function()
 while wait() do
-if _G.Sukuna then
+if _G.Sukunax then
 pcall(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna119"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
@@ -407,7 +407,7 @@ end)
 
 spawn(function()
 while wait() do
-if _G.Sukuna then
+if _G.Sukunax then
 pcall(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna120"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
@@ -418,7 +418,7 @@ end)
 
 spawn(function()
 while wait() do
-if _G.Sukuna then
+if _G.Sukunax then
 pcall(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna121"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
@@ -429,7 +429,7 @@ end)
 
 spawn(function()
 while wait() do
-if _G.Sukuna then
+if _G.Sukunax then
 pcall(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna122"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
@@ -440,7 +440,7 @@ end)
 
 spawn(function()
 while wait() do
-if _G.Sukuna then
+if _G.Sukunax then
 pcall(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna123"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
@@ -451,7 +451,7 @@ end)
 
 spawn(function()
 while wait() do
-if _G.Sukuna then
+if _G.Sukunax then
 pcall(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna124"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
@@ -462,7 +462,7 @@ end)
 
 spawn(function()
 while wait() do
-if _G.Sukuna then
+if _G.Sukunax then
 pcall(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna125"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
@@ -473,7 +473,7 @@ end)
 
 spawn(function()
 while wait() do
-if _G.Sukuna then
+if _G.Sukunax then
 pcall(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna126"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
@@ -484,7 +484,7 @@ end)
 
 spawn(function()
 while wait() do
-if _G.Sukuna then
+if _G.Sukunax then
 pcall(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna126"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
@@ -495,7 +495,7 @@ end)
 
 spawn(function()
 while wait() do
-if _G.Sukuna then
+if _G.Sukunax then
 pcall(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna127"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
@@ -506,7 +506,7 @@ end)
 
 spawn(function()
 while wait() do
-if _G.Sukuna then
+if _G.Sukunax then
 pcall(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna128"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
@@ -517,14 +517,13 @@ end)
 
 spawn(function()
 while wait() do
-if _G.Sukuna then
+if _G.Sukunax then
 pcall(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna129"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
 end
 end
 end)
-
 
 
 local player = page1:Label('TP')

@@ -218,13 +218,13 @@ end
 end)
 
 
-page1:Toggle('Gojo',false,function(aaaa)
-aaaa = aaaa
+page1:Toggle('Gojo',_G.Gojo,function(aaaa)
+_G.Gojo = aaaa
 end)
 
 spawn(function()
-while wait(.1) do
-if aaaa then
+while wait() do
+if _G.Gojo then
 pcall(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo [Unleashed]117"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
@@ -234,8 +234,8 @@ end)
 
 
 spawn(function()
-while wait(.1) do
-if aaaa then
+while wait() do
+if _G.Gojo then
 pcall(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo [Unleashed]118"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
@@ -245,8 +245,8 @@ end)
 
 
 spawn(function()
-while wait(.1) do
-if aaaa then
+while wait() do
+if _G.Gojo then
 pcall(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo [Unleashed]119"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
@@ -256,8 +256,8 @@ end)
 
 
 spawn(function()
-while wait(.1) do
-if aaaa then
+while wait() do
+if _G.Gojo then
 pcall(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo [Unleashed]120"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
@@ -267,8 +267,8 @@ end)
 
 
 spawn(function()
-while wait(.1) do
-if aaaa then
+while wait() do
+if _G.Gojo then
 pcall(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo [Unleashed]121"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
@@ -278,8 +278,8 @@ end)
 
 
 spawn(function()
-while wait(.1) do
-if Rimuru then
+while wait() do
+if _G.Gojo then
 pcall(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo [Unleashed]122"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
@@ -289,8 +289,8 @@ end)
 
 
 spawn(function()
-while wait(.1) do
-if aaaa then
+while wait() do
+if _G.Gojo then
 pcall(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo [Unleashed]1123"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
@@ -300,8 +300,8 @@ end)
 
 
 spawn(function()
-while wait(.1) do
-if aaaa then
+while wait() do
+if _G.Gojo then
 pcall(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo [Unleashed]124"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
@@ -311,8 +311,8 @@ end)
 
 
 spawn(function()
-while wait(.1) do
-if aaaa then
+while wait() do
+if _G.Gojo then
 pcall(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo [Unleashed]125"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
@@ -322,8 +322,8 @@ end)
 
 
 spawn(function()
-while wait(.1) do
-if aaaa then
+while wait() do
+if _G.Gojo then
 pcall(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo [Unleashed]126"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
@@ -333,8 +333,8 @@ end)
 
 
 spawn(function()
-while wait(.1) do
-if aaaa then
+while wait() do
+if _G.Gojo then
 pcall(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo [Unleashed]127"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
@@ -344,8 +344,8 @@ end)
 
 
 spawn(function()
-while wait(.1) do
-if aaaa then
+while wait() do
+if _G.Gojo then
 pcall(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo [Unleashed]128"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
@@ -355,8 +355,8 @@ end)
 
 
 spawn(function()
-while wait(.1) do
-if aaaa then
+while wait() do
+if _G.Gojo then
 pcall(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo [Unleashed]129"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
@@ -366,8 +366,8 @@ end)
 
 
 spawn(function()
-while wait(.1) do
-if aaaa then
+while wait() do
+if _G.Gojo then
 pcall(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo [Unleashed]130"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
@@ -405,7 +405,7 @@ end)
 
 spawn(function()
 	game:GetService("RunService").RenderStepped:Connect(function()
-		if aaaa then
+		if _G.Gojo then
 			pcall(function()
 				game:GetService'VirtualUser':CaptureController()
 				game:GetService'VirtualUser':Button1Down(Vector2.new(0,1,0,1))

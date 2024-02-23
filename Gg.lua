@@ -57,6 +57,18 @@ end
 end)
 
 
+page1:Toggle('Auto Equip',false,function(1122)
+ AutoClick = 1122
+end)
+
+while wait() do
+if AutoClick then
+local args = {
+    [1] = "BusoHaki"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("SkillHolder"):FireServer(unpack(args))
+end
 
 
 local player = page1:Label('Boss')

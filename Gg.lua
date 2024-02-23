@@ -377,7 +377,7 @@ end)
 
 
 
-page1:Toggle(Sukuna'',false,function(zxcv)
+page1:Toggle('Sukuna',false,function(zxcv)
 _G.Sukunax = zxcv
 end)
 

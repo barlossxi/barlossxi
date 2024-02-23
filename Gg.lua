@@ -292,7 +292,7 @@ spawn(function()
 while wait() do
 if _G.Gojo then
 pcall(function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo [Unleashed]1123"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo [Unleashed]123"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
 end
 end
@@ -376,6 +376,157 @@ end
 end)
 
 
+
+page1:Toggle(Sukuna'',_G.Sukuna,function(aaa)
+_G.Sukuna =aaa
+end)
+
+
+spawn(function()
+while wait() do
+if _G.Sukuna then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna118"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait() do
+if _G.Sukuna then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna119"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+
+spawn(function()
+while wait() do
+if _G.Sukuna then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna120"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait() do
+if _G.Sukuna then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna121"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait() do
+if _G.Sukuna then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna122"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait() do
+if _G.Sukuna then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna123"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait() do
+if _G.Sukuna then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna124"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait() do
+if _G.Sukuna then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna125"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait() do
+if _G.Sukuna then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna126"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait() do
+if _G.Sukuna then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna126"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait() do
+if _G.Sukuna then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna127"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait() do
+if _G.Sukuna then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna128"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait() do
+if _G.Sukuna then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna129"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+
 local player = page1:Label('TP')
 
 page1:Toggle('Auto TP Item',_G.F,function(K)
@@ -405,7 +556,7 @@ end)
 
 spawn(function()
 	game:GetService("RunService").RenderStepped:Connect(function()
-		if _G.Gojo then
+		if aaaa then
 			pcall(function()
 				game:GetService'VirtualUser':CaptureController()
 				game:GetService'VirtualUser':Button1Down(Vector2.new(0,1,0,1))

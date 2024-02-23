@@ -12,7 +12,7 @@ frame.Parent = screenGui
 local title = Instance.new("TextLabel")
 title.Size = UDim2.new(1, 0, 0, 20)
 title.Position = UDim2.new(0, 0, 0, -20)
-title.Text = "ZA Hub Key System Script"
+title.Text = "Name Hub Key System Script"
 title.TextColor3 = Color3.new(1, 1, 1)
 title.BackgroundColor3 = Color3.new(0, 0, 0)
 title.Parent = frame
@@ -60,10 +60,10 @@ game:GetService("UserInputService").InputChanged:Connect(function(input)
     end
 end)
 
-local KeySystem = Instance.new("TextButton")
+local KeySystem = Instance.new("TextBox")
 KeySystem.Size = UDim2.new(1, 0, 0.5, 0)
 KeySystem.Position = UDim2.new(0, 0, 0, 0)
-KeySystem.Text = ""
+KeySystem.Text = "Enter the Key"
 KeySystem.TextColor3 = Color3.new(0, 0, 0)
 KeySystem.BackgroundTransparency = 0.5
 KeySystem.BackgroundColor3 = Color3.new(1, 1, 1)

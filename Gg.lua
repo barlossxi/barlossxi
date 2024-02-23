@@ -8,32 +8,16 @@ local Win = library:Evil("ZOLA Hub","",_G.Logo )
 local tab1 = Win:CraftTab('Main')
 local page1 = tab1:CraftPage('Main',1)
 local page2 = tab1:CraftPage('Main',2)
-local tab2 = Win:CraftTab('Main')
+local tab2 = Win:CraftTab('SHOP')
 local page3 = tab2:CraftPage('Main',1)
 local page4 = tab2:CraftPage('Main',2)
+local tab3 = Win:CraftTab('Player')
+local page5 = tab3:CraftPage('Main',1)
+local page6 = tab3:CraftPage('Main',2)
 
 
-MONS = {}
- 
-for i,v in pairs(game:GetService("Workspace").Lives:GetChildren()) do
-    table.insert(MONS,v.Name)
-end
- 
- 
-page1:Dropdown("Select Mon",MONS,{""},function(currentOption)
-    Bondit0 = currentOption
-end)
 
-
-page1:Button('Sukuna Half Power',function()
-table.clear(MONS)
-for i,v in pairs(game:GetService("Workspace").Lives:GetChildren()) do
-    table.insert(MONS,v.Name)
-end
-end)
-
-
-page1:Toggle('Auto Farm',false,function(state)
+page1:Toggle('AutoFarm Boss',false,function(state)
     Automonx = state
 end)
 
@@ -42,7 +26,7 @@ spawn(function()
 while wait() do
 if Automonx then
 pcall(function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Snow Bandit2"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo42"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
 end
 end
@@ -53,7 +37,133 @@ spawn(function()
 while wait(.1) do
 if Automonx then
 pcall(function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Bandit0"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria40"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna40"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo81"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna83"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria86"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna111"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo89"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna111"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+page1:Toggle('Rimuru Boss',false,function(aoe)
+Rimuru = aoe
+end
+
+
+spawn(function()
+while wait(.1) do
+if Rimuru then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna108"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Rimuru then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Rimuru87"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Rimuru then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Rimuru90"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Rimuru then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Rimuru109"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
 end
 end
@@ -283,4 +393,22 @@ end)
 
 page3:Button('Yoro',function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1855.29944, 73.6511078, 31.2292843, 9.24971024e-14, 4.23067519e-08, 1, -5.50468542e-08, 1, -4.23067519e-08, -1, -5.50468542e-08, 9.48259551e-14)
+end)
+
+
+Plr = {}
+for i,v in pairs(game:GetService("Players"):GetChildren()) do
+    table.insert(Plr,v.Name) 
+end
+
+ page5:Dropdown("Select Player",Plr,{""},function(t)
+		PlayerTP = t
+	end)
+
+
+
+
+page5:Button('Teleport Player',function()
+      			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[PlayerTP].Character.HumanoidRootPart.CFrame
+end
 end)

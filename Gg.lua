@@ -57,8 +57,8 @@ end
 end)
 
 
-page1:Toggle('Auto Equip',false,function(1122)
- _G.AUTOHAKI = 1122
+page1:Toggle('Auto BusoHaki',false,function(hh)
+ _G.AUTOHAKI = hh
  end)
 
 spawn(function()

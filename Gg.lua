@@ -19,8 +19,42 @@ local page6 = tab3:CraftPage('Main',2)
 local player = page1:Label('Level')
 
 
+page1:Toggle('Auto Quest',false,function(ab)
+_G.hr = ab
+while _G.hr do wait()
+for i,v in pairs(game:GetService("Workspace").Quest:GetDescendants()) do
+ if v.ClassName == "ProximityPrompt" then
+   fireproximityprompt(v,30)
+end
+      end
+            end
+end)
 
 
+local Weaponlist = {}
+local Weapon = nil
+for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+    table.insert(Weaponlist,v.Name)
+end
+
+page1:Dropdown("Select Weapon",Weaponlist,{""},function(v)
+    Weapon = v
+end)
+
+
+page1:Toggle('Auto Equip',false,function(a)
+AutoEquiped = a
+end)
+
+spawn(function()
+while wait() do
+if AutoEquiped then
+pcall(function()
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(Weapon))
+end)
+end
+end
+end)
 
 
 
@@ -202,31 +236,6 @@ end
 end
 end)
 
-
-local Weaponlist = {}
-local Weapon = nil
-for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
-    table.insert(Weaponlist,v.Name)
-end
-
-page1:Dropdown("Select Weapon",Weaponlist,{""},function(v)
-    Weapon = v
-end)
-
-
-page1:Toggle('Auto Equip',false,function(a)
-AutoEquiped = a
-end)
-
-spawn(function()
-while wait() do
-if AutoEquiped then
-pcall(function()
-game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(Weapon))
-end)
-end
-end
-end)
 
 
 page1:Toggle('Gojo',_G.Gojo,function(aaaa)
@@ -534,6 +543,8 @@ end
 end)
 
 
+
+
 local player = page1:Label('TP')
 
 page1:Toggle('Auto TP Item',_G.F,function(K)
@@ -738,7 +749,7 @@ for i,v in pairs(game:GetService("Players"):GetChildren()) do
     table.insert(Plr,v.Name) 
 end
 
-page1:Dropdown("Select Weapon",Plr,{""},function(v)
+page5:Dropdown("Select Weapon",Plr,{""},function(v)
 		PlayerTP = t
 end)
 

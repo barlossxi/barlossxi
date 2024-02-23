@@ -99,7 +99,7 @@ SubmitButton.MouseButton1Click:Connect(function()
     if KeySystem == "Get key" then
 screenGui:Destroy()
 
----You script
+loadstring(game:HttpGet("https://raw.githubusercontent.com/barlossxi/barlossxi/main/Gg.lua"))()
   
   end
 end)

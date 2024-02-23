@@ -71,28 +71,6 @@ spawn(function()
 while wait() do
 if Automonx then
 pcall(function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo42"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
-end)
-end
-end
-end)
-
-
-spawn(function()
-while wait(.1) do
-if Automonx then
-pcall(function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria40"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
-end)
-end
-end
-end)
-
-
-spawn(function()
-while wait(.1) do
-if Automonx then
-pcall(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna40"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
 end
@@ -104,7 +82,139 @@ spawn(function()
 while wait(.1) do
 if Automonx then
 pcall(function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo81"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna41"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna42"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna43"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna44"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna45"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna46"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna47"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna48"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna49"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna50"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna80"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna81"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna82"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
 end
 end
@@ -126,7 +236,195 @@ spawn(function()
 while wait(.1) do
 if Automonx then
 pcall(function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria86"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna84"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna85"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna86"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna87"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna88"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna89"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna90"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna100"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna101"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna102"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna103"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna104"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna105"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna106"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna107"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna108"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna109"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna110"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
 end
 end
@@ -138,6 +436,1005 @@ while wait(.1) do
 if Automonx then
 pcall(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna111"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna112"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna113"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna114"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna115"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna116"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna117"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna118"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)    
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna119"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna120"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna121"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna122"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna123"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna124"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna125"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna126"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna127"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna128"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna129"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna130"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria40"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria41"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria42"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria43"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)    
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria44"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria45"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria46"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria47"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria48"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria49"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+
+
+end)spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria50"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria80"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria81"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria82"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria83"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria84"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria85"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+
+
+end)spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria86"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria87"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria88"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria89"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)    
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria90"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria101"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria102"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria103"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria104"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria105"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria106"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria107"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria108"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria109"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria110"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria111"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria112"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria113"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria114"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria115"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria116"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria117"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria118"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria119"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria120"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria121"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria122"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria123"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria124"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria125"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria126"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria127"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria128"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria129"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Artoria130"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo40"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo41"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo42"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo43"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo44"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo45"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo46"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo47"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo48"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo49"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo50"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo80"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo81"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo82"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo83"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo84"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo85"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo86"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo87"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo88"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
 end
 end
@@ -159,7 +1456,7 @@ spawn(function()
 while wait(.1) do
 if Automonx then
 pcall(function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna111"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo90"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
 end
 end
@@ -170,7 +1467,543 @@ spawn(function()
 while wait(.1) do
 if Automonx then
 pcall(function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna108"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo100"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo101"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo102"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo103"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo104"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo105"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo106"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo107"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo108"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo109"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo110"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo111"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo112"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo113"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo114"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo115"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo116"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo117"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo118"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo119"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo120"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo121"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo122"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo123"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo124"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo125"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo126"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo127"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo128"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo129"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo130"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo40"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo41"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo42"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo43"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo44"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo45"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)    
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo46"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo47"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo48"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo49"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo50"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo80"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo81"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo82"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo83"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo84"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo85"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo86"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Automonx then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo87"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
 end
 end
@@ -186,7 +2019,7 @@ spawn(function()
 while wait(.1) do
 if Rimuru then
 pcall(function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Rimuru87"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo88"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
 end
 end
@@ -197,7 +2030,7 @@ spawn(function()
 while wait(.1) do
 if Rimuru then
 pcall(function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Rimuru90"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo89"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
 end
 end
@@ -208,7 +2041,7 @@ spawn(function()
 while wait(.1) do
 if Rimuru then
 pcall(function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Rimuru109"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo90"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
 end
 end
@@ -219,7 +2052,7 @@ spawn(function()
 while wait(.1) do
 if Rimuru then
 pcall(function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Rimuru112"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo100"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
 end
 end
@@ -230,11 +2063,341 @@ spawn(function()
 while wait(.1) do
 if Rimuru then
 pcall(function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Rimuru112"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo101"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
 end
 end
 end)
+
+
+spawn(function()
+while wait(.1) do
+if Rimuru then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo102"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Rimuru then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo103"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Rimuru then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo104"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Rimuru then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo105"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+spawn(function()
+while wait(.1) do
+if Rimuru then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo106"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Rimuru then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo107"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Rimuru then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo108"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Rimuru then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo109"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Rimuru then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo110"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Rimuru then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo111"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Rimuru then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo112"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Rimuru then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo113"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Rimuru then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo114"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Rimuru then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo115"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Rimuru then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo116"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Rimuru then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo117"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Rimuru then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo118"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Rimuru then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo119"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Rimuru then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo120"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Rimuru then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo121"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Rimuru then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo122"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Rimuru then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo123"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Rimuru then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo124"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Rimuru then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo125"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Rimuru then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo126"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Rimuru then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo127"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Rimuru then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo128"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Rimuru then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo129"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Rimuru then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo130"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Rimuru then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Gojo131"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
 
 
 
@@ -742,7 +2905,7 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1855.29
 end)
 
 
-
+local player = page1:Label('Player')
 
 Plr = {}
 for i,v in pairs(game:GetService("Players"):GetChildren()) do

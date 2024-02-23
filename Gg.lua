@@ -16,6 +16,17 @@ local page5 = tab3:CraftPage('Main',1)
 local page6 = tab3:CraftPage('Main',2)
 
 
+local player = page1:Label('Level')
+
+
+
+
+
+
+
+
+local player = page1:Label('Boss')
+
 
 page1:Toggle('AutoFarm Boss',false,function(state)
     Automonx = state
@@ -717,4 +728,28 @@ end)
 
 page3:Button('Yoro',function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1855.29944, 73.6511078, 31.2292843, 9.24971024e-14, 4.23067519e-08, 1, -5.50468542e-08, 1, -4.23067519e-08, -1, -5.50468542e-08, 9.48259551e-14)
+end)
+
+
+
+
+Plr = {}
+for i,v in pairs(game:GetService("Players"):GetChildren()) do
+    table.insert(Plr,v.Name) 
+end
+
+page1:Dropdown("Select Weapon",Plr,{""},function(v)
+		PlayerTP = t
+end)
+
+
+page5:Button('Teleport Player',function()
+      			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[PlayerTP].Character.HumanoidRootPart.CFrame
+end)
+
+page5:Toggle('Teleport Player Loop',false,function(t)
+_G.TPPlayer = t
+while _G.TPPlayer do wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[PlayerTP].Character.HumanoidRootPart.CFrame * CFrame.new(0,0,3)
+end
 end)

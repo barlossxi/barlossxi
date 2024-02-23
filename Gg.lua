@@ -67,7 +67,8 @@ spawn(function()
             if not game.Players.LocalPlayer.Character:FindFirstChild("Assets") then
                 local args = {
                 [1] = "BusoHaki"
-                 }              game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("SkillHolder"):FireServer(unpack(args))
+                 }              
+                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
             end
         end
     end

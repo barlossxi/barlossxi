@@ -57,21 +57,14 @@ end
 end)
 
 
-page1:Toggle('Auto BusoHaki',false,function(hh)
-  AUTOHAKI = hh
- end)
+page5:Button('Auto BusoHaki',true,function()
 
-spawn(function()
-    while wait(.1) do
-        if AUTOHAKI then 
-            if not game.Players.LocalPlayer.Character:FindFirstChild("Assets") then
-                local args = {
-                [1] = "BusoHaki"
-                 }              
-                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
-            end
-        end
-    end
+local args = {
+    [1] = "BusoHaki"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("SkillHolder"):FireServer(unpack(args))
+end
 end)
 
 

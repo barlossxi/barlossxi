@@ -12,7 +12,7 @@ frame.Parent = screenGui
 local title = Instance.new("TextLabel")
 title.Size = UDim2.new(1, 0, 0, 20)
 title.Position = UDim2.new(0, 0, 0, -20)
-title.Text = "Name Hub Key System Script"
+title.Text = "ZA Hub Key System Script"
 title.TextColor3 = Color3.new(1, 1, 1)
 title.BackgroundColor3 = Color3.new(0, 0, 0)
 title.Parent = frame
@@ -60,7 +60,7 @@ game:GetService("UserInputService").InputChanged:Connect(function(input)
     end
 end)
 
-local KeySystem = Instance.new("Barloss")
+local KeySystem = Instance.new("TextButton")
 KeySystem.Size = UDim2.new(1, 0, 0.5, 0)
 KeySystem.Position = UDim2.new(0, 0, 0, 0)
 KeySystem.Text = "Enter the Key"
@@ -92,7 +92,7 @@ local GetKeyButton = Instance.new("TextButton")
 GetKeyButton.Size = UDim2.new(0.5, 0, 0.5, 0)
 GetKeyButton.Position = UDim2.new(0.5, 0, 0.5, 0)
 GetKeyButton.Text = "Get Key"
-GetKeyButton.Parent = frame
+GetKeyButton.Parent = Barloss
 --------------------------------------------------------------------------
 SubmitButton.MouseButton1Click:Connect(function()
     local KeySystem = KeySystem.Text

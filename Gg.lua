@@ -63,7 +63,7 @@ end)
 local KeySystem = Instance.new("TextButton")
 KeySystem.Size = UDim2.new(1, 0, 0.5, 0)
 KeySystem.Position = UDim2.new(0, 0, 0, 0)
-KeySystem.Text = "Enter the Key"
+KeySystem.Text = ""
 KeySystem.TextColor3 = Color3.new(0, 0, 0)
 KeySystem.BackgroundTransparency = 0.5
 KeySystem.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -92,7 +92,7 @@ local GetKeyButton = Instance.new("TextButton")
 GetKeyButton.Size = UDim2.new(0.5, 0, 0.5, 0)
 GetKeyButton.Position = UDim2.new(0.5, 0, 0.5, 0)
 GetKeyButton.Text = "Get Key"
-GetKeyButton.Parent = Barloss
+GetKeyButton.Parent = frame
 --------------------------------------------------------------------------
 SubmitButton.MouseButton1Click:Connect(function()
     local KeySystem = KeySystem.Text

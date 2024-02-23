@@ -57,7 +57,7 @@ end
 end)
 
 
-page1:Toggle('Auto BusoHaki',true,function(vvv)
+page1:Toggle('Auto Haki',false,function(vvv)
 _G.AUTOHAKI = vvv
 end)
 

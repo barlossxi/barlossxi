@@ -134,7 +134,7 @@ end)
 
 page1:Toggle('Rimuru Boss',false,function(aoe)
 Rimuru = aoe
-end
+end)
 
 
 spawn(function()

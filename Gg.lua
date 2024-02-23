@@ -121,20 +121,20 @@ end
 end)
 
 
-page1:Toggle('Rimuru Boss',false,function(aoe)
-Rimuru = aoe
-end
-
-
 spawn(function()
 while wait(.1) do
-if Rimuru then
+if Automonx then
 pcall(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Sukuna108"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
 end
 end
 end)
+
+
+page1:Toggle('Rimuru Boss',false,function(aoe)
+Rimuru = aoe
+end
 
 
 spawn(function()
@@ -164,6 +164,17 @@ while wait(.1) do
 if Rimuru then
 pcall(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Rimuru109"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+end)
+end
+end
+end)
+
+
+spawn(function()
+while wait(.1) do
+if Rimuru then
+pcall(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Rimuru112"].HumanoidRootPart.CFrame * CFrame.new(0,0,5)
 end)
 end
 end
@@ -410,5 +421,4 @@ end
 
 page5:Button('Teleport Player',function()
       			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[PlayerTP].Character.HumanoidRootPart.CFrame
-end
 end)

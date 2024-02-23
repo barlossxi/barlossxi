@@ -96,8 +96,8 @@ GetKeyButton.Parent = frame
 --------------------------------------------------------------------------
 SubmitButton.MouseButton1Click:Connect(function()
     local KeySystem = KeySystem.Text
-    if KeySystem == "Get key" then
-screenGui:Destroy(Barloss)
+    if KeySystem == "Barloss" then 
+screenGui:Destroy()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/barlossxi/barlossxi/main/Gg.lua"))()
   
@@ -107,3 +107,8 @@ end)
 GetKeyButton.MouseButton1Click:Connect(function()
  setclipboard("Paste here your link to get the key") 
 end) 
+
+
+
+
+

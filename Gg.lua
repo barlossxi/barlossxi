@@ -376,11 +376,9 @@ end
 end)
 
 
-
-page1:Toggle('Sukuna',false,function(zxcv)
+page1:Toggle('Sukuna',_G.Sukunax,function(zxcv)
 _G.Sukunax = zxcv
 end)
-
 
 spawn(function()
 while wait() do
@@ -402,7 +400,6 @@ end)
 end
 end
 end)
-
 
 
 spawn(function()

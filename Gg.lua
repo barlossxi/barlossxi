@@ -62,7 +62,6 @@ _G.AUTOHAKI = vvv
 end)
 
 spawn(function()
-    while wait(1) do
         if _G.AUTOHAKI then 
             if not game.Players.LocalPlayer.Character:FindFirstChild("Assets") then
                 local args = {
@@ -70,7 +69,6 @@ spawn(function()
                  }              game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("SkillHolder"):FireServer(unpack(args))
             end
         end
-    end
 end)
 
 

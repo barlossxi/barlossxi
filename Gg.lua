@@ -59,17 +59,17 @@ end)
 
 page1:Toggle('Auto Haki',false,function(vvv)
 _G.AUTOHAKI = vvv
-end)
 
-spawn(function()
-        if _G.AUTOHAKI then 
+if _G.AUTOHAKI then 
             if not game.Players.LocalPlayer.Character:FindFirstChild("Assets") then
                 local args = {
                 [1] = "BusoHaki"
                  }              game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("SkillHolder"):FireServer(unpack(args))
             end
         end
-end)
+   end)
+
+
 
 
 local player = page1:Label('Boss')

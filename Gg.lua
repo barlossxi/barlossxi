@@ -102,7 +102,7 @@ if text == "Kashimo" then
         end
     end)
 end
-elseif text == "Kashimo" then
+elseif text == "Sukuna" then
     function mobs()
     spawn(function()
         _G.mobs = true

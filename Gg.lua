@@ -85,7 +85,7 @@ while _G.AutoFarm do
     
     pcall(function()
         for i, v in pairs(game.Workspace:GetDescendants()) do
-            if v.Name == "Bandit0" or v.Name == "Bandit39" or v.Name == "Bandit40" and v:FindFirstChild("Humanoid") and v.Humanoid.Health > 0 then
+            if v.Name == "Bandit0" or v.Name == "Sukuna40" or v.Name == "Bandit40" and v:FindFirstChild("Humanoid") and v.Humanoid.Health > 0 then
                 repeat
                     wait()
                     game:GetService'VirtualUser':CaptureController()

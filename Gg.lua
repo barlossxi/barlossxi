@@ -83,7 +83,8 @@ page1:Toggle('AutoFarm Boss',false,function(value)
 
 
 
-page1:Dropdown("Select Mobs", {"::Select Mobs::","BOSS"}, 1, function(text)
+page1:Dropdown("Auto BOSS",{"BOSS"},"BOSS",function(text)
+
 if text == "BOSS" then
     function mobs()
     spawn(function()
@@ -451,7 +452,6 @@ elseif text == "BOSS" then
             end)
         end
     end)
-end
 end
 end)
   

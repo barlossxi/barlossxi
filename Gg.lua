@@ -85,8 +85,7 @@ end)
        while wait() do
        if _G.Automonx then
         pcall(function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo40"].HumanoidRootPart.CFrame * CFrame.new(0, 0, 5)
-              
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo40"].HumanoidRootPart.CFrame * CFrame.new(0, 0, 5)   
 end)
 end
 end

@@ -77,15 +77,9 @@ end)
 local player = page1:Label('Boss')
 
 
-page1:Toggle('AutoFarm Boss',false,function(value)
-    _G.mobs = value
-    end)
 
-
-
-page1:Dropdown("Auto BOSS",{"BOSS"},"BOSS",function(text)
-
-if text == "BOSS" then
+page1:Dropdown("Select Mobs", {"::Select Mobs::","Bandit", "Bandit Leader", "Clown Pirate", "Marine", "Monkey", "Monkey King", "Bomb Man", "Sand Man", "Shank", "Snow Bandit", "Snow Bandit Leader", "Sukuna", "Kashimo", "Sukuna [Half Power]", "Gojo [Unleashed]", "Rimuru"}, 1, function(text)
+if text == "Bandit" then
     function mobs()
     spawn(function()
         _G.mobs = true
@@ -108,7 +102,7 @@ if text == "BOSS" then
         end
     end)
 end
-elseif text == "BOSS then
+elseif text == "Bandit Leader" then
     function mobs()
     spawn(function()
         _G.mobs = true
@@ -131,7 +125,7 @@ elseif text == "BOSS then
         end
     end)
 end
-elseif text == "BOSS" then
+elseif text == "Clown Pirate" then
     function mobs()
     spawn(function()
         _G.mobs = true
@@ -154,7 +148,7 @@ elseif text == "BOSS" then
         end
     end)
 end
-elseif text == "BOSS" then
+elseif text == "Marine" then
     function mobs()
     spawn(function()
         _G.mobs = true
@@ -177,7 +171,7 @@ elseif text == "BOSS" then
         end
     end)
 end
-elseif text == "BOSS" then
+elseif text == "Monkey" then
     function mobs()
     spawn(function()
         _G.mobs = true
@@ -200,7 +194,7 @@ elseif text == "BOSS" then
         end
     end)
 end
-elseif text == "BOSS" then
+elseif text == "Monkey King" then
     function mobs()
     spawn(function()
         _G.mobs = true
@@ -223,7 +217,7 @@ elseif text == "BOSS" then
         end
     end)
 end
-elseif text == "BOSS" then
+elseif text == "Bomb Man" then
     function mobs()
     spawn(function()
         _G.mobs = true
@@ -246,7 +240,7 @@ elseif text == "BOSS" then
         end
     end)
 end
-elseif text == "BOSS" then
+elseif text == "Sand Man" then
     function mobs()
     spawn(function()
         _G.mobs = true
@@ -269,7 +263,7 @@ elseif text == "BOSS" then
         end
     end)
 end
-elseif text == "BOSS" then
+elseif text == "Shank" then
     function mobs()
     spawn(function()
         _G.mobs = true
@@ -292,7 +286,7 @@ elseif text == "BOSS" then
         end
     end)
 end
-elseif text == "BOSS" then
+elseif text == "Snow Bandit" then
     function mobs()
     spawn(function()
         _G.mobs = true
@@ -315,7 +309,7 @@ elseif text == "BOSS" then
         end
     end)
 end
-elseif text == "BOSS" then
+elseif text == "Snow Bandit Leader" then
     function mobs()
     spawn(function()
         _G.mobs = true
@@ -338,7 +332,7 @@ elseif text == "BOSS" then
         end
     end)
 end
-elseif text == "BOSS" then
+elseif text == "Kashimo" then
     function mobs()
     spawn(function()
         _G.mobs = true
@@ -361,7 +355,7 @@ elseif text == "BOSS" then
         end
     end)
 end
-elseif text == "BOSS" then
+elseif text == "Sukuna" then
     function mobs()
     spawn(function()
         _G.mobs = true
@@ -384,7 +378,7 @@ elseif text == "BOSS" then
         end
     end)
 end
-elseif text == "BOSS" then
+elseif text == "Sukuna [Half Power]" then
     function mobs()
     spawn(function()
         _G.mobs = true
@@ -407,7 +401,7 @@ elseif text == "BOSS" then
         end
     end)
 end
-elseif text == "BOSS" then
+elseif text == "Gojo [Unleashed]" then
     function mobs()
     spawn(function()
         _G.mobs = true
@@ -430,7 +424,7 @@ elseif text == "BOSS" then
         end
     end)
 end
-elseif text == "BOSS" then
+elseif text == "Rimuru" then
     function mobs()
     spawn(function()
         _G.mobs = true
@@ -453,5 +447,17 @@ elseif text == "BOSS" then
         end
     end)
 end
+end
 end)
-  
+
+
+page1:Toggle('Mobs Farm',false,function(value)
+    _G.mobs = value
+    print('mobs: ', value);
+    if value then
+        mobs();
+        _G.mobs = true
+        else
+        _G.mobs = false
+    end
+end)

@@ -78,8 +78,8 @@ local player = page1:Label('Boss')
 
 
 
-page1:Dropdown("Select Mobs", {"::Select Mobs::"}, 1, function(text)
-if text == "Select Mobs" then
+page1:Dropdown("Select Mobs", {"AllBOSS"}, 1, function(text)
+if text == "AllBOSS" then
     function mobs()
     spawn(function()
         _G.mobs = true
@@ -102,7 +102,7 @@ if text == "Select Mobs" then
         end
     end)
 end
-elseif text == "Select Mobs" then
+elseif text == "AllBOSS" then
     function mobs()
     spawn(function()
         _G.mobs = true
@@ -125,7 +125,7 @@ elseif text == "Select Mobs" then
         end
     end)
 end
-
+end)
 
 page1:Toggle('Mobs Farm',false,function(value)
     _G.mobs = value

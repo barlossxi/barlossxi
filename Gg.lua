@@ -78,12 +78,12 @@ local player = page1:Label('Boss')
 
 
 page1:Toggle('AutoFarm Boss',false,function(state)
-    _G._G.Automonx = state
+    _G.Automonx = state
 end)
     
   spawn(function()
        while wait() do
-       if Automonx then
+       if _G.Automonx then
         pcall(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Lives["Kashimo40"].HumanoidRootPart.CFrame * CFrame.new(0, 0, 5)
               

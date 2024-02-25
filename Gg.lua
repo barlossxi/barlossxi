@@ -78,7 +78,7 @@ local player = page1:Label('Boss')
 
 
 page1:Toggle('AutoFarm Boss',false,function(state)
-    _G.Automonx = state
+    Automonx = state
 end)
     
   spawn(function()

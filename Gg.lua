@@ -125,6 +125,7 @@ elseif text == "Sukuna" then
         end
     end)
 end
+end
 end)
 
 page1:Toggle('Mobs Farm',false,function(value)

@@ -78,7 +78,7 @@ local player = page1:Label('Boss')
 
 
 
-page1:Dropdown("Select Mobs", {"::Select Mobs::","", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""}, 1, function(text)
+page1:Dropdown("Select Mobs", {"AllBoss"}, 1, function(text)
 if text == "Bandit" then
     function mobs()
     spawn(function()
@@ -332,7 +332,7 @@ elseif text == "Snow Bandit Leader" then
         end
     end)
 end
-elseif text == "Kashimo" then
+elseif text == "AllBoss" then
     function mobs()
     spawn(function()
         _G.mobs = true
@@ -355,7 +355,7 @@ elseif text == "Kashimo" then
         end
     end)
 end
-elseif text == "Sukuna" then
+elseif text == "AllBoss" then
     function mobs()
     spawn(function()
         _G.mobs = true

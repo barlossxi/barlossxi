@@ -8,6 +8,9 @@ local Win = library:Evil("ZA Hub","",_G.Logo )
 local tab1 = Win:CraftTab('Main')
 local page1 = tab1:CraftPage('Main',1)
 local page2 = tab1:CraftPage('Main',2)
+local tab1 = Win:CraftTab('Boss')
+local page7 = tab4:CraftPage('Main',1)
+local page8 = tab4:CraftPage('Main',2)
 local tab2 = Win:CraftTab('SHOP')
 local page3 = tab2:CraftPage('Main',1)
 local page4 = tab2:CraftPage('Main',2)
@@ -74,12 +77,12 @@ end)
 
 
 
-local player = page1:Label('Boss')
+local player = page7:Label('Boss')
 
 
 
-page1:Dropdown("Select Mobs", {"BOSS"}, 1, function(text)
-if text == "BOSS" then
+page7:Dropdown("Select Boss", {"Boss"}, 1, function(text)
+if text == "Boss" then
     function mobs()
     spawn(function()
         _G.mobs = true
@@ -101,7 +104,7 @@ if text == "BOSS" then
                 local function GetClosestPlayer()
                 local target = nil
                 for i,v in pairs(workspace.Lives:GetDescendants()) do
-                    if v.Name == "Humanoid" and v.MaxHealth == 1750000 then
+                    if v.Name == "Humanoid" and v.MaxHealth == 450000 then
                         target = v
                     end
                  end
@@ -109,20 +112,7 @@ if text == "BOSS" then
                 end
                  repeat task.wait()
                     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = GetClosestPlayer().RootPart.CFrame*CFrame.new(0,0,5)
-                until _G.mobs == true
-                wait()
-            local function GetClosestPlayer()
-                local target = nil
-                for i,v in pairs(workspace.Lives:GetDescendants()) do
-                    if v.Name == "Humanoid" and v.MaxHealth == 50 then
-                        target = v
-                    end
-                 end
-                 return target
-                end
-                 repeat task.wait()
-                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = GetClosestPlayer().RootPart.CFrame*CFrame.new(0,5,0)*CFrame.Angles(math.rad(-90),0,0)
-                until _G.mobs == true
+                until _G.mobs == false
                 wait()
             end)
         end
@@ -132,13 +122,103 @@ end
 end)
                 
 
-page1:Toggle('Mobs Farm',false,function(value)
+page7:Toggle('Boss Farm',false,function(value)
     _G.mobs = value
     print('mobs: ', value);
     if value then
         mobs();
         _G.mobs = true
         else
-        _G.mobs = true
+        _G.mobs = false
+    end
+end)
+
+
+
+local player = page7:Label('Boss')
+
+page8:Dropdown("Select Boss", {"Choso","Gojo [Unleashed]","Sukuna [Half Power]"}, 1, function(textx)
+
+if textx == "Choso" then
+    function mobsx()
+    spawn(function()
+        _G.mobsx = true
+        while _G.mobsx do wait()
+            pcall(function()
+                local function GetClosestPlayer()
+                local target = nil
+                for i,v in pairs(workspace.Lives:GetDescendants()) do
+                    if v.Name == "Humanoid" and v.MaxHealth == 12500000  then
+                        target = v
+                    end
+                 end
+                 return target
+                end
+                 repeat task.wait()
+                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = GetClosestPlayer().RootPart.CFrame*CFrame.new(0,5,0)*CFrame.Angles(math.rad(-90),0,0)
+                until _G.mobsx == false
+                wait()
+            end)
+        end
+    end)
+end
+elseif textx == "Gojo [Unleashed]"" then
+    function mobsx()
+    spawn(function()
+        _G.mobsx = true
+        while _G.mobsx do wait()
+            pcall(function()
+                local function GetClosestPlayer()
+                local target = nil
+                for i,v in pairs(workspace.Lives:GetDescendants()) do
+                    if v.Name == "Humanoid" and v.MaxHealth == 4500000  then
+                        target = v
+                    end
+                 end
+                 return target
+                end
+                 repeat task.wait()
+                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = GetClosestPlayer().RootPart.CFrame*CFrame.new(0,5,0)*CFrame.Angles(math.rad(-90),0,0)
+                until _G.mobsx == false
+                wait()
+            end)
+        end
+    end)
+end
+elseif textx == "Sukuna [Half Power]" then
+    function mobsx()
+    spawn(function()
+        _G.mobsx = true
+        while _G.mobsx do wait()
+            pcall(function()
+                local function GetClosestPlayer()
+                local target = nil
+                for i,v in pairs(workspace.Lives:GetDescendants()) do
+                    if v.Name == "Humanoid" and v.MaxHealth == 5000000  then
+                        target = v
+                    end
+                 end
+                 return target
+                end
+                 repeat task.wait()
+                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = GetClosestPlayer().RootPart.CFrame*CFrame.new(0,5,0)*CFrame.Angles(math.rad(-90),0,0)
+                until _G.mobsx == false
+                wait()
+            
+        end
+    end)
+end
+end
+end)
+
+
+page8:Toggle('Boss Farm',false,function(valuex)
+    _G.mobsx = valuex
+    print('mobsx: ', valuex);
+    if value then
+        mobsx();
+        _G.mobsx = true
+        else
+        _G.mobsx = false
     end
 end)

@@ -88,7 +88,20 @@ if text == "BOSS" then
                 local function GetClosestPlayer()
                 local target = nil
                 for i,v in pairs(workspace.Lives:GetDescendants()) do
-                    if v.Name == "Humanoid" and v.MaxHealth == 1500 then
+                    if v.Name == "Humanoid" and v.MaxHealth == 5000000 then
+                        target = v
+                    end
+                 end
+                 return target
+                end
+                 repeat task.wait()
+                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = GetClosestPlayer().RootPart.CFrame*CFrame.new(0,5,0)*CFrame.Angles(math.rad(-90),0,0)
+                until _G.mobs == true
+                wait()
+                local function GetClosestPlayer()
+                local target = nil
+                for i,v in pairs(workspace.Lives:GetDescendants()) do
+                    if v.Name == "Humanoid" and v.MaxHealth == 4500000 then
                         target = v
                     end
                  end

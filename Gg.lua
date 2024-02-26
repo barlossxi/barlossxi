@@ -453,7 +453,7 @@ end
 end)
 
 
-page1:Toggle("Mobs Farm", function(value)
+page1:Toggle('Mobs Farm',_G.mobs, function(value)
     _G.mobs = value
     print('mobs: ', value);
     if value then

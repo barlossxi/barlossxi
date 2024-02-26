@@ -85,13 +85,14 @@ page7:Dropdown("Select Mobs", {"Boss"}, _G.mobs, function(text)
 if text == "Boss" then
     function mobs()
     spawn(function()
-       while wait() do
-       if _G.mobs then
-        pcall(function()
+        _G.mobs = true
+        while _G.mobs do wait(.1)
+            pcall(function()
                 local function GetClosestPlayer()
                 local target = nil
                 for i,v in pairs(workspace.Lives:GetDescendants()) do
-                    if v.Name == "Humanoid" and v.MaxHealth == 12500 or v.Name == "Humanoid" and v.MaxHealth == 7500 then
+                    if v.Name == "Humanoid" and v.MaxHealth == 12500 then
+                    if v.Name == "Humanoid" and v.MaxHealth == 350 then
                         target = v
                     end
                  end

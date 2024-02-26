@@ -204,7 +204,7 @@ elseif textx == "Sukuna [Half Power]" then
                     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = GetClosestPlayer().RootPart.CFrame*CFrame.new(0,5,0)*CFrame.Angles(math.rad(-90),0,0)
                 until _G.mobsx == false
                 wait()
-            
+            end)
         end
     end)
 end

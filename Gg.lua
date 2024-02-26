@@ -92,7 +92,6 @@ if text == "Boss" then
                 local target = nil
                 for i,v in pairs(workspace.Lives:GetDescendants()) do
                     if v.Name == "Humanoid" and v.MaxHealth == 12500 then
-                    if v.Name == "Humanoid" and v.MaxHealth == 350 then
                         target = v
                     end
                  end
@@ -118,6 +117,46 @@ page7:Toggle('Boss Farm',false,function(value)
         _G.mobs = true
         else
         _G.mobs = false
+    end
+end)
+
+
+page7:Dropdown("Select Mobs", {"Boss"}, _G.mobs, function(lllop)
+if lllopt == "Boss" then
+    function pzzc()
+    spawn(function()
+        _G.nmvc = true
+        while _G.nmvc do wait(.1)
+            pcall(function()
+                local function GetClosestPlayer()
+                local hkjk = nil
+                for i,v in pairs(workspace.Lives:GetDescendants()) do
+                    if v.Name == "Humanoid" and v.MaxHealth == 350 then
+                        hkjk = v
+                    end
+                 end
+                 return hkjk
+                end
+                 repeat task.wait()
+                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = GetClosestPlayer().RootPart.CFrame*CFrame.new(0,5,0)*CFrame.Angles(math.rad(-90),0,0)
+                until _G.nmvc == false
+                wait()
+            end)
+        end
+    end)
+end
+end
+end)
+                
+
+page7:Toggle('Boss Farm',false,function(gogopp)
+    _G.nmvc = gogopp
+    print('pzzc: ', gogopp);
+    if gogopp then
+        pzzc();
+        _G.nmvcs = true
+        else
+        _G.nmvc = false
     end
 end)
 

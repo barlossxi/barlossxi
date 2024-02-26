@@ -109,7 +109,7 @@ if text == "BOSS" then
                 end
                  repeat task.wait()
                     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = GetClosestPlayer().RootPart.CFrame*CFrame.new(0,0,5)*CFrame.Angles(math.rad(-90),0,0)
-                until _G.mobs == false
+                until _G.mobs == true
                 wait()
                 local function GetClosestPlayer()
                 local target = nil

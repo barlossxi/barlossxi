@@ -80,8 +80,7 @@ end)
 local player = page7:Label('Boss')
 
 
-
-page1:Dropdown("Select Mobs", {"Bandit"}, 1, function(text)
+page7:Dropdown("Select Mobs", {"Bandit"}, 1, function(text)
 if text == "Bandit" then
     function mobs()
     spawn(function()
@@ -91,7 +90,7 @@ if text == "Bandit" then
                 local function GetClosestPlayer()
                 local target = nil
                 for i,v in pairs(workspace.Lives:GetDescendants()) do
-                    if v.Name == "Humanoid" and v.MaxHealth == 50 then
+                    if v.Name == "Humanoid" and v.MaxHealth == 12500  then
                         target = v
                     end
                  end
@@ -109,8 +108,7 @@ end
 end)
             
 
-
-page1:Toggle("Mobs Farm", function(value)
+page7:Toggle("Mobs Farm", function(value)
     _G.mobs = value
     print('mobs: ', value);
     if value then

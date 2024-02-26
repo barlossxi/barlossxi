@@ -81,7 +81,7 @@ local player = page7:Label('Boss')
 
 
 
-KillingCheats:CreateDropdown("Select Mobs", {"Bandit"}, 1, function(text)
+page1:Dropdown("Select Mobs", {"Bandit"}, 1, function(text)
 if text == "Bandit" then
     function mobs()
     spawn(function()

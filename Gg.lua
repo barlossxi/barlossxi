@@ -80,7 +80,7 @@ end)
 local player = page7:Label('Boss')
 
 
-page7:Dropdown("Select Mobs", {"Bandit"}, 1, function(text)
+page7:Dropdown("Select Mobs", {"::Select Mobs::","Bandit", "Bandit Leader", "Clown Pirate", "Marine", "Monkey", "Monkey King", "Bomb Man", "Sand Man", "Shank", "Snow Bandit", "Snow Bandit Leader", "Sukuna", "Kashimo", "Sukuna [Half Power]", "Gojo [Unleashed]", "Rimuru"}, 1, function(text)
 if text == "Bandit" then
     function mobs()
     spawn(function()

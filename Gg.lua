@@ -161,7 +161,7 @@ if textx == "Choso" then
         end
     end)
 end
-elseif textx == "Gojo [Unleashed]"" then
+elseif textx == "Gojo [Unleashed]" then
     function mobsx()
     spawn(function()
         _G.mobsx = true

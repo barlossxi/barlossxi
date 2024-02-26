@@ -124,7 +124,7 @@ elseif text == "BOSS" then
                 local function GetClosestPlayer()
                 local target = nil
                 for i,v in pairs(workspace.Lives:GetDescendants()) do
-                    if v.Name == "Humanoid" and v.MaxHealth == 50  then
+                    if v.Name == "Humanoid" and v.MaxHealth == 50 then
                         target = v
                     end
                  end

@@ -135,9 +135,10 @@ end)
 
 
 
-local player = page7:Label('Boss')
+local player = page8:Label('Boss')
 
-page8:Dropdown("Select Boss", {"Choso","Gojo [Unleashed]","Sukuna [Half Power]"}, 1, function(textx)
+
+page8:Dropdown("Select Mobs", {"Choso","Gojo [Unleashed]", "Sukuna [Half Power]"}, 1, function(textx)
 
 if textx == "Choso" then
     function mobsx()
@@ -215,7 +216,7 @@ end)
 page8:Toggle('Boss Farm',false,function(valuex)
     _G.mobsx = valuex
     print('mobsx: ', valuex);
-    if value then
+    if valuex then
         mobsx();
         _G.mobsx = true
         else

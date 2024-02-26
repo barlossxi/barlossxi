@@ -91,7 +91,7 @@ if text == "Bandit" then
                 local function GetClosestPlayer()
                 local target = nil
                 for i,v in pairs(workspace.Lives:GetDescendants()) do
-                    if v.Name == "Humanoid" and v.MaxHealth == 7500  then
+                    if v.Name == "Humanoid" and v.MaxHealth == 7500 then
                         target = v
                     end
                  end
@@ -101,10 +101,10 @@ if text == "Bandit" then
                     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = GetClosestPlayer().RootPart.CFrame*CFrame.new(0,5,0)*CFrame.Angles(math.rad(-90),0,0)
                 until _G.mobs == true
                 wait()
-                 local function GetClosestPlayer()
+                local function GetClosestPlayer()
                 local target = nil
                 for i,v in pairs(workspace.Lives:GetDescendants()) do
-                    if v.Name == "Humanoid" and v.MaxHealth == 12500  then
+                    if v.Name == "Humanoid" and v.MaxHealth == 12500 then
                         target = v
                     end
                  end
@@ -117,6 +117,7 @@ if text == "Bandit" then
             end)
         end
     end)
+end
 end
 end
 end)

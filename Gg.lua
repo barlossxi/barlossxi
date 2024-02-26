@@ -121,7 +121,7 @@ page7:Toggle('Boss Farm',false,function(value)
 end)
 
 
-page7:Dropdown("Select Mobs", {"mon"}, _G.mobs, function(lllop)
+page7:Dropdown("Select Mobs", {"mon"}, _G.nmvc, function(lllop)
 if lllopt == "mon" then
     function pzzc()
     spawn(function()

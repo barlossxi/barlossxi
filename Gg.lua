@@ -78,8 +78,8 @@ local player = page1:Label('Boss')
 
 
 
-page1:Dropdown("Select Mobs", {"Bandit"}, 1, function(text)
-if text == "Bandit" then
+page1:Dropdown("Select Mobs", {"BOSS"}, 1, function(text)
+if text == "BOSS" then
     function mobs()
     spawn(function()
         _G.mobs = true

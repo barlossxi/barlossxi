@@ -81,8 +81,8 @@ local player = page7:Label('Boss')
 
 
 
-page7:Dropdown("Select Boss", {"Boss"}, 1, function(text)
-if text == "Boss" then
+KillingCheats:CreateDropdown("Select Mobs", {"Bandit"}, 1, function(text)
+if text == "Bandit" then
     function mobs()
     spawn(function()
         _G.mobs = true
@@ -91,27 +91,27 @@ if text == "Boss" then
                 local function GetClosestPlayer()
                 local target = nil
                 for i,v in pairs(workspace.Lives:GetDescendants()) do
-                    if v.Name == "Humanoid" and v.MaxHealth == 450000  then
+                    if v.Name == "Humanoid" and v.MaxHealth == 50  then
                         target = v
                     end
                  end
                  return target
                 end
                  repeat task.wait()
-                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = GetClosestPlayer().RootPart.CFrame*CFrame.new(0,0,5)
-                until _G.mobs == true
+                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = GetClosestPlayer().RootPart.CFrame*CFrame.new(0,5,0)*CFrame.Angles(math.rad(-90),0,0)
+                until _G.mobs == false
                 wait()
-                local function GetClosestPlayer()
+                 local function GetClosestPlayer()
                 local target = nil
                 for i,v in pairs(workspace.Lives:GetDescendants()) do
-                    if v.Name == "Humanoid" and v.MaxHealth == 300000  then
+                    if v.Name == "Humanoid" and v.MaxHealth == 350  then
                         target = v
                     end
                  end
                  return target
                 end
                  repeat task.wait()
-                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = GetClosestPlayer().RootPart.CFrame*CFrame.new(0,0,5)
+                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = GetClosestPlayer().RootPart.CFrame*CFrame.new(0,5,0)*CFrame.Angles(math.rad(-90),0,0)
                 until _G.mobs == false
                 wait()
             end)

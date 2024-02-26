@@ -82,7 +82,7 @@ local player = page7:Label('Boss')
 
 
 page7:Dropdown("Select Mobs", {"Sukuna"}, 1, function(text)
-if text == "Bandit" then
+if text == "Sukuna" then
     function mobs()
     spawn(function()
         _G.mobs = true
@@ -105,168 +105,30 @@ if text == "Bandit" then
         end
     end)
 end
-elseif text == "Bandit Leader" then
-    function mobs()
-    spawn(function()
-        _G.mobs = true
-        while _G.mobs do wait()
-            pcall(function()
-                local function GetClosestPlayer()
-                local target = nil
-                for i,v in pairs(workspace.Lives:GetDescendants()) do
-                    if v.Name == "Humanoid" and v.MaxHealth == 350  then
-                        target = v
-                    end
-                 end
-                 return target
-                end
-                 repeat task.wait()
-                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = GetClosestPlayer().RootPart.CFrame*CFrame.new(0,5,0)*CFrame.Angles(math.rad(-90),0,0)
-                until _G.mobs == false
-                wait()
-            end)
-        end
-    end)
 end
-elseif text == "Clown Pirate" then
-    function mobs()
-    spawn(function()
+end)
+
+
+page7:Toggle("Mobs Farm", function(value)
+    _G.mobs = value
+    print('mobs: ', value);
+    if value then
+        mobs();
         _G.mobs = true
-        while _G.mobs do wait()
-            pcall(function()
-                local function GetClosestPlayer()
-                local target = nil
-                for i,v in pairs(workspace.Lives:GetDescendants()) do
-                    if v.Name == "Humanoid" and v.MaxHealth == 500  then
-                        target = v
-                    end
-                 end
-                 return target
-                end
-                 repeat task.wait()
-                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = GetClosestPlayer().RootPart.CFrame*CFrame.new(0,5,0)*CFrame.Angles(math.rad(-90),0,0)
-                until _G.mobs == false
-                wait()
-            end)
-        end
-    end)
-end
-elseif text == "Marine" then
-    function mobs()
-    spawn(function()
-        _G.mobs = true
-        while _G.mobs do wait()
-            pcall(function()
-                local function GetClosestPlayer()
-                local target = nil
-                for i,v in pairs(workspace.Lives:GetDescendants()) do
-                    if v.Name == "Humanoid" and v.MaxHealth == 850  then
-                        target = v
-                    end
-                 end
-                 return target
-                end
-                 repeat task.wait()
-                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = GetClosestPlayer().RootPart.CFrame*CFrame.new(0,5,0)*CFrame.Angles(math.rad(-90),0,0)
-                until _G.mobs == false
-                wait()
-            end)
-        end
-    end)
-end
-elseif text == "Monkey" then
-    function mobs()
-    spawn(function()
-        _G.mobs = true
-        while _G.mobs do wait()
-            pcall(function()
-                local function GetClosestPlayer()
-                local target = nil
-                for i,v in pairs(workspace.Lives:GetDescendants()) do
-                    if v.Name == "Humanoid" and v.MaxHealth == 1500  then
-                        target = v
-                    end
-                 end
-                 return target
-                end
-                 repeat task.wait()
-                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = GetClosestPlayer().RootPart.CFrame*CFrame.new(0,5,0)*CFrame.Angles(math.rad(-90),0,0)
-                until _G.mobs == false
-                wait()
-            end)
-        end
-    end)
-end
-elseif text == "Monkey King" then
-    function mobs()
-    spawn(function()
-        _G.mobs = true
-        while _G.mobs do wait()
-            pcall(function()
-                local function GetClosestPlayer()
-                local target = nil
-                for i,v in pairs(workspace.Lives:GetDescendants()) do
-                    if v.Name == "Humanoid" and v.MaxHealth == 3500  then
-                        target = v
-                    end
-                 end
-                 return target
-                end
-                 repeat task.wait()
-                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = GetClosestPlayer().RootPart.CFrame*CFrame.new(0,5,0)*CFrame.Angles(math.rad(-90),0,0)
-                until _G.mobs == false
-                wait()
-            end)
-        end
-    end)
-end
-elseif text == "Bomb Man" then
-    function mobs()
-    spawn(function()
-        _G.mobs = true
-        while _G.mobs do wait()
-            pcall(function()
-                local function GetClosestPlayer()
-                local target = nil
-                for i,v in pairs(workspace.Lives:GetDescendants()) do
-                    if v.Name == "Humanoid" and v.MaxHealth == 7500  then
-                        target = v
-                    end
-                 end
-                 return target
-                end
-                 repeat task.wait()
-                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = GetClosestPlayer().RootPart.CFrame*CFrame.new(0,5,0)*CFrame.Angles(math.rad(-90),0,0)
-                until _G.mobs == false
-                wait()
-            end)
-        end
-    end)
-end
-elseif text == "Sand Man" then
-    function mobs()
-    spawn(function()
-        _G.mobs = true
-        while _G.mobs do wait()
-            pcall(function()
-                local function GetClosestPlayer()
-                local target = nil
-                for i,v in pairs(workspace.Lives:GetDescendants()) do
-                    if v.Name == "Humanoid" and v.MaxHealth == 10000  then
-                        target = v
-                    end
-                 end
-                 return target
-                end
-                 repeat task.wait()
-                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = GetClosestPlayer().RootPart.CFrame*CFrame.new(0,5,0)*CFrame.Angles(math.rad(-90),0,0)
-                until _G.mobs == false
-                wait()
-            end)
-        end
-    end)
-end
-elseif text == "Shank" then
+        else
+        _G.mobs = false
+    end 
+end)
+
+
+
+______________________________________________________________________________        
+
+
+
+
+page7:Dropdown("Select Mobs", {"SukunaPY"}, 1, function(text)
+if text == "SukunaPY" then
     function mobs()
     spawn(function()
         _G.mobs = true
@@ -289,172 +151,11 @@ elseif text == "Shank" then
         end
     end)
 end
-elseif text == "Snow Bandit" then
-    function mobs()
-    spawn(function()
-        _G.mobs = true
-        while _G.mobs do wait()
-            pcall(function()
-                local function GetClosestPlayer()
-                local target = nil
-                for i,v in pairs(workspace.Lives:GetDescendants()) do
-                    if v.Name == "Humanoid" and v.MaxHealth == 15000  then
-                        target = v
-                    end
-                 end
-                 return target
-                end
-                 repeat task.wait()
-                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = GetClosestPlayer().RootPart.CFrame*CFrame.new(0,5,0)*CFrame.Angles(math.rad(-90),0,0)
-                until _G.mobs == false
-                wait()
-            end)
-        end
-    end)
-end
-elseif text == "Snow Bandit Leader" then
-    function mobs()
-    spawn(function()
-        _G.mobs = true
-        while _G.mobs do wait()
-            pcall(function()
-                local function GetClosestPlayer()
-                local target = nil
-                for i,v in pairs(workspace.Lives:GetDescendants()) do
-                    if v.Name == "Humanoid" and v.MaxHealth == 32500  then
-                        target = v
-                    end
-                 end
-                 return target
-                end
-                 repeat task.wait()
-                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = GetClosestPlayer().RootPart.CFrame*CFrame.new(0,5,0)*CFrame.Angles(math.rad(-90),0,0)
-                until _G.mobs == false
-                wait()
-            end)
-        end
-    end)
-end
-elseif text == "Kashimo" then
-    function mobs()
-    spawn(function()
-        _G.mobs = true
-        while _G.mobs do wait()
-            pcall(function()
-                local function GetClosestPlayer()
-                local target = nil
-                for i,v in pairs(workspace.Lives:GetDescendants()) do
-                    if v.Name == "Humanoid" and v.MaxHealth == 450000  then
-                        target = v
-                    end
-                 end
-                 return target
-                end
-                 repeat task.wait()
-                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = GetClosestPlayer().RootPart.CFrame*CFrame.new(0,5,0)*CFrame.Angles(math.rad(-90),0,0)
-                until _G.mobs == false
-                wait()
-            end)
-        end
-    end)
-end
-elseif text == "Sukuna" then
-    function mobs()
-    spawn(function()
-        _G.mobs = true
-        while _G.mobs do wait()
-            pcall(function()
-                local function GetClosestPlayer()
-                local target = nil
-                for i,v in pairs(workspace.Lives:GetDescendants()) do
-                    if v.Name == "Humanoid" and v.MaxHealth == 300000  then
-                        target = v
-                    end
-                 end
-                 return target
-                end
-                 repeat task.wait()
-                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = GetClosestPlayer().RootPart.CFrame*CFrame.new(0,5,0)*CFrame.Angles(math.rad(-90),0,0)
-                until _G.mobs == false
-                wait()
-            end)
-        end
-    end)
-end
-elseif text == "Sukuna [Half Power]" then
-    function mobs()
-    spawn(function()
-        _G.mobs = true
-        while _G.mobs do wait()
-            pcall(function()
-                local function GetClosestPlayer()
-                local target = nil
-                for i,v in pairs(workspace.Lives:GetDescendants()) do
-                    if v.Name == "Humanoid" and v.MaxHealth == 5000000  then
-                        target = v
-                    end
-                 end
-                 return target
-                end
-                 repeat task.wait()
-                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = GetClosestPlayer().RootPart.CFrame*CFrame.new(0,5,0)*CFrame.Angles(math.rad(-90),0,0)
-                until _G.mobs == false
-                wait()
-            end)
-        end
-    end)
-end
-elseif text == "Gojo [Unleashed]" then
-    function mobs()
-    spawn(function()
-        _G.mobs = true
-        while _G.mobs do wait()
-            pcall(function()
-                local function GetClosestPlayer()
-                local target = nil
-                for i,v in pairs(workspace.Lives:GetDescendants()) do
-                    if v.Name == "Humanoid" and v.MaxHealth == 4500000  then
-                        target = v
-                    end
-                 end
-                 return target
-                end
-                 repeat task.wait()
-                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = GetClosestPlayer().RootPart.CFrame*CFrame.new(0,5,0)*CFrame.Angles(math.rad(-90),0,0)
-                until _G.mobs == false
-                wait()
-            end)
-        end
-    end)
-end
-elseif text == "Rimuru" then
-    function mobs()
-    spawn(function()
-        _G.mobs = true
-        while _G.mobs do wait()
-            pcall(function()
-                local function GetClosestPlayer()
-                local target = nil
-                for i,v in pairs(workspace.Lives:GetDescendants()) do
-                    if v.Name == "Humanoid" and v.MaxHealth == 1000000  then
-                        target = v
-                    end
-                 end
-                 return target
-                end
-                 repeat task.wait()
-                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = GetClosestPlayer().RootPart.CFrame*CFrame.new(0,5,0)*CFrame.Angles(math.rad(-90),0,0)
-                until _G.mobs == false
-                wait()
-            end)
-        end
-    end)
-end
 end
 end)
 
 
-page1:Toggle("Mobs Farm", function(value)
+page7:Toggle("Mobs Farm", function(value)
     _G.mobs = value
     print('mobs: ', value);
     if value then
@@ -464,6 +165,12 @@ page1:Toggle("Mobs Farm", function(value)
         _G.mobs = false
     end
 end)
+
+
+
+
+
+
 
 
 

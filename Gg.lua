@@ -8,7 +8,7 @@ local Win = library:Evil("ZA Hub","",_G.Logo )
 local tab1 = Win:CraftTab('Main')
 local page1 = tab1:CraftPage('Main',1)
 local page2 = tab1:CraftPage('Main',2)
-local tab1 = Win:CraftTab('Boss')
+local tab4 = Win:CraftTab('Boss')
 local page7 = tab4:CraftPage('Main',1)
 local page8 = tab4:CraftPage('Main',2)
 local tab2 = Win:CraftTab('SHOP')
@@ -134,12 +134,10 @@ page7:Toggle('Boss Farm',false,function(value)
 end)
 
 
-
 local player = page8:Label('Boss')
 
 
 page8:Dropdown("Select Mobs", {"Choso","Gojo [Unleashed]", "Sukuna [Half Power]"}, 1, function(textx)
-
 if textx == "Choso" then
     function mobsx()
     spawn(function()

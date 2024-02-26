@@ -101,7 +101,6 @@ if text == "Boss" then
                     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = GetClosestPlayer().RootPart.CFrame*CFrame.new(0,5,0)*CFrame.Angles(math.rad(-90),0,0)
                 until _G.mobs == true
                 wait(.1)
-                if text == "Boss" then
                 local function GetClosestPlayer()
                 local target = nil
                 for i,v in pairs(workspace.Lives:GetDescendants()) do

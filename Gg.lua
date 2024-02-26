@@ -119,7 +119,6 @@ if text == "Bandit" then
     end)
 end
 end
-end
 end)
                 
 

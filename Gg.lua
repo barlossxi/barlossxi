@@ -86,12 +86,12 @@ if text == "Boss" then
     function mobs()
     spawn(function()
         _G.mobs = true
-        while _G.mobs do wait()
+        while _G.mobs do wait(.1)
             pcall(function()
                 local function GetClosestPlayer()
                 local target = nil
                 for i,v in pairs(workspace.Lives:GetDescendants()) do
-                    if v.Name == "Humanoid" and v.MaxHealth == 450000 then
+                    if v.Name == "Humanoid" and v.MaxHealth == 10000 then
                         target = v
                     end
                  end
@@ -100,11 +100,12 @@ if text == "Boss" then
                  repeat task.wait()
                     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = GetClosestPlayer().RootPart.CFrame*CFrame.new(0,5,0)*CFrame.Angles(math.rad(-90),0,0)
                 until _G.mobs == true
-                wait()
+                wait(.1)
+                if text == "Boss" then
                 local function GetClosestPlayer()
                 local target = nil
                 for i,v in pairs(workspace.Lives:GetDescendants()) do
-                    if v.Name == "Humanoid" and v.MaxHealth == 350 then
+                    if v.Name == "Humanoid" and v.MaxHealth == 12500 then
                         target = v
                     end
                  end
@@ -408,5 +409,4 @@ while _G.x do wait()
 game:service('VirtualInputManager'):SendKeyEvent(true, "V", false, game)
 end
 end)
-
 

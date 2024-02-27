@@ -398,7 +398,7 @@ end)
 local player = page8:Label('Boss')
 
 
-page8:Dropdown("Select Mobs", {"Choso", "Gojo [Unleashed]", "Sukuna [Half Power]"}, 1, function amdcc()
+page8:Dropdown("Select Mobs", {"Choso", "Gojo [Unleashed]", "Sukuna [Half Power]"}, 1, function(abcd)
 if abcd == "Choso" then
     function amdcc()
     spawn(function()

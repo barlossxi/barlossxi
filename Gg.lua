@@ -474,7 +474,7 @@ end)
 
 page8:Toggle('Boss Farm',false,function(lop)
     _G.opk = lop
-    print('mobs: ', lop);
+    print('amdcc: ', lop);
     if valuex then
         amdcc();
         _G.opk = true

@@ -85,7 +85,7 @@ if tet == "Bandit" then
     function ssdf()
     spawn(function()
         _G.mos = true
-        while _G.mobs do wait()
+        while _G.mos do wait()
             pcall(function()
                 local function Player()
                 local zxcvbn = nil

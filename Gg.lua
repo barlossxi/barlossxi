@@ -80,11 +80,11 @@ end)
 local player = page7:Label('Boss')
 
 
-page7:Dropdown("Select Mobs", {"Bandit"}, 1, function(text)
-if text == "Bandit" then
-    function mobs()
+page7:Dropdown("Select Mobs", {"Bandit"}, 1, function(tet)
+if tet == "Bandit" then
+    function ssdf()
     spawn(function()
-        _G.mobs = true
+        _G.mos = true
         while _G.mobs do wait()
             pcall(function()
                 local function Player()
@@ -98,7 +98,7 @@ if text == "Bandit" then
                 end
                  repeat task.wait()
                     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Player().RootPart.CFrame*CFrame.new(0,0,5)
-                until _G.mobs == false
+                until _G.mos == false
                 wait()
             end)
         end
@@ -110,14 +110,14 @@ end)
                     
 
 
-page7:Toggle('Mobs Farm',_G.mobs, function(value)
-    _G.mobs = value
-    print('mobs: ', value);
-    if value then
-        mobs();
-        _G.mobs = true
+page7:Toggle('Mobs Farm',_G.mos, function(vale)
+    _G.mos = vale
+    print('ssdf: ', vale);
+    if vale then
+        ssdf();
+        _G.mos = true
         else
-        _G.mobs = false
+        _G.mos = false
     end
 end)
 

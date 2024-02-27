@@ -89,8 +89,8 @@ if text == "Bandit" then
             pcall(function()
                 local function Player()
                 local zxcvbn = nil
-                for i,v in pairs(workspace.Lives:GetDescendants()) do
-                    if v.Name == "Humanoid" and v.MaxHealth == 5000000  then
+                for i,v in pairs(game:GetService("Workspace").Lives:GetDescendants()) do
+                    if v.Name == "Humanoid" and v.MaxHealth == 50  then
                         zxcvbn = v
                     end
                  end

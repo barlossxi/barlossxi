@@ -398,71 +398,25 @@ end)
 local player = page8:Label('Boss')
 
 
-page8:Dropdown("Select Mobs", {"Choso", "Gojo [Unleashed]", "Sukuna [Half Power]"}, 1, function(abcd)
-if abcd == "Choso" then
-    function amdcc()
+page7:Dropdown("Select Mobs", {"Banditty"}, 2, function(tetee)
+if tetee == "Banditty" then
+    function tetee()
     spawn(function()
-        _G.opk = true
-        while _G.opk do wait()
+        _G.mmsos = true
+        while _G.mmsos do wait()
             pcall(function()
-                local function GetPlayers()
-                local kuyee = nil
-                for i,v in pairs(workspace.Lives:GetDescendants()) do
+                local function GGPlayer()
+                local zxcvbnpp = nil
+                for i,v in pairs(game:GetService("Workspace").Lives:GetDescendants()) do
                     if v.Name == "Humanoid" and v.MaxHealth == 12500  then
-                        kuyee = v
+                        zxcvbnpp = v
                     end
                  end
-                 return kuyee
+                 return zxcvbnpp
                 end
                  repeat task.wait()
-                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = GetPlayers().RootPart.CFrame*CFrame.new(0,0,5)
-                until _G.opk == false
-                wait()
-            end)
-        end
-    end)
-end
-elseif abcd == "Gojo [Unleashed]" then
-    function amdcc()
-    spawn(function()
-        _G.opk = true
-        while _G.opk do wait()
-            pcall(function()
-                local function GetPlayers()
-                local kuyee = nil
-                for i,v in pairs(workspace.Lives:GetDescendants()) do
-                    if v.Name == "Humanoid" and v.MaxHealth == 4500000  then
-                        kuyee = v
-                    end
-                 end
-                 return kuyee
-                end
-                 repeat task.wait()
-                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = GetPlayers().RootPart.CFrame*CFrame.new(0,0,5)
-                until _G.opk == false
-                wait()
-            end)
-        end
-    end)
-end
-elseif abcd == "Sukuna [Half Power]" then
-    function amdcc()
-    spawn(function()
-        _G.opk = true
-        while _G.opk do wait()
-            pcall(function()
-                local function GetPlayers()
-                local kuyee = nil
-                for i,v in pairs(workspace.Lives:GetDescendants()) do
-                    if v.Name == "Humanoid" and v.MaxHealth == 5000000  then
-                        kuyee = v
-                    end
-                 end
-                 return kuyee
-                end
-                 repeat task.wait()
-                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = GetPlayers().RootPart.CFrame*CFrame.new(0,0,5)
-                until _G.opk == false
+                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = GGPlayer().RootPart.CFrame*CFrame.new(0,0,5)
+                until _G.mmsos == false
                 wait()
             end)
         end
@@ -471,14 +425,16 @@ end
 end
 end)
 
+                    
 
-page8:Toggle('Boss Farm',false,function(lop)
-    _G.opk = lop
-    print('amdcc: ', lop);
-    if valuex then
-        amdcc();
-        _G.opk = true
+
+page7:Toggle('Mobs Farm',_G.mmsos, function(valeee)
+    _G.mmsos = valeee
+    print('ssdfffh: ', valeee);
+    if valeee then
+        ssdfffh();
+        _G.mmsos = true
         else
-        _G.opk = false
+        _G.mmsos = false
     end
 end)

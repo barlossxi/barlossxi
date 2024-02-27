@@ -405,17 +405,17 @@ if tetee == "Banditty" then
         _G.mmsos = true
         while _G.mmsos do wait()
             pcall(function()
-                local function GGPlayer()
-                local zxcvbnpp = nil
+                local function Player()
+                local zxcvbn = nil
                 for i,v in pairs(game:GetService("Workspace").Lives:GetDescendants()) do
                     if v.Name == "Humanoid" and v.MaxHealth == 12500  then
-                        zxcvbnpp = v
+                        zxcvbn = v
                     end
                  end
-                 return zxcvbnpp
+                 return zxcvbn
                 end
                  repeat task.wait()
-                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = GGPlayer().RootPart.CFrame*CFrame.new(0,0,5)
+                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Player().RootPart.CFrame*CFrame.new(0,0,5)
                 until _G.mmsos == false
                 wait()
             end)

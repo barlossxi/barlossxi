@@ -90,7 +90,7 @@ if text == "Bandit" then
                 local function Player()
                 local zxcvbn = nil
                 for i,v in pairs(workspace.Lives:GetDescendants()) do
-                    if v.Name == "Humanoid" and v.MaxHealth == 12500  then
+                    if v.Name == "Humanoid" and v.MaxHealth == 5000000  then
                         zxcvbn = v
                     end
                  end

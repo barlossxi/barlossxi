@@ -80,46 +80,54 @@ end)
 local player = page7:Label('Boss')
 
 
-page7:Dropdown("Select Mobs", {"Bandit"}, 1, function(tet)
-if tet == "Bandit" then
-    function ssdf()
-    spawn(function()
-        _G.mos = true
-        while _G.mos do wait()
+
+page7:Toggle('AutoFarmBoss',false,function(vvazv)
+_G.AutoFarmboss = vvazv
+end)
+
+spawn(function()
+    while wait(.1) do
+        if _G.AutoFarmboss then
             pcall(function()
-                local function Player()
-                local zxcvbn = nil
-                for i,v in pairs(game:GetService("Workspace").Lives:GetDescendants()) do
-                    if v.Name == "Humanoid" and v.MaxHealth == 50  then
-                        zxcvbn = v
+                for i,v in pairs(game:GetService("Workspace").Lives:GetChildren()) do
+                    if v:IsA("Model") and v:FindFirstChildOfClass("Humanoid") and v.Humanoid.DisplayName == "Clown Pirate [LV.50]" then
+                        repeat
+                            wait()
+                            game:GetService('VirtualUser'):CaptureController()
+                            game:GetService('VirtualUser'):Button1Down(Vector2.new(1280, 672))
+                            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0, 0, 3)
+                        until not _G.AutoFarmboss or v.Humanoid.Health <= 0
                     end
-                 end
-                 return zxcvbn
                 end
-                 repeat task.wait()
-                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Player().RootPart.CFrame*CFrame.new(0,0,5)
-                until _G.mos == false
-                wait()
             end)
         end
-    end)
-end
-end
-end)
-
-                    
-
-
-page7:Toggle('Mobs Farm',_G.mos, function(vale)
-    _G.mos = vale
-    print('ssdf: ', vale);
-    if vale then
-        ssdf();
-        _G.mos = true
-        else
-        _G.mos = false
     end
 end)
+
+
+spawn(function()
+    while wait(.1) do
+        if _G.AutoFarmboss then
+            pcall(function()
+                for i,v in pairs(game:GetService("Workspace").Lives:GetChildren()) do
+                    if v:IsA("Model") and v:FindFirstChildOfClass("Humanoid") and v.Humanoid.DisplayName == "Bandit Leader [LV.15]" then
+                        repeat
+                            wait()
+                            game:GetService('VirtualUser'):CaptureController()
+                            game:GetService('VirtualUser'):Button1Down(Vector2.new(1280, 672))
+                            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0, 0, 3)
+                        until not _G.AutoFarmboss or v.Humanoid.Health <= 0
+                    end
+                end
+            end)
+        end
+    end
+end)
+
+
+
+
+
 
 
 local player = page1:Label('TP')
@@ -394,47 +402,3 @@ end
 end)
 
 
-
-local player = page8:Label('Boss')
-
-
-page7:Dropdown("Select Mobs", {"Banditty"}, 2, function(tetee)
-if tetee == "Banditty" then
-    function tetee()
-    spawn(function()
-        _G.mmsos = true
-        while _G.mmsos do wait()
-            pcall(function()
-                local function Player()
-                local zxcvbn = nil
-                for i,v in pairs(game:GetService("Workspace").Lives:GetDescendants()) do
-                    if v.Name == "Humanoid" and v.MaxHealth == 12500  then
-                        zxcvbn = v
-                    end
-                 end
-                 return zxcvbn
-                end
-                 repeat task.wait()
-                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Player().RootPart.CFrame*CFrame.new(0,0,5)
-                until _G.mmsos == false
-                wait()
-            end)
-        end
-    end)
-end
-end
-end)
-
-                    
-
-
-page7:Toggle('Mobs Farm',_G.mmsos, function(valeee)
-    _G.mmsos = valeee
-    print('ssdfffh: ', valeee);
-    if valeee then
-        ssdfffh();
-        _G.mmsos = true
-        else
-        _G.mmsos = false
-    end
-end)

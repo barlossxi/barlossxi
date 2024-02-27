@@ -408,7 +408,7 @@ if abcd == "Choso" then
                 local function GetPlayers()
                 local kuyee = nil
                 for i,v in pairs(workspace.Lives:GetDescendants()) do
-                    if v.Name == "Humanoid" and v.MaxHealth == 12500000  then
+                    if v.Name == "Humanoid" and v.MaxHealth == 12500  then
                         kuyee = v
                     end
                  end

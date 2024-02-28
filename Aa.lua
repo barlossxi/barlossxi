@@ -61,14 +61,12 @@ local DropdownWeapon = Tabs.Main:AddDropdown("DropdownWeapon", {
         Values = {""},
         Multi = false,
         Default = 1,
-        Callback = function(v)
-        Weapon = v
-    end
-    
+        
     })
     
-    
-        
+    Callback:OnChanged(function(v)
+        Weapon = v
+    end)
     
 
 

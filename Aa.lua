@@ -52,21 +52,22 @@ end)
     
     local Weaponlist = {}
 local Weapon = nil
-
 for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
     table.insert(Weaponlist,v.Name)
 end
 
 
-local SelectToolWeapona = Tabs.MainAddDropdown("Select Weapon", {
+local Dropdown = Tabs.Main:AddDropdown("Dropdown", {
         Title = "Select Weapon",
-        Values = Weapon,
+        Values = Weaponlist,
         Multi = false,
-        Default = 1,
-        Callback = function(hhjhk)
-          _G.SelectWeapon = hhjhk
+        Default = false,
+        Callback = function(reerrtyt)
+        Weapon = reerrtyt
+        
         end
     })
+
 
 
 local ToggleAutoEquiped = Tabs.Main:AddToggle("ToggleAutoEquiped", {Title = "Auto Equiped", Default = false })

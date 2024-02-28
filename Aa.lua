@@ -37,10 +37,10 @@ do
 
 
 
-    local ToggleAuto Quest = Tabs.Main:AddToggle("ToggleAuto Quest", {Title = "Auto Quest", Default = false })
-    ToggleAuto Quest:OnChanged(function(Value)
-        _G.hr = ab
-while _G.hr do wait(.1)
+    local ToggleAutoQuest = Tabs.Main:AddToggle("ToggleAutoQuest", {Title = "Auto Quest", Default = false })
+    ToggleAutoQuest:OnChanged(function(abkkll)
+        _G.AutoQuest = abkkll
+while _G.AutoQuest do wait(.1)
 for i,v in pairs(game:GetService("Workspace").Quest:GetDescendants()) do
  if v.ClassName == "ProximityPrompt" then
    fireproximityprompt(v,30)
@@ -95,6 +95,7 @@ end)
     Dropdown:OnChanged(function(Value)
         print("Dropdown changed:", Value)
     end)
+    
 
 Tabs.Main:AddButton({
         Title = "Button",
@@ -120,6 +121,7 @@ Tabs.Main:AddButton({
             })
         end
     })
+    
     
     local MultiDropdown = Tabs.Main:AddDropdown("MultiDropdown", {
         Title = "Dropdown",

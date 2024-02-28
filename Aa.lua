@@ -57,13 +57,14 @@ for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) 
     table.insert(Weaponlist,v.Name)
 end
 
-local SelectToolWeapona = Tabs.Main:AddDropdown("Select Weapon", {
+
+local SelectToolWeapona = Tabs.MainAddDropdown("Select Weapon", {
         Title = "Select Weapon",
         Values = Weapon,
         Multi = false,
         Default = 1,
-        Callback = function(v)
-          Weapon = v
+        Callback = function(hhjhk)
+          _G.SelectWeapon = hhjhk
         end
     })
 

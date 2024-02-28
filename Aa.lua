@@ -56,16 +56,19 @@ for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) 
     table.insert(Weaponlist,v.Name)
 end
 
-local DropdownWeapon = Tabs.Main:AddWeapon("DropdownWeapon", {
-        Title = "Select Weapon",
-        Values = {'Weapon'},
+local DropdownWeapon = Tabs.Main:AddDropdown("DropdownWeapon", {
+        Title = "Dropdow",
+        Values = {""},
         Multi = false,
         Default = 1,
     })
-    
-    DropdownWeapon:OnChanged(function(v)
+
+    Dropdown:SetValue("four")
+
+    Dropdown:OnChanged(function(v)
         Weapon = v
     end)
+    
 
 
 local ToggleAutoEquiped = Tabs.Main:AddToggle("ToggleAutoEquiped", {Title = "Auto Equiped", Default = false })

@@ -59,9 +59,8 @@ end
 
 local DropdownWeapon = Tabs.Main:AddDropdown("DropdownWeapon", {
 	Title = "Weapon",
-	Values = {""},
+	Values = {"Weapon"},
 	Multi = Weaponlist,
-	Default = 1,
 	Callback = function(currentOption)
 		Weapon = currentOption
 	end    
@@ -160,7 +159,7 @@ Tabs.Main:AddButton({
     local MultiDropdown = Tabs.Main:AddDropdown("MultiDropdown", {
         Title = "Dropdown",
         Description = "You can select multiple values.",
-        Values = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen"},
+        Values = {""},
         Multi = true,
         Default = {"seven", "twelve"},
     })

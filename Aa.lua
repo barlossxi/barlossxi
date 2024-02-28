@@ -50,7 +50,7 @@ end
 end)
 
     
-    local _G.SelectWeapon = {}
+    local Weaponlist = {}
 local Weapon = nil
 
 for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do

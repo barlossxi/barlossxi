@@ -31,36 +31,25 @@ do
 
 
     Tabs.Main:AddParagraph({
-        Title = "Paragraph",
-        Content = "This is a paragraph.\nSecond line!"
+        Title = "Level",
+        Content = "ออโต้เควสส"
     })
 
 
 
-    Tabs.Main:AddButton({
-        Title = "Button",
-        Description = "Very important button",
-        Callback = function()
-            Window:Dialog({
-                Title = "Title",
-                Content = "This is a dialog",
-                Buttons = {
-                    {
-                        Title = "Confirm",
-                        Callback = function()
-                            print("Confirmed the dialog.")
-                        end
-                    },
-                    {
-                        Title = "Cancel",
-                        Callback = function()
-                            print("Cancelled the dialog.")
-                        end
-                    }
-                }
-            })
-        end
-    })
+    local ToggleAuto Quest = Tabs.Main:AddToggle("ToggleAuto Quest", {Title = "Auto Quest", Default = false })
+    ToggleAuto Quest:OnChanged(function(Value)
+        _G.hr = ab
+while _G.hr do wait(.1)
+for i,v in pairs(game:GetService("Workspace").Quest:GetDescendants()) do
+ if v.ClassName == "ProximityPrompt" then
+   fireproximityprompt(v,30)
+end
+      end
+            end
+end)
+
+
 
 
 
@@ -107,7 +96,30 @@ do
         print("Dropdown changed:", Value)
     end)
 
-
+Tabs.Main:AddButton({
+        Title = "Button",
+        Description = "Very important button",
+        Callback = function()
+            Window:Dialog({
+                Title = "Title",
+                Content = "This is a dialog",
+                Buttons = {
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
     
     local MultiDropdown = Tabs.Main:AddDropdown("MultiDropdown", {
         Title = "Dropdown",
@@ -250,8 +262,8 @@ SaveManager:BuildConfigSection(Tabs.Settings)
 Window:SelectTab(1)
 
 Fluent:Notify({
-    Title = "Fluent",
-    Content = "The script has been loaded.",
+    Title = "ZAHUB",
+    Content = "ZAHUB VIP SCRIPT.",
     Duration = 8
 })
 

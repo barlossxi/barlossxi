@@ -6,7 +6,7 @@ local Window = Fluent:CreateWindow({
     Title = "Fluent " .. Fluent.Version,
     SubTitle = "by dawid",
     TabWidth = 160,
-    Size = UDim2.fromOffset(580, 460),
+    Size = UDim2.fromOffset(450, 300),
     Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
     Theme = "Dark",
     MinimizeKey = Enum.KeyCode.LeftControl -- Used when theres no MinimizeKeybind
@@ -49,6 +49,42 @@ end
             end
 end)
 
+
+local Weaponlist = {}
+local Weapon = nil
+for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+    table.insert(Weaponlist,v.Name)
+end
+
+local DropdownWeapon = Tabs.Main:AddWeapon("DropdownWeapon", {
+        Title = "Select Weapon",
+        Values = {''},
+        Multi = false,
+        Default = 1,
+    })
+    
+    DropdownWeapon:SetValue("")
+    
+    DropdownWeapon:OnChanged(function(v)
+        Weapon = v
+    end)
+
+
+local ToggleAutoEquiped = Tabs.Main:AddToggle("ToggleAutoEquiped", {Title = "Auto Equiped", Default = false })
+ToggleAutoEquiped:OnChanged(function(a)
+AutoEquiped = a
+end)
+
+
+spawn(function()
+while wait(.1) do
+if AutoEquiped then
+pcall(function()
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(Weapon))
+end)
+end
+end
+end)
 
 
 

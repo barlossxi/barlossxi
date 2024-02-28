@@ -63,9 +63,7 @@ local DropdownWeapon = Tabs.Main:AddDropdown("DropdownWeapon", {
         Default = 1,
     })
 
-    Dropdown:SetValue("four")
-
-    Dropdown:OnChanged(function(v)
+    DropdownWeapon:OnChanged(function(v)
         Weapon = v
     end)
     
@@ -73,13 +71,13 @@ local DropdownWeapon = Tabs.Main:AddDropdown("DropdownWeapon", {
 
 local ToggleAutoEquiped = Tabs.Main:AddToggle("ToggleAutoEquiped", {Title = "Auto Equiped", Default = false })
 ToggleAutoEquiped:OnChanged(function(a)
-AutoEquiped = a
+_G.AutoEquiped = a
 end)
 
 
 spawn(function()
 while wait(.1) do
-if AutoEquiped then
+if _G.AutoEquiped then
 pcall(function()
 game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(Weapon))
 end)

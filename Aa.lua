@@ -284,4 +284,9 @@ do local GUI = game.CoreGui:FindFirstChild("SOMEXHUB");if GUI then GUI:Destroy()
 end
 
 
+
+
+
+
+
 SaveManager:LoadAutoloadConfig()

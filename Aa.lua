@@ -1,4 +1,3 @@
-
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
@@ -60,7 +59,7 @@ end
 
 local DropdownWeapon = Tabs.Main:AddDropdown("DropdownWeapon", {
 	Title = "Weapon",
-	Values = "",
+	Values = {""},
 	Multi = Weaponlist,
 	Callback = function(currentOption)
 		Weapon = currentOption
@@ -119,7 +118,7 @@ end)
 
     local Dropdown = Tabs.Main:AddDropdown("Dropdown", {
         Title = "Dropdown",
-        Values = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen"},
+        Values = {""},
         Multi = false,
         Default = 1,
     })

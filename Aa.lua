@@ -58,12 +58,10 @@ end
 
 local DropdownWeapon = Tabs.Main:AddWeapon("DropdownWeapon", {
         Title = "Select Weapon",
-        Values = {''},
+        Values = {'Weapon'},
         Multi = false,
         Default = 1,
     })
-    
-    DropdownWeapon:SetValue("")
     
     DropdownWeapon:OnChanged(function(v)
         Weapon = v

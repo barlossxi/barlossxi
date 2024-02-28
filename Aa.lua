@@ -61,6 +61,7 @@ local DropdownWeapon = Tabs.Main:AddDropdown("DropdownWeapon", {
 	Title = "Weapon",
 	Values = {""},
 	Multi = Weaponlist,
+	Default = 1,
 	Callback = function(currentOption)
 		Weapon = currentOption
 	end    

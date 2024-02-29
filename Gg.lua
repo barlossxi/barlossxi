@@ -97,14 +97,12 @@ GetKeyButton.Parent = frame
 SubmitButton.MouseButton1Click:Connect(function()
     local KeySystem = KeySystem.Text
     if KeySystem == "ZAHUBBATA" then
-screenGui:Destroy()
-    elseif KeySystem == "AAHUB" then
+    if KeySystem == "ZAHUBBATAA" then
 screenGui:Destroy()
 
 
 
   
-  end
   end
 end)
 

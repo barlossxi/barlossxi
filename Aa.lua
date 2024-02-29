@@ -610,9 +610,9 @@ Tabs.Settings:AddButton({
     
     
     
-    local Togglexm = Tabs.Fruit:AddToggle("Togglexm", {Title = "Auto Random fruit Beli", Default = false })
-Togglexm:OnChanged(function(wyccv)
-    _G.xm = wyccv 
+    local Togglexmoooo = Tabs.Fruit:AddToggle("Togglexmoooo", {Title = "Auto Random fruit Beli", Default = false })
+Togglexmoooo:OnChanged(function(wyccv)
+    _G.xmoooo = wyccv 
 while _G.xm do wait()
 for i,v in pairs(game:GetService("Workspace").Shop:GetDescendants()) do
 if v.ClassName == "ProximityPrompt" then
@@ -621,9 +621,7 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(790.2037
 end
 end
 end
-
-	end    
-})
+end)
 
 
 local Togglegg = Tabs.Fruit:AddToggle("Togglegg", {Title = "Auto Random fruit Gem", Default = false })
@@ -637,9 +635,63 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-741.048
 end
 end
 end
+end)
 
-	end    
-})
+
+
+Tabs.Main:AddParagraph({
+        Title = "Auto skill",
+        Content = "Z X C V"
+    })
+
+
+
+local Togglex = Tabs.Main:AddToggle("Togglex", {Title = "Z", Default = false })
+Togglex:OnChanged(function(mbbb)
+_G.x = mbbb
+while _G.x do wait()
+
+game:service('VirtualInputManager'):SendKeyEvent(true, "Z", false, game)
+
+end
+
+end)
+
+
+local Togglexz = Tabs.Main:AddToggle("Togglexz", {Title = "X", Default = false })
+Togglexz:OnChanged(function(mbbgb)
+_G.xz = mbbgb
+while _G.xz do wait()
+
+game:service('VirtualInputManager'):SendKeyEvent(true, "X", false, game)
+
+end
+
+end)
+
+
+
+local Togglexa = Tabs.Main:AddToggle("Togglexa", {Title = "C", Default = false })
+Togglexa:OnChanged(function(mbbgllb)
+_G.xa = mbbgllb
+while _G.xa do wait()
+
+game:service('VirtualInputManager'):SendKeyEvent(true, "C", false, game)
+
+end
+
+end)
+
+local Togglexxc = Tabs.Main:AddToggle("Togglexxc", {Title = "V", Default = false })
+Togglexxc:OnChanged(function(mbbgllob)
+_G.xxc = mbbgllob
+while _G.xxc do wait()
+
+game:service('VirtualInputManager'):SendKeyEvent(true, "V", false, game)
+
+end
+
+end)
 
 
 

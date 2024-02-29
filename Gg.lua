@@ -98,12 +98,13 @@ SubmitButton.MouseButton1Click:Connect(function()
     local KeySystem = KeySystem.Text
     if KeySystem == "ZAHUBBATA" then
 screenGui:Destroy()
-    if KeySystem == "AAHUB" then
+    elseif KeySystem == "AAHUB" then
 screenGui:Destroy()
 
 
 
   
+  end
   end
 end)
 

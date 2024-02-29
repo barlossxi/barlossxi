@@ -487,116 +487,11 @@ Tabs.Settings:AddButton({
     end
     
     
-    Tabs.Island:AddParagraph({
-        Title = "Island",
-        Content = ""
-    })
     
     
     
-    Tabs.Island:AddButton({
-        Title = "Niflheim Island",
-        Description = "",
-        Callback = function()
-            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2071.05298, 118.110451, -2329.66089, 0.0611509159, 0, -0.998128593, -0, 1.00000012, -0, 0.998128593, 0, 0.0611509159)
-        end
-    })
     
-    Tabs.Island:AddButton({
-        Title = "Ape Reolm Island",
-        Description = "",
-        Callback = function()
-            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(736.608093, 42.2545433, -1351.19006, -0.99488622, 1.3681408e-08, -0.101001881, 4.54119276e-09, 1, 9.07254147e-08, 0.101001881, 8.98027963e-08, -0.99488622)
-        end
-    })
     
-    Tabs.Island:AddButton({
-        Title = "Frost Island",
-        Description = "",
-        Callback = function()
-            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1486.14514, 102.059998, -286.697357, -0.681915939, -7.37037054e-09, 0.731430531, 9.51822798e-09, 1, 1.89505371e-08, -0.731430531, 1.98845971e-08, -0.681915939)
-        end
-    })
-    
-    Tabs.Island:AddButton({
-        Title = "Shell Town",
-        Description = "",
-        Callback = function()
-            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(832.985779, 35.5073013, 1211.95557, -0.996663392, 2.62425406e-08, 0.0816217959, 1.86090094e-08, 1, -9.42839122e-08, -0.0816217959, -9.24504207e-08, -0.996663392)
-        end
-    })
-    
-    Tabs.Island:AddButton({
-        Title = "Oronge Archipel",
-        Description = "",
-        Callback = function()
-            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(48.8623047, 36.9179535, 56.3762283, -0.110307582, 3.87341288e-08, 0.993897498, 6.02370653e-10, 1, -3.89050996e-08, -0.993897498, -3.69283293e-09, -0.110307582)
-        end
-    })
-    
-    Tabs.Island:AddButton({
-        Title = "Sunset",
-        Description = "",
-        Callback = function()
-            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-732.842834, 37.4596138, 869.867859, 0.971757531, -2.97100069e-08, -0.235981628, 3.18496554e-08, 1, 5.25521449e-09, 0.235981628, -1.26227278e-08, 0.971757531)
-        end
-    })
-    
-    Tabs.Island:AddButton({
-        Title = "Autumnol Island",
-        Description = "",
-        Callback = function()
-            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1885.90845, 65.296669, 294.494354, 0.584343195, -3.33234489e-08, -0.811506629, 3.90393051e-09, 1, -3.82525691e-08, 0.811506629, 1.91845633e-08, 0.584343195)
-        end
-    })
-    
-    Tabs.Island:AddButton({
-        Title = "Storter Island",
-        Description = "",
-        Callback = function()
-            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-947.392944, 35.2999916, -538.731384, 0.0061308681, -9.77479502e-08, -0.999981225, 9.94426941e-09, 1, -9.76888188e-08, 0.999981225, -9.34516553e-09, 0.0061308681)
-        end
-    })
-    
-    Tabs.Island:AddButton({
-        Title = "Cursed Island",
-        Description = "",
-        Callback = function()
-            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2450.22925, 55.4080696, -1147.97766, -0.0612664372, 6.08063004e-08, 0.99812144, -2.25501076e-08, 1, -6.23049132e-08, -0.99812144, -2.63249476e-08, -0.0612664372)
-        end
-    })
-    
-    Tabs.Island:AddButton({
-        Title = "Forgotten Island",
-        Description = "",
-        Callback = function()
-            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-766.986816, 59.8069458, -1950.05823, 0.654291034, 1.4349113e-08, -0.756242871, -2.65838462e-09, 1, 1.6674214e-08, 0.756242871, -8.89940477e-09, 0.654291034)
-        end
-    })
-    
-    Tabs.Island:AddButton({
-        Title = "Areno Island",
-        Description = "",
-        Callback = function()
-            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1844.32336, 43.0870209, -3011.05371, 0.635693133, -7.30360412e-08, 0.771941841, 6.0526439e-08, 1, 4.47699549e-08, -0.771941841, 1.82629378e-08, 0.635693133)
-        end
-    })
-    
-    Tabs.Island:AddButton({
-        Title = "Worriors Retreot",
-        Description = "",
-        Callback = function()
-            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-643.675476, 52.2972946, -4070.31592, 0.662801504, 5.85313238e-08, -0.748795152, -2.09039008e-08, 1, 5.9664103e-08, 0.748795152, -2.38927154e-08, 0.662801504)
-        end
-    })
-    
-    Tabs.Island:AddButton({
-        Title = "Chxmei Island",
-        Description = "",
-        Callback = function()
-            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(393.419128, 40.7999039, -3114.146, -0.628278673, -6.08280502e-08, -0.777988374, 4.71084816e-09, 1, -8.1990656e-08, 0.777988374, -5.51779671e-08, -0.628278673)
-        end
-    })
     
     
       Tabs.Fruit:AddParagraph({

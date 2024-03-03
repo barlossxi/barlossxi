@@ -12,14 +12,7 @@ local player = page1:Label('Auto Farm')
 
 
 Monster = { --ใส่เอาเองชื่อมอนที่อยากฟาร์ม
-  "BaconHair",
-  "Bacon XD",
-  "Bacon Big",
-  "Bacon lvl.15",
-  "Bacon +Exp.2X",
-  "Bacon Buggy",
-  "Bacon Fan",
-  "Boss King"
+  "BaconHair", "Bacon XD", "Bacon Big", "Bacon lvl.15", "Bacon +Exp.2X", "Bacon Buggy", "Bacon Fan", "Boss King"
 }
 
 

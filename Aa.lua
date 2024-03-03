@@ -17,14 +17,14 @@ Monster = { --ใส่เอาเองชื่อมอนที่อยา
 }
 
 
-page1:Dropdown('Select Monster', "x",Monster, function(value)
-    Mob = value
+page1:Dropdown("Select Monster",Monster,{""},function(v)
+    Mob = v
 end)
 
-page1:Toggle('AutoFarm Monster [Fast]', "x", function(value)
-    _G.AutoFarm = value 
-end)
 
+page1:Toggle('Auto Farm',false,function(a)
+_G.AutoFarm = a
+end)
 
 
 

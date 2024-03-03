@@ -1452,8 +1452,8 @@ local Wapon = Ultra_left:Dropdown("Mon",_G.mobs,function(text)
             pcall(function()
                 local function GetClosestPlayer()
                 local target = nil
-                for i,v in pairs(workspace.Lives:GetDescendants()) do
-                    if v.Name == "Humanoid" and v.MaxHealth == 50  then
+                for i,v in pairs(workspace.Workspace:GetDescendants()) do
+                    if v.Name == "Humanoid" and v.MaxHealth == 100  then
                         target = v
                     end
                  end
@@ -1475,8 +1475,8 @@ elseif text == "Bandit Leader" then
             pcall(function()
                 local function GetClosestPlayer()
                 local target = nil
-                for i,v in pairs(workspace.Lives:GetDescendants()) do
-                    if v.Name == "Humanoid" and v.MaxHealth == 350  then
+                for i,v in pairs(workspace.Workspace:GetDescendants()) do
+                    if v.Name == "Humanoid" and v.MaxHealth == 500  then
                         target = v
                     end
                  end

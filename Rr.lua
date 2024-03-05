@@ -43,23 +43,6 @@ do
 
 
 
-Monster = { --ใส่เอาเองชื่อมอนที่อยากฟาร์ม
-  "BaconHair", "Bacon XD", "Bacon Big", "Bacon lvl.15", "Bacon +Exp.2X", "Bacon Buggy", "Bacon Fan", "Boss King", "Bacon Red", "Bacon Blue", "Boss Snow", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
-}
-
-
-
-local DropdownMon = Tabs.Main:AddDropdown("DropdownMon", {
-        Title = "Select Mon",
-        Values = Monster,
-        Multi = false,
-        Default = false,
-        Callback = function(reerrtyt)
-        Mob = reerrtyt
-        end
-    })
-
-
 local Togglehee = Tabs.Main:AddToggle("Togglehee", {Title = "Auto LV", Default = false })
     Togglehee:OnChanged(function(asdf)
     _G.hee = asdf
@@ -68,91 +51,6 @@ fireclickdetector(game:GetService("Workspace")["Click to Expx10 [AFK]"].Humanoid
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4774.6377, 48349.1602, 3166.73145, -0.631904721, 1.10530625e-08, -0.775046051, 1.61701816e-08, 1, 1.07741815e-09, 0.775046051, -1.18518093e-08, -0.631904721)
 end
 end)
-
-
-
-
-
-local ToggleAutoFarm = Tabs.Main:AddToggle("ToggleAutoFarm", {Title = "Auto Farm", Default = false })
-    ToggleAutoFatm:OnChanged(function(azxcbkkll)
-_G.AutoFarm = azxcbkkll
-end)
-
-
-
-
-
---AutoFarm
-spawn(function()
-  while task.wait(1) do
-    if _G.AutoFarm then
-          pcall(function()
-     for _,v in pairs(game:GetService("Workspace"):GetDescendants()) do
-      if v.Name == Mob and v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health >= 0 then
-        v.Humanoid.WalkSpeed = 0
-        v.Humanoid.JumpPower = 0
-      repeat task.wait()
-       EquipWeapon(tostring(_G.Weaponnn))
-        TP(v.HumanoidRootPart.CFrame * CFrame.new(0,4,4))
-      Attack()
-      until not _G.AutoFarm or v.Humanoid.Health <= 0
-      end
-  end
- end)
-end
-end
-end)
-
-
-
---function all
-function Attack()
-  game:GetService'VirtualUser':CaptureController()
-  game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
-end
-
-function TP(CFrame)
-    pcall(function()
-        game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = CFrame
-    end)
-end
-
-function EquipWeapon(ToolSe)
-		if game.Players.LocalPlayer.Backpack:FindFirstChild(ToolSe) then
-			Tool = game.Players.LocalPlayer.Backpack:WaitForChild(ToolSe)
-			wait(.1)
-			game.Players.LocalPlayer.Character.Humanoid:EquipTool(Tool)
-	end
-end
-
-spawn(function()
-    pcall(function()
-        game:GetService("RunService").Stepped:Connect(function()
-            if _G.AutoFarm then
-                if not game.Players.LocalPlayer.Character.HumanoidRootPart:FindFirstChild("BodyClip") then
-                    local Noclip = Instance.new("BodyVelocity")
-                    Noclip.Name = "BodyClip"
-                    Noclip.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
-                    Noclip.MaxForce = Vector3.new(100000,100000,100000)
-                    Noclip.Velocity = Vector3.new(0,0,0)
-                end
-            else    
-                if game.Players.LocalPlayer.Character.HumanoidRootPart:FindFirstChild("BodyClip") then
-                    game.Players.LocalPlayer.Character.HumanoidRootPart:FindFirstChild("BodyClip"):Destroy()
-                end
-            end
-        end)
-    end)
-end)
-    
-
-
-
-    
-    
-    
-    
-    
     
     
     

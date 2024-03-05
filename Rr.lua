@@ -67,13 +67,13 @@ local DropdownMon = Tabs.Main:AddDropdown("DropdownMon", {
         Default = false,
         Callback = function(reerrtyt)
         Mob = reerrtyt
+        
         end
     })
     
-    
 
 
-local ToggleAutoFarm = Tabs.Main:AddToggle("ToggleAutoFarm", {Title = "AutoFarm", Default = false })
+local ToggleAutoFarm = Tabs.Main:AddToggle("ToggleAutoFarm", {Title = "Auto Farm", Default = false })
     ToggleAutoFarm:OnChanged(function(asdggf)
    _G.AutoFarm = asdggf 
 end)
@@ -224,5 +224,17 @@ Input:OnChanged(function()
         print("Input updated:", Input.Value)
     end)
 end
+
+
+
+
+
+
+
+
+
+
+
+            
 
 

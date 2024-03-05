@@ -55,7 +55,7 @@ end)
     
 
 Monster = { --ใส่เอาเองชื่อมอนที่อยากฟาร์ม
-  "BaconHair", "Bacon XD", "Bacon Big", "Bacon lvl.15", "Bacon +Exp.2X", "Bacon Buggy", "Bacon Fan", "Boss King", "Bacon Red", "Bacon Blue", "Boss Snow", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
+  "BaconHair", "Bacon XD", "Bacon Big", "Bacon lvl.15", "Bacon +Exp.2X", "Bacon Buggy", "Bacon Fan", "Boss King", "Bacon Red", "Bacon Blue", "Boss Snow", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""
 }
 
 
@@ -73,7 +73,7 @@ local DropdownMon = Tabs.Main:AddDropdown("DropdownMon", {
     
 
 
-local Togglehee = Tabs.Main:AddToggle("ToggleAutoFarm", {Title = "AutoFarm", Default = false })
+local ToggleAutoFarm = Tabs.Main:AddToggle("ToggleAutoFarm", {Title = "AutoFarm", Default = false })
     ToggleAutoFarm:OnChanged(function(asdggf)
    _G.AutoFarm = asdggf 
 end)
@@ -224,18 +224,5 @@ Input:OnChanged(function()
         print("Input updated:", Input.Value)
     end)
 end
-
-
-
-
-
-
-
-
-
-
-
-            
-
 
 

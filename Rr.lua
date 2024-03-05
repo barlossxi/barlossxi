@@ -67,14 +67,7 @@ _G.AutoFarm = abkkll
 end)
 
 
-local Togglehee = Tabs.Main:AddToggle("Togglehee", {Title = "Auto LV", Default = false })
-    Togglehee:OnChanged(function(asdf)
-    _G.hee = asdf
-while _G.hee do wait()
-fireclickdetector(game:GetService("Workspace")["Click to Expx10 [AFK]"].HumanoidRootPart.ClickDetector)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4774.6377, 48349.1602, 3166.73145, -0.631904721, 1.10530625e-08, -0.775046051, 1.61701816e-08, 1, 1.07741815e-09, 0.775046051, -1.18518093e-08, -0.631904721)
-end
-end)
+
 
 
 

@@ -1,7 +1,7 @@
 local httpService = game:GetService("HttpService")
 
 local SaveManager = {} do
-	SaveManager.Folder = "ZAHUBConfig"
+	SaveManager.Folder = "FluentSettings"
 	SaveManager.Ignore = {}
 	SaveManager.Parser = {
 		Toggle = {
@@ -83,7 +83,7 @@ local SaveManager = {} do
 			return false, "no config file is selected"
 		end
 
-		local fullPath = self.Folder .. "/ZAHUB/" .. name .. ".json"
+		local fullPath = self.Folder .. "/settings/" .. name .. ".json"
 
 		local data = {
 			objects = {}
@@ -110,7 +110,7 @@ local SaveManager = {} do
 			return false, "no config file is selected"
 		end
 		
-		local file = self.Folder .. "/ZAHUB/" .. name .. ".json"
+		local file = self.Folder .. "/settings/" .. name .. ".json"
 		if not isfile(file) then return false, "invalid file" end
 
 		local success, decoded = pcall(httpService.JSONDecode, httpService, readfile(file))
@@ -134,7 +134,7 @@ local SaveManager = {} do
 	function SaveManager:BuildFolderTree()
 		local paths = {
 			self.Folder,
-			self.Folder .. "/ZAHUB"
+			self.Folder .. "/settings"
 		}
 
 		for i = 1, #paths do
@@ -146,7 +146,7 @@ local SaveManager = {} do
 	end
 
 	function SaveManager:RefreshConfigList()
-		local list = listfiles(self.Folder .. "/ZAHUB")
+		local list = listfiles(self.Folder .. "/settings")
 
 		local out = {}
 		for i = 1, #list do
@@ -179,8 +179,8 @@ local SaveManager = {} do
 	end
 
 	function SaveManager:LoadAutoloadConfig()
-		if isfile(self.Folder .. "/ZAHUB/autoload.txt") then
-			local name = readfile(self.Folder .. "/ZAHUB/autoload.txt")
+		if isfile(self.Folder .. "/settings/autoload.txt") then
+			local name = readfile(self.Folder .. "/settings/autoload.txt")
 
 			local success, err = self:Load(name)
 			if not success then
@@ -206,96 +206,12 @@ local SaveManager = {} do
 
 		local section = tab:AddSection("Configuration")
 
-		section:AddInput("SaveManager_ConfigName",    { Title = "Config name" })
-		section:AddDropdown("SaveManager_ConfigList", { Title = "Config list", Values = self:RefreshConfigList(), AllowNull = true })
-
-		section:AddButton({
-            Title = "Create config",
-            Callback = function()
-                local name = SaveManager.Options.SaveManager_ConfigName.Value
-
-                if name:gsub(" ", "") == "" then 
-                    return self.Library:Notify({
-						Title = "Interface",
-						Content = "Config loader",
-						SubContent = "Invalid config name (empty)",
-						Duration = 7
-					})
-                end
-
-                local success, err = self:Save(name)
-                if not success then
-                    return self.Library:Notify({
-						Title = "Interface",
-						Content = "Config loader",
-						SubContent = "Failed to save config: " .. err,
-						Duration = 7
-					})
-                end
-
-				self.Library:Notify({
-					Title = "Interface",
-					Content = "Config loader",
-					SubContent = string.format("Created config %q", name),
-					Duration = 7
-				})
-
-                SaveManager.Options.SaveManager_ConfigList:SetValues(self:RefreshConfigList())
-                SaveManager.Options.SaveManager_ConfigList:SetValue(nil)
-            end
-        })
-
-        section:AddButton({Title = "Load config", Callback = function()
-			local name = SaveManager.Options.SaveManager_ConfigList.Value
-
-			local success, err = self:Load(name)
-			if not success then
-				return self.Library:Notify({
-					Title = "Interface",
-					Content = "Config loader",
-					SubContent = "Failed to load config: " .. err,
-					Duration = 7
-				})
-			end
-
-			self.Library:Notify({
-				Title = "Interface",
-				Content = "Config loader",
-				SubContent = string.format("Loaded config %q", name),
-				Duration = 7
-			})
-		end})
-
-		section:AddButton({Title = "Overwrite config", Callback = function()
-			local name = SaveManager.Options.SaveManager_ConfigList.Value
-
-			local success, err = self:Save(name)
-			if not success then
-				return self.Library:Notify({
-					Title = "Interface",
-					Content = "Config loader",
-					SubContent = "Failed to overwrite config: " .. err,
-					Duration = 7
-				})
-			end
-
-			self.Library:Notify({
-				Title = "Interface",
-				Content = "Config loader",
-				SubContent = string.format("Overwrote config %q", name),
-				Duration = 7
-			})
-		end})
-
-		section:AddButton({Title = "Refresh list", Callback = function()
-			SaveManager.Options.SaveManager_ConfigList:SetValues(self:RefreshConfigList())
-			SaveManager.Options.SaveManager_ConfigList:SetValue(nil)
-		end})
+		
 
 		local AutoloadButton
 		AutoloadButton = section:AddButton({Title = "Set as autoload", Description = "Current autoload config: none", Callback = function()
 			local name = SaveManager.Options.SaveManager_ConfigList.Value
-			writefile(self.Folder .. "/ZAHUB/autoload.txt", name)
+			writefile(self.Folder .. "/settings/autoload.txt", name)
 			AutoloadButton:SetDesc("Current autoload config: " .. name)
 			self.Library:Notify({
 				Title = "Interface",
@@ -305,7 +221,7 @@ local SaveManager = {} do
 			})
 		end})
 
-		if isfile(self.Folder .. "/ZAHUB/autoload.txt") then
+		if isfile(self.Folder .. "/settings/autoload.txt") then
 			local name = readfile(self.Folder .. "/settings/autoload.txt")
 			AutoloadButton:SetDesc("Current autoload config: " .. name)
 		end
